@@ -1,10 +1,10 @@
 import { useState } from 'react'
 
-function App() {
+function HomePage() {
 
   return (
-   <div className='text-red-500'>hello world</div>
+   <div className='text-red-500'>homepage</div>
   )
 }
 
-export default App
+export default HomePage
