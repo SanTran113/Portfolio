@@ -4,9 +4,11 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 
 import './index.css'
 
+import Navbar from './components/Navbar.tsx'
 import HomePage from './pages/HomePage.tsx'
-import AboutMe from './pages/AboutMe.tsx'
+import About from './pages/About.tsx'
 import Works from './pages/Works.tsx'
+import Contact from './pages/Contact.tsx'
 
 const router = createBrowserRouter([
   {
@@ -15,16 +17,21 @@ const router = createBrowserRouter([
   },
   {
     path: '/aboutme',
-    element: <AboutMe />,
+    element: <About />,
   },
   {
     path: '/works',
     element: <Works />,
   },
+  {
+    path: '/contact',
+    element: <Contact />,
+  },
 ])
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
+    <Navbar />
     <RouterProvider router={router} />
   </StrictMode>,
 )
