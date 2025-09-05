@@ -1,5 +1,3 @@
-import React, { useState, useEffect, useRef } from "react";
-
 function Navbar() {
   return (
     <nav className="p-4 col-span-3 row-start-2 flex justify-between items-center gap-4 mt-10 mb-10">
@@ -23,6 +21,7 @@ function Navbar() {
           </a>
         </li>
       </ul>
+      <div></div>
     </nav>
   );
 }
