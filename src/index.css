@@ -1,6 +1,19 @@
 @import "tailwindcss";
 
+@theme {
+  --size-image: clamp(10rem,60vw,60rem);
+  --text-title: clamp(1rem,18vw,12rem);
+  --text-body: clamp(0.8rem,1vw,1.5rem);
+  --text-heading1: clamp(2rem,3vw,3rem);
+
+  --mb-home: clamp(1rem,5vw,5rem);
+  --mt-border: clamp(2rem,10vw,10rem);
+}
+
+
+
 body {
-  margin: 0;
   background-color: #1A1A1A;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }

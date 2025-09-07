@@ -1,6 +1,6 @@
 function Navbar() {
   return (
-    <nav className="p-4 col-span-3 row-start-2 flex justify-between items-center gap-4 mt-10 mb-10">
+    <nav className="p-4 col-span-3 row-start-2 flex justify-between items-center gap-4 mt-5 mr-5 ml-5">
       <a href="/" className="text-white text-2xl font-bold">
         ST
       </a>
