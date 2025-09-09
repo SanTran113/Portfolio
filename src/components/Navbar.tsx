@@ -6,13 +6,13 @@ function Navbar() {
       </a>
       <ul className="flex space-x-4">
         <li>
-          <a href="/aboutme" className="text-white hover:text-gray-300">
-            About
+          <a href="/works" className="text-white hover:text-gray-300">
+            Works
           </a>
         </li>
         <li>
-          <a href="/works" className="text-white hover:text-gray-300">
-            Works
+          <a href="/aboutme" className="text-white hover:text-gray-300">
+            About
           </a>
         </li>
         <li>
