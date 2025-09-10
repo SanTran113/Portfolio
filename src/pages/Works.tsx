@@ -1,39 +1,57 @@
 import { useState } from "react";
+import Mask from "../components/Mask";
+import Rectangle from "../assets/Rectangle.svg";
+import OngawaCover from "../assets/ongawaCover.png";
+import SGCover from "../assets/SGCover.png";
 
 function Works() {
-
   const projectList = [
     {
       name: "Ongawa",
-      coverImg: "",
+      coverImg: OngawaCover,
       skillsUsed: "Figma",
+      link: "https://www.figma.com/proto/OYdtCI9cxpPROI90AUTu2y/New-Ongawa-Website--Copy-?node-id=1729-4523&t=F3UCrZvYIFBYrIPN-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=116%3A2505&show-proto-sidebar=1",
     },
     {
       name: "SpreadGoodness",
-      coverImg: "",
+      coverImg: SGCover,
       skillsUsed: "Figma, React, TailwindCSS, TypeScript, Firebase",
-    }
+      link: "",
+    },
   ];
 
   const [project, setProject] = useState(projectList[0]);
 
+  const handleProjectClick = (proj: typeof project) => {
+    window.open(proj.link, "_blank");
+  }
+
   return (
-    <div className="flex flex-row gap-19">
-      <section className="w-1/2 h-3/4 flex flex-col">
-        <div className="border border-white h-96">{project.coverImg}</div>
+    <div className="flex flex-row gap-10 ml-10 mr-10 item-start h-screen">
+      <section className="w-1/2 h-3/4 flex flex-col items-start space-y-5">
+        <Mask
+          maskImage={Rectangle}
+          backgroundImage={project.coverImg}
+          className="w-full border border-white"
+        />
         <div className="text-white text-body">{project.skillsUsed}</div>
+        <hr className="border-b border-white w-full" />
       </section>
       <section className="w-1/2 h-3/4 flex flex-col">
         <div className="text-white text-heading1 font-bold mb-5">Projects</div>
-        <ul className="text-heading2">
+        <ul className="group text-heading2 space-y-5 font-medium flex flex-col">
           {projectList.map((proj) => (
-            <li
+            <button
               key={proj.name}
-              className="text-white cursor-pointer"
+              className="text-white text-left cursor-pointer hover:text-gray-300 hover:bg-gray-900 hover/see:visible p-2 rounded"
               onMouseEnter={() => setProject(proj)}
+              onClick={() => handleProjectClick(proj)}
             >
               {proj.name}
-            </li>
+              <div className="invisible hover:see text-sm text-gray-400">
+                See Project
+              </div>
+            </button>
           ))}
         </ul>
       </section>
