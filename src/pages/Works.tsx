@@ -39,17 +39,17 @@ function Works() {
       </section>
       <section className="w-1/2 h-3/4 flex flex-col">
         <div className="text-white text-heading1 font-bold mb-5">Projects</div>
-        <ul className="group text-heading2 space-y-5 font-medium flex flex-col">
+        <ul className="text-heading2 space-y-5 font-medium flex flex-col">
           {projectList.map((proj) => (
             <button
               key={proj.name}
-              className="text-white text-left cursor-pointer hover:text-gray-300 hover:bg-gray-900 hover/see:visible p-2 rounded"
+              className="group text-white text-left cursor-pointer hover:text-gray-300 hover:bg-gray-900 hover/see:visible p-5 rounded flex flex-row justify-between items-center"
               onMouseEnter={() => setProject(proj)}
               onClick={() => handleProjectClick(proj)}
             >
               {proj.name}
-              <div className="invisible hover:see text-sm text-gray-400">
-                See Project
+              <div className="invisible group-hover:visible text-sm text-gray-400 text-body">
+                See Project &gt;
               </div>
             </button>
           ))}
