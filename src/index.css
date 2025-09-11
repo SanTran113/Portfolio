@@ -5,6 +5,7 @@
   --size-image: clamp(10rem,60vw,60rem);
   --text-title: clamp(1rem,17vw,12rem);
   --text-body: clamp(0.8rem,1.5vw,1.5rem);
+  --text-contact: clamp(0.8rem,1vw,1rem);
   --text-heading1: clamp(2rem,4vw,4rem);
   --text-heading2: clamp(1rem,3vw,3rem);
 
@@ -18,6 +19,4 @@
 
 body {
   background-color: #1A1A1A;
-  overflow-y: hidden;
-  overflow-x: hidden;
 }

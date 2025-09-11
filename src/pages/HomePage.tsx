@@ -4,9 +4,10 @@ import Leaves from "../assets/leaves.jpeg";
 
 function HomePage() {
   return (
-    <div className="ml-10 mr-10">
+    <div className="ml-10 mr-10 overflow-hidden">
       <h1 className="text-title font-extrabold text-white mb-home">San Tran</h1>
-      <div className="h-[calc(100vh-16rem)] grid grid-cols-2 grid-rows-3 gap-4">
+      {/* TODO: Make grid more dynamic */}
+      <div className="h-[calc(100vh-25rem)] grid grid-cols-2 grid-rows-3 gap-4">
         <div className="row-span-3 flex flex-col space-y-10">
           <section className="space-y-6">
             <p className=" text-body font-semibold text-gray-300">
