@@ -19,4 +19,9 @@
 
 body {
   background-color: #1A1A1A;
+  background-image: url('./assets/canvasTex.jpg');
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
