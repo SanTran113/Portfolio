@@ -7,7 +7,7 @@
   --text-body: clamp(0.8rem,1.5vw,1.5rem);
   --text-contact: clamp(0.8rem,1vw,1rem);
   --text-heading1: clamp(2rem,4vw,4rem);
-  --text-heading2: clamp(1rem,3vw,3rem);
+  --text-heading2: clamp(1.5rem,3vw,3rem);
 
   --mb-home: clamp(1rem,5vw,5rem);
   --mt-border: clamp(2rem,10vw,10rem);

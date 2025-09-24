@@ -27,17 +27,17 @@ function Works() {
   }
 
   return (
-    <div className="flex flex-row gap-10 ml-10 mr-10 item-start h-screen">
-      <section className="w-1/2 h-3/4 flex flex-col items-start space-y-5">
+    <div className="flex flex-col lg:flex-row gap-10 ml-10 mr-10 item-start mt-10 h-[calc(100vh-8rem)]">
+      <section className="w-full flex flex-col items-start lg:h-3/4 md:h-1/2">
         <Mask
           maskImage={Rectangle}
           backgroundImage={project.coverImg}
           className="w-full border border-white"
         />
-        <div className="text-white text-body">{project.skillsUsed}</div>
+        <div className="text-white text-body mt-5">{project.skillsUsed}</div>
         <hr className="border-b border-white w-full" />
       </section>
-      <section className="w-1/2 h-3/4 flex flex-col">
+      <section className="w-full flex flex-col">
         <div className="text-white text-heading1 font-bold mb-5">Projects</div>
         <ul className="text-heading2 space-y-5 font-medium flex flex-col">
           {projectList.map((proj) => (
