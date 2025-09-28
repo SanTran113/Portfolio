@@ -4,16 +4,16 @@ import Leaves from "../assets/leaves.jpeg";
 
 function About() {
   return (
-    <div className="ml-10 mr-10">
-      <div className="flex flex-col lg:flex-row items-start overflow-y-hidden gap-10 ">
+    <div className="pl-10 pr-10">
+      <div className="flex flex-col lg:flex-row items-center overflow-y-hidden gap-10 w-full h-[calc(100vh-6rem)]">
         <section className="w-full lg:w-1/2 md:w-1/2">
           <Mask
-            className="h-[50vh]"
+            className="w-full"
             maskImage={Circle}
             backgroundImage={Leaves}
           />
         </section>
-        <section className="w-full mb-6 text-text-body text-gray-300">
+        <section className="w-full lg:w-1/2 md:w-1/2 mb-6 text-text-body text-gray-300">
           <h1 className="text-heading1 text-white font-bold mb-6">Hi, I'm San!</h1>
           <p>
             I'm a software engineer based in the Los Angeles Area. I enjoy
