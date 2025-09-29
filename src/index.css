@@ -12,7 +12,8 @@
   --mb-home: clamp(1rem,5vw,5rem);
   --mt-border: clamp(2rem,10vw,10rem);
 
-  --bg-contact: oklch(0.1800 0 0)
+  --bg-contact: oklch(0.1800 0 0);
+  --breakpoint-xm: 52rem;
 }
 
 

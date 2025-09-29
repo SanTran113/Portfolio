@@ -6,15 +6,15 @@ import Resume from "../assets/resume.pdf";
 function About() {
   return (
     <div className="pl-10 pr-10">
-      <div className="flex flex-col lg:flex-row items-center gap-10 w-full h-[calc(100vh-6rem)]">
-        <section className="w-full lg:w-1/2 md:w-3/4">
+      <div className="flex flex-col lg:flex-row xm:flex-row items-center gap-10 w-full h-[calc(100vh-6rem)]">
+        <section className="w-full lg:w-1/2 xm:w-1/2 md:w-3/4">
           <Mask
             className="w-full"
             maskImage={Circle}
             backgroundImage={Leaves}
           />
         </section>
-        <section className="w-full lg:w-1/2 md:w-3/4 text-text-body text-gray-300 space-y-5 lg:space-y-8">
+        <section className="w-full lg:w-1/2 xm:w-1/2 md:w-3/4 text-text-body text-gray-300 space-y-5 lg:space-y-8">
           <h1 className="text-heading1 text-white font-bold">Hi, I'm San!</h1>
           <p>
             I'm a software engineer based in the Los Angeles Area. I enjoy

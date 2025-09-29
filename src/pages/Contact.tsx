@@ -2,7 +2,7 @@ function Contact() {
   return (
     <div className="ml-10 mr-10">
       <div className="text-heading1 text-white font-bold mb-home">Contact </div>
-      <div className="flex flex-col md:flex-row lg:flex-row xl:flex-row 2xl:flex-row justify-center items-stretch">
+      <div className="flex flex-col lg:flex-row xl:flex-row 2xl:flex-row justify-center items-stretch">
         <section className="flex flex-col bg-[var(--bg-contact)] m-5 p-5 space-y-6 justify-between flex-1">
           <i className="text-3xl fi fi-solid fi-brands-linkedin text-white mb-20"></i>
           <h1 className="text-contact text-white font-bold">LinkedIn</h1>
