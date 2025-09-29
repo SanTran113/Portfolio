@@ -4,13 +4,13 @@ import Leaves from "../assets/leaves.jpeg";
 
 function HomePage() {
   return (
-    <div className="ml-10 mr-10 overflow-hidden">
+    <div className="pl-10 pr-10 overflow-hidden h-[calc(100vh-6rem)]">
       <h1 className="text-title font-extrabold text-white mb-home">San Tran</h1>
       {/* TODO: Make grid more dynamic */}
-      <div className="h-[calc(100vh-25rem)] grid grid-cols-2 grid-rows-3 gap-4">
-        <div className="row-span-3 flex flex-col space-y-10">
+      <div className="flex flex-col xm:flex-row lg:flex-row gap-4 h-full">
+        <div className="w-full flex flex-col space-y-10">
           <section className="space-y-6">
-            <p className=" text-body font-semibold text-gray-300">
+            <p className= "text-body font-semibold text-gray-300">
               Lorem ipsum dolor sit amet, at elit graece eam, eu recusabo
               deseruisse moderatius vel, cu decore equidem voluptaria eos. No
               fuisset abhorreant nam, ut essent putant usu.
@@ -40,17 +40,18 @@ function HomePage() {
                     </a>
                   </li>
                 </ul>
-                <div></div>
               </nav>
             </section>
           </section>
         </div>
-        <div className="col-start-2 row-start-1 row-span-2 border border-white h-3/4"></div>
-        <Mask
-          className="col-start-2 row-start-1 place-self-center size-image"
-          maskImage={Paint}
-          backgroundImage={Leaves}
-        />
+        <section className="w-full relative h-1/2">
+          <div className="w-full border border-white h-3/4"></div>
+          <Mask
+            className="place-self-center size-homeImg inline-block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-3/5"
+            maskImage={Paint}
+            backgroundImage={Leaves}
+          />
+        </section>
       </div>
     </div>
   );

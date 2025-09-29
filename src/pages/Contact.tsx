@@ -1,6 +1,6 @@
 function Contact() {
   return (
-    <div className="ml-10 mr-10">
+    <div className="pl-10 pr-10">
       <div className="text-heading1 text-white font-bold mb-home">Contact </div>
       <div className="flex flex-col lg:flex-row xl:flex-row 2xl:flex-row justify-center items-stretch">
         <section className="flex flex-col bg-[var(--bg-contact)] m-5 p-5 space-y-6 justify-between flex-1">

@@ -32,7 +32,7 @@ function Works() {
         <Mask
           maskImage={Rectangle}
           backgroundImage={project.coverImg}
-          className="w-full border border-white"
+          className="w-full border border-white size-image"
         />
         <div className="text-white text-body mt-5">{project.skillsUsed}</div>
         <hr className="border-b border-white w-full" />

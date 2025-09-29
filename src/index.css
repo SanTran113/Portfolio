@@ -2,25 +2,24 @@
 @import "@flaticon/flaticon-uicons/css/all/all";
 
 @theme {
-  --size-image: clamp(10rem,60vw,60rem);
-  --text-title: clamp(1rem,17vw,12rem);
-  --text-body: clamp(0.8rem,1.5vw,1.5rem);
-  --text-contact: clamp(0.8rem,1vw,1rem);
-  --text-heading1: clamp(2rem,4vw,4rem);
-  --text-heading2: clamp(1.5rem,3vw,3rem);
+  --size-image: clamp(10rem, 60vw, 60rem);
+  --size-homeImg: clamp(35rem, 65vw, 90rem);
+  --text-title: clamp(1rem, 17vw, 12rem);
+  --text-body: clamp(0.8rem, 1.5vw, 1.5rem);
+  --text-contact: clamp(0.8rem, 1vw, 1rem);
+  --text-heading1: clamp(2rem, 4vw, 4rem);
+  --text-heading2: clamp(1.5rem, 3vw, 3rem);
 
-  --mb-home: clamp(1rem,5vw,5rem);
-  --mt-border: clamp(2rem,10vw,10rem);
+  --mb-home: clamp(1rem, 5vw, 5rem);
+  --mt-border: clamp(2rem, 10vw, 10rem);
 
-  --bg-contact: oklch(0.1800 0 0);
+  --bg-contact: oklch(0.18 0 0);
   --breakpoint-xm: 52rem;
 }
 
-
-
 body {
-  background-color: #1A1A1A;
-  background-image: url('./assets/canvasTex.jpg');
+  background-color: #1a1a1a;
+  background-image: url("./assets/canvasTex.jpg");
   background-blend-mode: multiply;
   background-size: cover;
   background-position: center;
