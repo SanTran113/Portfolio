@@ -12,7 +12,7 @@ function Mask({
   return (
     <div
       id="mask"
-      className={`${className}
+      className={`${className} 
               [mask-size:contain] [mask-repeat:no-repeat] [mask-position:center] 
               bg-cover bg-center bg-no-repeat`}
       style={{
