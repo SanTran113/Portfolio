@@ -22,7 +22,7 @@ function Mask({
       }}
     >
       <div
-        className="bg-cover bg-center bg-no-repeat min-h-full w-full opacity-100 lg:opacity-50 md:opacity-30 sm:opacity-30"
+        className="bg-cover bg-center bg-no-repeat min-h-full w-full opacity-70"
         style={{
           backgroundImage: `url(${tex})`,
           mixBlendMode: "multiply",

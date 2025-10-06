@@ -39,11 +39,11 @@ function Works() {
       </section>
       <section className="w-full flex flex-col">
         <div className="text-white text-heading1 font-bold mb-5">Projects</div>
-        <ul className="text-heading2 font-medium flex flex-col">
+        <ul className="text-heading2 font-medium flex flex-col ml-5 gap-2 lg:gap-5 md:gap-3">
           {projectList.map((proj) => (
             <button
               key={proj.name}
-              className="group text-white text-left cursor-pointer hover:text-gray-300 hover:outline-3 hover/see:visible p-5 rounded flex flex-row justify-between items-center"
+              className="group text-white text-left cursor-pointer hover:text-gray-300 hover:outline-3 hover/see:visible rounded flex flex-row justify-between items-center p-3 lg:p-5"
               onMouseEnter={() => setProject(proj)}
               onClick={() => handleProjectClick(proj)}
             >

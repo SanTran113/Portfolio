@@ -2,7 +2,7 @@
 @import "@flaticon/flaticon-uicons/css/all/all";
 
 @theme {
-  --size-image: clamp(10rem, 50vw, 50rem);
+  --size-image: clamp(20rem, 50vw, 50rem);
   --size-homeImg: clamp(35rem, 65vw, 90rem);
   --text-title: clamp(1rem, 17vw, 12rem);
   --text-body: clamp(1rem, 1.2vw, 1.2rem);
