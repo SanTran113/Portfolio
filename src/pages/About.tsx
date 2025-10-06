@@ -7,7 +7,7 @@ function About() {
   return (
     <div className="pl-10 pr-10">
       <div className="flex flex-col lg:flex-row xm:flex-row items-center lg:gap-10 xm:gap-5 w-full h-[calc(100vh-6rem)]">
-        <section className="w-full h-full lg:w-2/5 xm:w-2/5 md:w-3/4 flex justify-center items-center overflow-clip">
+        <section className="w-full h-full lg:w-2/5 xm:w-2/5 md:w-3/4 flex justify-center items-center overflow-hidden">
           <Mask
             className="w-full size-image"
             maskImage={Circle}
