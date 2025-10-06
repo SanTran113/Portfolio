@@ -7,7 +7,7 @@ function About() {
   return (
     <div className="pl-10 pr-10">
       <div className="flex flex-col lg:flex-row xm:flex-row items-center lg:gap-10 xm:gap-5 w-full h-[calc(100vh-6rem)]">
-        <section className="w-full h-full lg:w-2/5 xm:w-2/5 md:w-3/4">
+        <section className="w-full h-full lg:w-2/5 xm:w-2/5 md:w-3/4 flex justify-center items-center overflow-clip">
           <Mask
             className="w-full size-image"
             maskImage={Circle}
@@ -35,7 +35,7 @@ function About() {
             </ul>
           </div>
           <button
-            className="text-body cursor-pointer hover:text-gray-300 hover:bg-gray-900 p-2 rounded border border-white text-white w-full mb-10"
+            className="text-body cursor-pointer hover:bg-gray-200 p-2 rounded bg-white text-[#1a1a1a] w-full mb-10"
             onClick={() => window.open(Resume, "_blank")}
           >
             See Resume
