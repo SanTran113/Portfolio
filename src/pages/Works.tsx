@@ -34,16 +34,16 @@ function Works() {
           backgroundImage={project.coverImg}
           className="w-full border border-white size-image"
         />
-        <div className="text-white text-body mt-5">{project.skillsUsed}</div>
+        <div className="text-white text-body mt-5 mb-3 tracking-wide">{project.skillsUsed}</div>
         <hr className="border-b border-white w-full" />
       </section>
       <section className="w-full flex flex-col">
         <div className="text-white text-heading1 font-bold mb-5">Projects</div>
-        <ul className="text-heading2 space-y-5 font-medium flex flex-col">
+        <ul className="text-heading2 font-medium flex flex-col">
           {projectList.map((proj) => (
             <button
               key={proj.name}
-              className="group text-white text-left cursor-pointer hover:text-gray-300 hover:bg-gray-900 hover/see:visible p-5 rounded flex flex-row justify-between items-center"
+              className="group text-white text-left cursor-pointer hover:text-gray-300 hover:outline-3 hover/see:visible p-5 rounded flex flex-row justify-between items-center"
               onMouseEnter={() => setProject(proj)}
               onClick={() => handleProjectClick(proj)}
             >
