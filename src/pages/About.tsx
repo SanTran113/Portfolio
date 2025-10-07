@@ -1,6 +1,6 @@
 import Mask from "../components/Mask";
 import Circle from "../assets/circle.png";
-import Leaves from "../assets/leaves.jpeg";
+import Profile from "../assets/profile.jpg";
 import Resume from "../assets/resume.pdf";
 
 function About() {
@@ -9,9 +9,9 @@ function About() {
       <div className="flex flex-col lg:flex-row xm:flex-row items-center lg:gap-10 xm:gap-5 w-full h-[calc(100vh-6rem)]">
         <section className="w-full h-full lg:w-2/5 xm:w-2/5 md:w-3/4 flex justify-center items-center overflow-hidden">
           <Mask
-            className="w-full size-image"
+            className="w-full size-image opacity-100"
             maskImage={Circle}
-            backgroundImage={Leaves}
+            backgroundImage={Profile}
           />
         </section>
         <section className="w-full lg:w-1/2 xm:w-1/2 md:w-3/4 text-text-body text-gray-300 space-y-5 lg:space-y-8">

@@ -1,6 +1,6 @@
 import Mask from "../components/Mask";
 import Paint from "../assets/paintStroke.png";
-import Leaves from "../assets/leaves.jpeg";
+import Leaves from "../assets/pinkClouds.jpeg";
 
 function HomePage() {
   return (
