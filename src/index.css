@@ -4,10 +4,10 @@
 @theme {
   --size-image: clamp(20rem, 50vw, 50rem);
   --size-homeImg: clamp(35rem, 65vw, 90rem);
-  --text-title: clamp(1rem, 17vw, 12rem);
-  --text-body: clamp(1rem, 1.2vw, 1.2rem);
+  --text-title: clamp(1rem, 11vw, 12rem);
+  --text-body: clamp(1rem, 1.1vw, 1.2rem);
   --text-contact: clamp(0.8rem, 1vw, 1rem);
-  --text-heading1: clamp(2rem, 4vw, 4rem);
+  --text-heading1: clamp(2rem, 3.5vw, 4rem);
   --text-heading2: clamp(1.5rem, 2.5vw, 2.5rem);
 
   --mb-home: clamp(1rem, 5vw, 5rem);
