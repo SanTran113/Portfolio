@@ -3,6 +3,7 @@ import Mask from "../components/Mask";
 import Rectangle from "../assets/Rectangle.svg";
 import OngawaCover from "../assets/ongawaCover.png";
 import SGCover from "../assets/SGCover.png";
+import RizzletCover from "../assets/rizzlet.jpg";
 
 function Works() {
   const projectList = [
@@ -18,6 +19,13 @@ function Works() {
       skillsUsed: "Figma, React, TailwindCSS, TypeScript, Firebase",
       link: "",
     },
+    {
+      name: "Rizzlet",
+      coverImg: RizzletCover,
+      skillsUsed: "React, TailwindCSS, TypeScript, AWS, MongoDB",
+      link: "https://github.com/Rizzlet/rizzlet",
+    },
+
   ];
 
   const [project, setProject] = useState(projectList[0]);
