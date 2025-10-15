@@ -2,7 +2,7 @@ import { useState } from "react";
 import Mask from "../components/Mask";
 import Rectangle from "../assets/Rectangle.svg";
 import OngawaCover from "../assets/ongawaCover.png";
-import SGCover from "../assets/SGCover.png";
+import SGCover from "../assets/sGCover.png";
 import RizzletCover from "../assets/rizzlet.jpg";
 
 function Works() {

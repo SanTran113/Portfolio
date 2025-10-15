@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { RouterProvider, createHashRouter } from 'react-router-dom'
+import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 
 import './index.css'
 
@@ -10,7 +10,7 @@ import About from './pages/About.tsx'
 import Works from './pages/Works.tsx'
 import Contact from './pages/Contact.tsx'
 
-const router = createHashRouter([
+const router = createBrowserRouter([
   {
     path: '/',
     element: <HomePage />,
