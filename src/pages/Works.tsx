@@ -12,12 +12,12 @@ function Works() {
   }
 
   return (
-    <div className="flex flex-col lg:flex-row gap-10 item-start mt-10 h-[calc(100vh-8rem)]">
-      <section className="w-100vw h-auto flex flex-col items-start lg:h-full lg:w-full">
+    <div className="flex flex-col lg:flex-row gap-10 item-start h-[calc(100vh-8rem)]">
+      <section className="w-full h-full flex flex-col items-start">
         <Mask
           maskImage={Rectangle}
           backgroundImage={project.coverImg}
-          className="w-full border border-white size-workImg"
+          className="w-full h-full border border-white flex items-center"
         />
         {/* <div className="text-white text-body mt-5 mb-3 tracking-wide">{project.skillsUsed}</div> */}
         {/* <hr className="border-b border-white w-full" /> */}
