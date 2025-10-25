@@ -14,7 +14,7 @@ function Mask({
       id="mask"
       className={`${className} 
               [mask-size:contain] [mask-repeat:no-repeat] [mask-position:center] 
-              bg-cover bg-center bg-no-repeat`}
+              bg-contain bg-center bg-no-repeat`}
       style={{
         maskImage: `url(${maskImage})`,
         WebkitMaskImage: `url(${maskImage})`,

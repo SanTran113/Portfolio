@@ -12,17 +12,17 @@ function Works() {
   }
 
   return (
-    <div className="flex flex-col lg:flex-row gap-10 ml-10 mr-10 item-start mt-10 h-[calc(100vh-8rem)]">
-      <section className="w-full flex flex-col items-start lg:h-3/4 md:h-1/2">
+    <div className="flex flex-col lg:flex-row gap-10 item-start mt-10 h-[calc(100vh-8rem)]">
+      <section className="w-100vw h-auto flex flex-col items-start lg:h-full lg:w-full">
         <Mask
           maskImage={Rectangle}
           backgroundImage={project.coverImg}
-          className="w-full border border-white size-image"
+          className="w-full border border-white size-workImg"
         />
-        <div className="text-white text-body mt-5 mb-3 tracking-wide">{project.skillsUsed}</div>
-        <hr className="border-b border-white w-full" />
+        {/* <div className="text-white text-body mt-5 mb-3 tracking-wide">{project.skillsUsed}</div> */}
+        {/* <hr className="border-b border-white w-full" /> */}
       </section>
-      <section className="w-full flex flex-col">
+      <section className="w-full flex flex-col ml-10 mr-10">
         <div className="text-white text-heading1 font-bold mb-5">Projects</div>
         <ul className="text-heading2 font-medium flex flex-col ml-5 gap-2 lg:gap-5 md:gap-0">
           {projectList.map((proj) => (
