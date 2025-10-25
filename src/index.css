@@ -10,6 +10,7 @@
   --text-contact: clamp(0.8rem, 1vw, 1rem);
   --text-heading1: clamp(2rem, 3.5vw, 4rem);
   --text-heading2: clamp(1.5rem, 2.5vw, 2.5rem);
+  --text-heading3: clamp(1.25rem, 2.25vw, 2.25rem);
 
   --mb-home: clamp(1rem, 5vw, 5rem);
   --mt-border: clamp(2rem, 10vw, 10rem);
