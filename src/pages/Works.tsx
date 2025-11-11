@@ -4,6 +4,7 @@ import Rectangle from "../assets/Rectangle.svg";
 import { projectList } from "../data/projects";
 
 function Works() {
+
   const [project, setProject] = useState(projectList[0]);
 
   const handleProjectClick = (proj: typeof project) => {
@@ -27,12 +28,12 @@ function Works() {
           {projectList.map((proj) => (
             <button
               key={proj.name}
-              className="group text-left cursor-pointer hover:opacity-80 hover:outline-1 hover/see:visible rounded flex flex-row justify-between items-center p-3 lg:p-5"
+              className="group text-left cursor-pointer hover:opacity-80 hover:outline-1 hover/see:visible hover:outline-white rounded flex flex-row justify-between items-center p-3 lg:p-5"
               onMouseEnter={() => setProject(proj)}
               onClick={() => handleProjectClick(proj)}
             >
-              <h1 className="text-white text-heading2 font-medium">{proj.name} </h1>
-              <body className="text-gray-300 text-heading3">{proj.type}</body>
+              <h1 className="text-white text-heading2 font-medium">{proj.name}</h1>
+              <div className="text-gray-300">{proj.type}</div>
             </button>
           ))}
         </ul>
