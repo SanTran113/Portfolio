@@ -11,7 +11,7 @@ function Works() {
       name: "Ongawa",
       coverImg: OngawaCover,
       skillsUsed: "Figma",
-      link: "https://www.figma.com/proto/OYdtCI9cxpPROI90AUTu2y/New-Ongawa-Website--Copy-?node-id=1729-4523&t=F3UCrZvYIFBYrIPN-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=116%3A2505&show-proto-sidebar=1",
+      link: "https://www.figma.com/proto/nJMpfKz3RcBumpbSz82F0A/New-Ongawa-Website--Copy-?node-id=2115-4449&p=f&t=BWDjzsU0NDMp4ihR-0&scaling=min-zoom&content-scaling=fixed&page-id=2115%3A4221&starting-point-node-id=2115%3A4449&show-proto-sidebar=1",
     },
     {
       name: "SpreadGoodness",
