@@ -4,6 +4,7 @@ import Mask from "../components/Mask";
 import Rectangle from "../assets/Rectangle.svg";
 import { projectList } from "../data/projects";
 function Works() {
+
   const [project, setProject] = useState(projectList[0]);
   const navigate = useNavigate();
 
