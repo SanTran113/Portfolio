@@ -9,6 +9,7 @@ import HomePage from './pages/HomePage.tsx'
 import About from './pages/About.tsx'
 import Works from './pages/Works.tsx'
 import Contact from './pages/Contact.tsx'
+import Ongawa from './pages/Ongawa.tsx'
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
   {
     path: '/contact',
     element: <Contact />,
+  },
+  {
+    path: '/ongawa',
+    element: <Ongawa />,
   },
 ])
 
