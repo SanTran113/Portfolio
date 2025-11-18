@@ -10,17 +10,18 @@ function Mask({
   className?: string;
 }) {
   return (
-    <div
-      id="mask"
-      className={`${className} 
-              [mask-size:contain] [mask-repeat:no-repeat] [mask-position:center] 
-              bg-cover bg-center bg-no-repeat`}
-      style={{
-        maskImage: `url(${maskImage})`,
-        WebkitMaskImage: `url(${maskImage})`,
-        backgroundImage: `url(${backgroundImage})`,
-      }}
-    >
+    <div className="relative w-full h-full">
+      <img
+        src = {backgroundImage}
+        className={`${className}`}
+        style={ {
+          maskImage: `url(${maskImage})`,
+          maskSize: "contain",
+          maskRepeat: "no-repeat",
+          maskPosition: "center",
+        }}
+      />
+
       <img
         src={tex}
         alt=""
