@@ -37,15 +37,11 @@ function Works() {
               onMouseEnter={() => setProject(proj)}
               onClick={() => handleProjectClick(proj)}
             >
-<<<<<<< HEAD
-              <h1 className="text-white text-heading2 font-medium">{proj.name}</h1>
-              <div className="text-gray-300 text-heading3">{proj.type}</div>
-=======
+
               <h1 className="text-white text-heading2 font-medium">
                 {proj.name}
               </h1>
               <div className="text-gray-300 text-body">{proj.type}</div>
->>>>>>> b2cfc3b20982353a14c2f36bad4e210c7b881ce7
             </button>
           ))}
         </ul>

@@ -1,5 +1,5 @@
 import Mask from "../components/Mask";
-import Circle from "../assets/circle.png";
+import Circle from "../assets/circle_arylic.png";
 import Profile from "../assets/profile.jpg";
 import Resume from "../assets/resume.pdf";
 
