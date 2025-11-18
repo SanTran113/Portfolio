@@ -30,7 +30,7 @@ function Works() {
               onClick={() => handleProjectClick(proj)}
             >
               <h1 className="text-white text-heading2 font-medium">{proj.name}</h1>
-              <div className="text-gray-300">{proj.type}</div>
+              <div className="text-gray-300 text-heading3">{proj.type}</div>
             </button>
           ))}
         </ul>
