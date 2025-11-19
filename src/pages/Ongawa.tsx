@@ -7,13 +7,14 @@ function Ongawa() {
   const [project] = useState(projectList[0]);
 
   return (
-    <div className="pl-10 pr-10 flex flex-col justify-start items-center">
-      <div className="">
+    <>
+      <div className="flex flex-col justify-start items-center">
         <section className="w-full h-auto overflow-hidden">
           <Mask maskImage={rec} backgroundImage={project.coverImg} />
         </section>
       </div>
-    </div>
+      <section className="pl-10 pr-10"></section>
+    </>
   );
 }
 
