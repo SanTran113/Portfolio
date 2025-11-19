@@ -10,22 +10,37 @@ function Mask({
   className?: string;
 }) {
   return (
-    <div className="relative w-full h-full">
+    <div className="relative">
       <img
-        src = {backgroundImage}
-        className={`${className}`}
-        style={ {
+        src={backgroundImage}
+        className={className}
+        style={{
           maskImage: `url(${maskImage})`,
           maskSize: "contain",
           maskRepeat: "no-repeat",
           maskPosition: "center",
+          WebkitMaskImage: `url(${maskImage})`,
+          WebkitMaskSize: "contain",
+          WebkitMaskRepeat: "no-repeat",
+          WebkitMaskPosition: "center",
         }}
       />
 
       <img
         src={tex}
-        alt=""
-        className="absolute inset-0 w-full h-full object-cover opacity-50 mix-blend-multiply pointer-events-none"
+        className={`absolute top-0 left-0 pointer-events-none ${className}`}
+        style={{
+          maskImage: `url(${maskImage})`,
+          maskSize: "contain",
+          maskRepeat: "no-repeat",
+          maskPosition: "center",
+          WebkitMaskImage: `url(${maskImage})`,
+          WebkitMaskSize: "contain",
+          WebkitMaskRepeat: "no-repeat",
+          WebkitMaskPosition: "center",
+          mixBlendMode: "multiply", 
+          opacity: 0.4,
+        }}
       />
     </div>
   );
