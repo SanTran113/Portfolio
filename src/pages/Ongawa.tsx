@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import Mask from "../components/Mask";
 import rec from "../assets/rec_work.png";
 import { projectList } from "../data/projects";
@@ -6,11 +6,16 @@ import ProjectDescriptionItem from "../components/ProjectDescriptionItem";
 
 function Ongawa() {
   const [project] = useState(projectList[0]);
+  const prototypeRef = useRef<HTMLDivElement | null>(null);
+  const scrollToPrototype = () => {
+    if (prototypeRef.current) {
+      prototypeRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   const figmaPrototype = (
     <iframe
       style={{ border: "1px solid rgba(0, 0, 0, 0.1)" }}
-      width="100%"
-      height="500"
+      className="aspect-video"
       src="https://embed.figma.com/proto/nJMpfKz3RcBumpbSz82F0A/New-Ongawa-Website--Copy-?node-id=2115-4449&p=f&scaling=contain&content-scaling=fixed&page-id=2115%3A4221&starting-point-node-id=2115%3A4449&show-proto-sidebar=1&embed-host=share"
       {...{ allowfullscreen: "" }}
     ></iframe>
@@ -37,7 +42,7 @@ function Ongawa() {
               {ProjectDescriptionItem("Technologies Used", "Figma")}
               <button
                 className="text-body cursor-pointer hover:bg-gray-200 p-2 rounded bg-white text-[#1a1a1a] w-full mt-5"
-                onClick={() => ""}
+                onClick={scrollToPrototype}
               >
                 Test Prototype
               </button>
@@ -78,7 +83,7 @@ function Ongawa() {
           Background
           <div className="text-body font-normal mt-[1%]">
             The original Ongawa design was part of a Senior project, having a
-            limited time frame constraint. They display only a mobile horizontal
+            limited time frame constraint. They display only a mobile vertical
             screen and a purple color palette.
           </div>
         </section>
@@ -95,10 +100,10 @@ function Ongawa() {
           </div>
         </section>
         <section className="text-heading2 text-white font-bold">
-          Final Screens
+          Important Decisions
           <div className="text-body font-normal mt-[1%]"></div>
         </section>
-        <section className="text-heading2 text-white font-bold">
+        <section ref={prototypeRef} className="text-heading2 text-white font-bold">
           Prototype
           {figmaPrototype}
         </section>
