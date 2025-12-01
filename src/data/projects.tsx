@@ -1,4 +1,4 @@
-import OngawaCover from "../assets/ongawaCover.png";
+import OngawaCover from "../assets/ongawa/ongawaCover.png";
 import SGCover from "../assets/sGCover.png";
 import RizzletCover from "../assets/rizzlet.jpg";
 

@@ -3,6 +3,7 @@ import Mask from "../components/Mask";
 import rec from "../assets/rec_work.png";
 import { projectList } from "../data/projects";
 import ProjectDescriptionItem from "../components/ProjectDescriptionItem";
+import Gameplay from "../assets/ongawa/ongawaGameplay.png";
 
 function Ongawa() {
   const [project] = useState(projectList[0]);
@@ -35,17 +36,25 @@ function Ongawa() {
           <div className="text-white text-heading1 font-bold">
             {project.name}
           </div>
-          <div className="flex flex-row ">
-            <div className="flex flex-col">
-              {ProjectDescriptionItem("Year", "October 2024 - November 2025")}
-              {ProjectDescriptionItem("My Role", "Designer")}
-              {ProjectDescriptionItem("Technologies Used", "Figma")}
+          <div className="flex flex-col">
+            {ProjectDescriptionItem("Year", "October 2024 - November 2025")}
+            {ProjectDescriptionItem("My Role", "Designer")}
+            {ProjectDescriptionItem("Technologies Used", "Figma")}
+            <div className="flex flex-col w-full lg:flex-row lg:gap-5">
               <button
                 className="text-body cursor-pointer hover:bg-gray-200 p-2 rounded bg-white text-[#1a1a1a] w-full mt-5"
                 onClick={scrollToPrototype}
               >
                 Test Prototype
               </button>
+              {/* <button
+                  className="text-body cursor-pointer hover:bg-gray-700 p-2 rounded border-1 border-solid border-white text-white w-full mt-5"
+                  onClick={() =>
+                    window.open("https://www.ongawa.io/", "_blank")
+                  }
+                >
+                  See Current Website
+                </button> */}
             </div>
           </div>
         </section>
@@ -53,10 +62,14 @@ function Ongawa() {
           Preface
           <div className="text-body font-normal mt-[1%]">
             Ongawa is a cutting-edge mobile rhythm game that combines music,
-            gaming, and technology! The goal of Ongawa is to provide a platform
-            for new and upcoming musicians to showcase their work through
-            gaming. By creating beatmaps, the player is able to enjoy both
-            gameplay and discover new artists!
+            gaming, and technology! Rhythm gamws are a genre where the primary
+            goal is to tap in time with the beat. The goal of Ongawa is to
+            provide a platform for new and upcoming musicians to showcase their
+            music through rhythm games. By creating beatmaps, levels in rhythm
+            games, the player is able to enjoy both gameplay and discover new
+            music artists! To assist musicians in creating beatmaps, Ongawa
+            features AI tools to help generate fun beatmaps according to the
+            song. Below is a sample of the AI technology in action.
           </div>
         </section>
         <section className="text-heading2 text-white font-bold">
@@ -80,14 +93,6 @@ function Ongawa() {
           </div>
         </section>
         <section className="text-heading2 text-white font-bold">
-          Background
-          <div className="text-body font-normal mt-[1%]">
-            The original Ongawa design was part of a Senior project, having a
-            limited time frame constraint. They display only a mobile vertical
-            screen and a purple color palette.
-          </div>
-        </section>
-        <section className="text-heading2 text-white font-bold">
           Aproach
           <div className="text-body font-normal mt-[1%]">
             The client hopes for designs that resemble games such as Muse Dash,
@@ -98,12 +103,36 @@ function Ongawa() {
             the apocalyptic storyline. This also allows the colors of future
             musicians and artists’ beatmaps to shine.
           </div>
+          <img src={Gameplay} alt="approachImg" className="w-full mt-[2%]" />
         </section>
         <section className="text-heading2 text-white font-bold">
           Important Decisions
-          <div className="text-body font-normal mt-[1%]"></div>
+          <div className="text-body font-normal mt-[1%]">
+            <h1 className="font-bold text-heading3">1. Color Palette: </h1>
+            <p className="mb-[2%]">
+              The original Ongawa website used a purple color palette. However,
+              after discussing with the client, we decided to switch to a more
+            </p>
+            <h1 className="font-bold text-heading3">
+              2. Reinventing Difficulty
+            </h1>
+            <p className="mb-[2%]">
+              to better match the apocalyptic storyline of the game. This change
+              also allows the colors of future musicians and artists’ beatmaps
+              to stand out more on the
+            </p>
+            <h1 className="font-bold text-heading3">
+              3. Connecting with Players
+            </h1>
+            <p className="mb-[2%]">
+              
+            </p>
+          </div>
         </section>
-        <section ref={prototypeRef} className="text-heading2 text-white font-bold">
+        <section
+          ref={prototypeRef}
+          className="text-heading2 text-white font-bold mt-[1%"
+        >
           Prototype
           {figmaPrototype}
         </section>

@@ -12,7 +12,7 @@ function Contact() {
           <button
             className="text-contact cursor-pointer hover:text-gray-300 hover:bg-gray-900 p-2 rounded border border-white text-white w-full"
             onClick={() =>
-              window.open("https://www.linkedin.com/in/san-tran113/", "_blank")
+              window.open("https://www.linkedin.com/in/san-tran1/", "_blank")
             }
           >
             See LinkedIn Profile
@@ -42,7 +42,7 @@ function Contact() {
           <button
             className="text-contact cursor-pointer hover:text-gray-300 hover:bg-gray-900 p-2 rounded border border-white text-white w-full"
             onClick={() =>
-              window.open("https://github.com/san-tran113", "_blank")
+              window.open("https://github.com/SanTran113", "_blank")
             }
           >
             See GitHub Profile
