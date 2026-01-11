@@ -62,7 +62,7 @@ function Ongawa() {
           Preface
           <div className="text-body font-normal mt-[1%]">
             Ongawa is a cutting-edge mobile rhythm game that combines music,
-            gaming, and technology! Rhythm gamws are a genre where the primary
+            gaming, and technology! Rhythm games are a genre where the primary
             goal is to tap in time with the beat. The goal of Ongawa is to
             provide a platform for new and upcoming musicians to showcase their
             music through rhythm games. By creating beatmaps, levels in rhythm
@@ -75,7 +75,7 @@ function Ongawa() {
         <section className="text-heading2 text-white font-bold">
           Goals
           <div className="text-body font-normal mt-[1%]">
-            This project aims to redesign the offcial Ongawa website.
+            This project aims to redesign the official Ongawa website.
             <ul className="list-decimal ml-[4%]">
               <li className="mt-2">
                 Integrable website into the game - Design more responsive
@@ -83,10 +83,10 @@ function Ongawa() {
               </li>
               <li className="mt-2">Reduce information overload</li>
               <li className="mt-2">
-                Regenerate a color palette to match the storyline of the game
+                Create a color palette to match the storyline of the game
               </li>
               <li className="mt-2">
-                Create communication between players, musicians, and developers
+                Develop a communication system between players, musicians, and developers
               </li>
               <li className="mt-2">Bring movement and animation</li>
             </ul>
