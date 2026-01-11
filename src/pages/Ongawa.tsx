@@ -37,7 +37,7 @@ function Ongawa() {
             {project.name}
           </div>
           <div className="flex flex-col">
-            {ProjectDescriptionItem("Year", "October 2024 - November 2025")}
+            {ProjectDescriptionItem("Year", "October 2024 - Current")}
             {ProjectDescriptionItem("My Role", "Designer")}
             {ProjectDescriptionItem("Technologies Used", "Figma")}
             <div className="flex flex-col w-full lg:flex-row lg:gap-5">
@@ -47,14 +47,6 @@ function Ongawa() {
               >
                 Test Prototype
               </button>
-              {/* <button
-                  className="text-body cursor-pointer hover:bg-gray-700 p-2 rounded border-1 border-solid border-white text-white w-full mt-5"
-                  onClick={() =>
-                    window.open("https://www.ongawa.io/", "_blank")
-                  }
-                >
-                  See Current Website
-                </button> */}
             </div>
           </div>
         </section>
@@ -69,7 +61,7 @@ function Ongawa() {
             games, the player is able to enjoy both gameplay and discover new
             music artists! To assist musicians in creating beatmaps, Ongawa
             features AI tools to help generate fun beatmaps according to the
-            song. Below is a sample of the AI technology in action.
+            song.
           </div>
         </section>
         <section className="text-heading2 text-white font-bold">
@@ -86,47 +78,89 @@ function Ongawa() {
                 Create a color palette to match the storyline of the game
               </li>
               <li className="mt-2">
-                Develop a communication system between players, musicians, and developers
+                Develop a communication system between players, musicians, and
+                developers
               </li>
               <li className="mt-2">Bring movement and animation</li>
             </ul>
+            <div className="text-heading3 text-white font-bold mt-[2%]">
+              Target Audience:
+              <p className="text-body font-normal">
+                Upcoming musicians, players who enjoy rhythm games/players who
+                want to discover new music while playing
+              </p>
+            </div>
           </div>
         </section>
         <section className="text-heading2 text-white font-bold">
           Aproach
-          <div className="text-body font-normal mt-[1%]">
-            The client hopes for designs that resemble games such as Muse Dash,
-            Cytus II, Deemo II, and VOEZ, while also adhering to
-            industry-standard labels. For example, the difficulties of the songs
-            would mirror those of OSU, the top competitor in rhythm games. For
-            the color palette, we chose a more monochromatic tan tone to match
-            the apocalyptic storyline. This also allows the colors of future
-            musicians and artists’ beatmaps to shine.
+          <p className="text-body font-normal mt-[1%]">
+            The team hopes for designs that resemble games such as Muse Dash,
+            Cytus II, Deemo II, and VOEZ. Each of these websites has animation
+            as an integral part of the design. Taking inspiration, we
+            incorporate these animation aspects into the new Ongawa website.
+            Some of these aspects are simple, such as navigation animation, from
+            homepage navigation to character animation. Many of the layouts of
+            pages were based on these game websites, excluding the following:
+            <ul className="list-disc ml-[4%] text-body font-normal mt-[1%] mb-[1%]">
+              <li className="mt-2">The community page was inspired by Twitter and Reddit</li>
+              <li className="mt-2">The gallery page was inspired by Pinterest</li>
+              <li className="mt-2">The header of the Song Page was inspired by Spotify</li>
+            </ul>
+            By analyzing the previous team’s Figma design, we realized that the
+            issue mainly stems from cramming a lot of information into one page.
+            To fix this, we focused on breathing room and separating each
+            section with a clear subheading.
+          </p>
+          <div className="text-heading3 text-white font-bold mt-[2%]">
+            Color Palette:
+            <p className="text-body font-normal">
+              The new color palette was established by the game design team,
+              which came out to be a monochromatic tan tone to match the
+              apocalyptic storyline. Below is the game dev Figma and moodboard
+              that was used.
+            </p>
+          </div>
+          <div className="text-heading3 text-white font-bold mt-[2%]">
+            Responsive Design:
+            <p className="text-body font-normal">
+              Each page has a corresponding mobile vertical, mobile horizontal,
+              and a web counterpart. Each page was designed for the website
+              first, then designed to fit the mobile vertical and mobile
+              horizontal, respectively.
+            </p>
           </div>
           <img src={Gameplay} alt="approachImg" className="w-full mt-[2%]" />
         </section>
         <section className="text-heading2 text-white font-bold">
           Important Decisions
           <div className="text-body font-normal mt-[1%]">
-            <h1 className="font-bold text-heading3">1. Color Palette: </h1>
-            <p className="mb-[2%]">
-              The original Ongawa website used a purple color palette. However,
-              after discussing with the client, we decided to switch to a more
-            </p>
             <h1 className="font-bold text-heading3">
-              2. Reinventing Difficulty
+              Reinventing Difficulty:
             </h1>
             <p className="mb-[2%]">
-              to better match the apocalyptic storyline of the game. This change
-              also allows the colors of future musicians and artists’ beatmaps
-              to stand out more on the
+              In OSU, the difficulty is labeled with each beatmap listed under
+              each song (see below). As the song becomes more flexible in terms
+              of difficulty, the more the difficulties take room, making it
+              difficult for the viewer to look at multiple songs at once when
+              deciding which song they may want to download and play. To solve
+              this, we have come up with a new way by using a color range, where
+              each color coordinates to a difficulty (mirroring OSU’s difficulty
+              standard). However, now the website utilizes a color range to
+              display the difficulties, making each song layout consistent.
             </p>
             <h1 className="font-bold text-heading3">
-              3. Connecting with Players
+              Comments in Community Page:
             </h1>
             <p className="mb-[2%]">
-              
+              To minimize horizontal scrolling, replies to comments only have
+              one indent. For example, at the bottom, even though QuestComposer
+              is replying to The Shadow Weaver, who has replied to Techno
+              Maestro, both QuestComposer and The Shadow Weaver have one tab to
+              differentiate which comment thread they are in (Techno Maestro’s
+              comment thread).
             </p>
+            <p className="mb-[2%]"></p>
           </div>
         </section>
         <section
