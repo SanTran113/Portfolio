@@ -2,14 +2,19 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Mask from "../components/Mask";
 import Rectangle from "../assets/Rectangle.svg";
-import { projectList } from "../data/projects";
+import { projectList } from "../data/projectsList";
 function Works() {
-
+  const [work, setWork] = useState();
   const [project, setProject] = useState(projectList[0]);
   const navigate = useNavigate();
 
+  const handleWorkClick = (wk: typeof work) => {
+    work;
+  };
+
   const handleProjectClick = (proj: typeof project) => {
-    const externalLink = proj.link.startsWith("http") || proj.link.startsWith("https");
+    const externalLink =
+      proj.link.startsWith("http") || proj.link.startsWith("https");
     if (externalLink) {
       window.open(proj.link, "_blank");
       return;
@@ -37,7 +42,6 @@ function Works() {
               onMouseEnter={() => setProject(proj)}
               onClick={() => handleProjectClick(proj)}
             >
-
               <h1 className="text-white text-heading2 font-medium">
                 {proj.name}
               </h1>

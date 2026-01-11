@@ -1,7 +1,7 @@
 import { useState, useRef } from "react";
 import Mask from "../components/Mask";
 import rec from "../assets/rec_work.png";
-import { projectList } from "../data/projects";
+import { projectList } from "../data/projectsList";
 import ProjectDescriptionItem from "../components/ProjectDescriptionItem";
 import Gameplay from "../assets/ongawa/ongawaGameplay.png";
 
@@ -124,9 +124,7 @@ function Ongawa() {
             <h1 className="font-bold text-heading3">
               3. Connecting with Players
             </h1>
-            <p className="mb-[2%]">
-              
-            </p>
+            <p className="mb-[2%]"></p>
           </div>
         </section>
         <section
