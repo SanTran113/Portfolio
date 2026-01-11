@@ -28,6 +28,14 @@ const projectList: Project[] = [
     type: "Full Stack",
     workType: "web",
   },
+  {
+    name: "Butterfly Marionette",
+    coverImg: RizzletCover,
+    skillsUsed: "React, TailwindCSS, TypeScript, AWS, MongoDB",
+    link: "https://github.com/Rizzlet/rizzlet",
+    type: "Full Stack",
+    workType: "game",
+  },
 ];
 
 export { projectList };
