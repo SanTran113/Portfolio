@@ -1,16 +1,15 @@
 import Mask from "./Mask";
+import rec from "../assets/rec_work.png";
 import ProjectDescriptionItem from "./ProjectDescriptionItem";
 
 function ProjectHeader({
-  maskImg,
-  backgroundImage,
+  coverImg,
   projectName,
   year,
   role,
   technologies,
 }: {
-  maskImg: string;
-  backgroundImage: string;
+  coverImg: string;
   projectName: string;
   year: string;
   role: string;
@@ -21,8 +20,8 @@ function ProjectHeader({
       <section className="w-full h-full flex items-center">
         <Mask
           className="w-full size-projectImg opacity-100"
-          maskImage={maskImg}
-          backgroundImage={backgroundImage}
+          maskImage={rec}
+          backgroundImage={coverImg}
         />
       </section>
       <div className="flex flex-col pl-[15%] pr-[15%] space-y-[8%] mt-[5%]">

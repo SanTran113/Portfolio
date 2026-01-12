@@ -1,8 +1,5 @@
 import { useState, useRef } from "react";
-import Mask from "../components/Mask";
-import rec from "../assets/rec_work.png";
 import { projectList } from "../data/projectsList";
-import ProjectDescriptionItem from "../components/ProjectDescriptionItem";
 import Gameplay from "../assets/ongawa/ongawaGameplay.png";
 import ProjectHeader from "../components/ProjectHeader";
 
@@ -26,12 +23,11 @@ function Ongawa() {
   return (
     <div className="w-full mb-[10%]">
       <ProjectHeader
-        maskImg={rec}
-        backgroundImage={project.coverImg}
+        coverImg={project.coverImg}
         projectName={project.name}
         year={"October 2024 - Current"}
         role={"Designer"}
-        technologies={"Figma"}
+        technologies= {project.skillsUsed}
       />
       <div className="flex flex-col pl-[15%] pr-[15%]">
         <button
@@ -43,7 +39,7 @@ function Ongawa() {
         <div className="space-y-[8%] mt-[5%]">
           <section className="text-heading2 text-white font-bold">
             Preface
-            <div className="text-body font-normal mt-[1%]">
+            <p className="text-body font-normal mt-[1%]">
               Ongawa is a cutting-edge mobile rhythm game that combines music,
               gaming, and technology! Rhythm games are a genre where the primary
               goal is to tap in time with the beat. The goal of Ongawa is to
@@ -53,7 +49,7 @@ function Ongawa() {
               discover new music artists! To assist musicians in creating
               beatmaps, Ongawa features AI tools to help generate fun beatmaps
               according to the song.
-            </div>
+            </p>
           </section>
           <section className="text-heading2 text-white font-bold">
             Goals

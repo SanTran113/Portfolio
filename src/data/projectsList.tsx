@@ -34,7 +34,7 @@ const projectList: Project[] = [
   {
     name: "Butterfly Marionette",
     coverImg: BMCover,
-    skillsUsed: "Maya, Substance Painter",
+    skillsUsed: "Maya, Substance 3D Painter, Arnold",
     link: "/butterfly-marionette",
     type: "3D Model and Animation",
     workType: "game",
