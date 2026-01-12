@@ -1,6 +1,9 @@
 import OngawaCover from "../assets/ongawa/ongawaCover.png";
-import SGCover from "../assets/sGCover.png";
-import RizzletCover from "../assets/rizzlet.jpg";
+import SGCover from "../assets/covers/sGCover.png";
+import RizzletCover from "../assets/covers/rizzlet.jpg";
+import BMCover from "../assets/covers/BMCover.png";
+import NinjaPenguCover from "../assets/covers/NinjaPenguCover.png";
+import grayScaleGameplay from "../assets/grayscale/grayScaleGameplay.png";
 import type { Project } from "./Project";
 
 const projectList: Project[] = [
@@ -30,10 +33,26 @@ const projectList: Project[] = [
   },
   {
     name: "Butterfly Marionette",
-    coverImg: RizzletCover,
-    skillsUsed: "React, TailwindCSS, TypeScript, AWS, MongoDB",
-    link: "https://github.com/Rizzlet/rizzlet",
-    type: "Full Stack",
+    coverImg: BMCover,
+    skillsUsed: "Maya, Substance Painter",
+    link: "/butterfly-marionette",
+    type: "3D Model and Animation",
+    workType: "game",
+  },
+  {
+    name: "GrayScale",
+    coverImg: grayScaleGameplay,
+    skillsUsed: "Unity, Procreate",
+    link: "https://nnguy239.itch.io/grayscale",
+    type: "Puzzle",
+    workType: "game",
+  },
+  {
+    name: "Ninja Penguin",
+    coverImg: NinjaPenguCover,
+    skillsUsed: "Unity, Procreate",
+    link: "https://san-which.itch.io/sr-fish-le-penguin",
+    type: "Platformer",
     workType: "game",
   },
 ];
