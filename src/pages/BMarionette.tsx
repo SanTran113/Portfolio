@@ -1,7 +1,10 @@
 import { useState } from "react";
 import ProjectHeader from "../components/ProjectHeader";
-import BMCover from "../assets/covers/BMCover.png";
 import { projectList } from "../data/projectsList";
+
+import BMCover from "../assets/BMarionette/BMCover.png";
+import MFront from "../assets/BMarionette/Marionette_front.png";
+import MSide from "../assets/BMarionette/Marionette_side.png";
 
 function BMarionette() {
   const [proj] = useState(projectList[3]);
@@ -19,6 +22,10 @@ function BMarionette() {
         <div className="space-y-[8%] mt-[5%]">
           <section className="text-heading2 text-white font-bold">
             Animation
+            <iframe
+              className="w-full aspect-video mt-2"
+              src="www.youtube.com"
+            ></iframe>
           </section>
 
           <section className="text-heading2 text-white font-bold">
@@ -29,6 +36,8 @@ function BMarionette() {
               seem to have eyes. Below I sketched the inital depiction in a
               T-pose for easier modeling.
             </p>
+            <img src={MFront} alt="Marionette Front Sketch" className="mt-2" />
+            <img src={MSide} alt="Marionette Side Sketch" className="mt-2" />
           </section>
 
           <section className="text-heading2 text-white font-bold">

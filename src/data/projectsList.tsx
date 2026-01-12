@@ -1,7 +1,7 @@
 import OngawaCover from "../assets/ongawa/ongawaCover.png";
 import SGCover from "../assets/covers/sGCover.png";
 import RizzletCover from "../assets/covers/rizzlet.jpg";
-import BMCover from "../assets/covers/BMCover.png";
+import BMCover from "../assets/BMarionette/BMCover.png";
 import NinjaPenguCover from "../assets/covers/NinjaPenguCover.png";
 import grayScaleGameplay from "../assets/grayscale/grayScaleGameplay.png";
 import type { Project } from "./Project";
