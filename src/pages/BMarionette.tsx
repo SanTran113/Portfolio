@@ -2,8 +2,7 @@ import { useState } from "react";
 import ProjectHeader from "../components/ProjectHeader";
 import { projectList } from "../data/projectsList";
 
-import BMCover from "../assets/BMarionette/BMCover.png";
-import BM_eyes from "../assets/BMarionette/BM_eyes.png";
+import BM_eyes from "../assets/BMarionette/BM_Eyes.png";
 import MFront from "../assets/BMarionette/Marionette_front.png";
 import MSide from "../assets/BMarionette/Marionette_side.png";
 import BM_sculpt from "../assets/BMarionette/BM_sculpting.png";
