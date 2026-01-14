@@ -2,7 +2,6 @@ import { useState } from "react";
 import ProjectHeader from "../components/ProjectHeader";
 import { projectList } from "../data/projectsList";
 
-import BMCover from "../assets/BMarionette/BMCover.png";
 import BM_eyes from "../assets/BMarionette/BM_eyes.png";
 import MFront from "../assets/BMarionette/Marionette_front.png";
 import MSide from "../assets/BMarionette/Marionette_side.png";
@@ -99,14 +98,12 @@ function BMarionette() {
               such as ambient occlusion and curvature. Then, I created base
               colors and materials for the character. For the wings, I manually
               went in and painted on the details. Similarly, I painted on the
-              details of the eyes. The main texture on the music box was an
-              online texture I found online, linked below!
+              details of the eyes. 
             </p>
             <div className="flex flex-row mt-2 max-w-1/2">
               <img src={musicBoxTex} alt="Music Box Texture" className="mt-2" />
               <img src={MBTex} alt="Marionette Texture" className="mt-2" />
             </div>
-            <p>LINK</p>
           </section>
 
           <section className="text-heading2 text-white font-bold">
