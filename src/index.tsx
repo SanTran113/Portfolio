@@ -11,6 +11,7 @@ import Works from './pages/Works.tsx'
 import Contact from './pages/Contact.tsx'
 import Ongawa from './pages/Ongawa.tsx'
 import BMarionette from './pages/BMarionette.tsx'
+import SorcererDesk from './pages/SorcererDesk.tsx'
 
 const router = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
     {
     path: '/butterfly-marionette',
     element: <BMarionette />,
+  },
+    {
+    path: '/sorcerer-desk',
+    element: <SorcererDesk />,
   },
 ])
 
