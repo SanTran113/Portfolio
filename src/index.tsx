@@ -1,47 +1,52 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
-import './index.css'
+import "./index.css";
 
-import Navbar from './components/Navbar.tsx'
-import HomePage from './pages/HomePage.tsx'
-import About from './pages/About.tsx'
-import Works from './pages/Works.tsx'
-import Contact from './pages/Contact.tsx'
-import Ongawa from './pages/Ongawa.tsx'
-import BMarionette from './pages/BMarionette.tsx'
+import Navbar from "./components/Navbar.tsx";
+import HomePage from "./pages/HomePage.tsx";
+import About from "./pages/About.tsx";
+import Works from "./pages/Works.tsx";
+import Contact from "./pages/Contact.tsx";
+import Ongawa from "./pages/WorkProject/Ongawa.tsx";
+import BMarionette from "./pages/WorkProject/BMarionette.tsx";
+import SorcererDesk from "./pages/WorkProject/SorcererDesk.tsx";
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: "/",
     element: <HomePage />,
   },
   {
-    path: '/aboutme',
+    path: "/aboutme",
     element: <About />,
   },
   {
-    path: '/works',
+    path: "/works",
     element: <Works />,
   },
   {
-    path: '/contact',
+    path: "/contact",
     element: <Contact />,
   },
   {
-    path: '/ongawa',
+    path: "/ongawa",
     element: <Ongawa />,
   },
-    {
-    path: '/butterfly-marionette',
+  {
+    path: "/butterfly-marionette",
     element: <BMarionette />,
   },
-])
+  {
+    path: "/sorcerer-desk",
+    element: <SorcererDesk />,
+  },
+]);
 
-createRoot(document.getElementById('root')!).render(
+createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <Navbar />
     <RouterProvider router={router} />
   </StrictMode>,
-)
+);

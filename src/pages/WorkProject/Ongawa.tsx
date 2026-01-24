@@ -1,7 +1,8 @@
 import { useState, useRef } from "react";
-import { projectList } from "../data/projectsList";
-import Gameplay from "../assets/ongawa/ongawaGameplay.png";
-import ProjectHeader from "../components/ProjectHeader";
+import { projectList } from "../../data/projectsList";
+import ProjectHeader from "../../components/ProjectHeader";
+
+import Gameplay from "../../assets/ongawa/ongawaGameplay.png";
 
 function Ongawa() {
   const [project] = useState(projectList[0]);
@@ -27,7 +28,7 @@ function Ongawa() {
         projectName={project.name}
         year={"October 2024 - Current"}
         role={"Designer"}
-        technologies= {project.skillsUsed}
+        technologies={project.skillsUsed}
       />
       <div className="flex flex-col pl-[15%] pr-[15%]">
         <button

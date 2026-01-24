@@ -4,6 +4,7 @@ import RizzletCover from "../assets/covers/rizzlet.jpg";
 import BMCover from "../assets/BMarionette/BMCover.png";
 import NinjaPenguCover from "../assets/covers/NinjaPenguCover.png";
 import grayScaleGameplay from "../assets/grayscale/grayScaleGameplay.png";
+import SDCover from "../assets/sorcererDesk/SorcerersDeskCover.jpg";
 import type { Project } from "./Project";
 
 const projectList: Project[] = [
@@ -37,6 +38,14 @@ const projectList: Project[] = [
     skillsUsed: "Maya, Substance 3D Painter, Arnold",
     link: "/butterfly-marionette",
     type: "3D Model and Animation",
+    workType: "game",
+  },
+  {
+    name: "Sorcerer's Desk",
+    coverImg: SDCover,
+    skillsUsed: "Maya, Arnold",
+    link: "/sorcerer-desk",
+    type: "3D Model",
     workType: "game",
   },
   {
