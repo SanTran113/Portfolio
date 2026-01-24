@@ -143,7 +143,7 @@ function BMarionette() {
           </section>
 
           <section className="text-heading2 text-white font-bold">
-            Final Rendering
+            Final Render
             <img src={BM_Bow} alt="Final Bow Scene" className="mt-2" />
             <img src={BM_dance} alt="Final Dance Scene" className="mt-2" />
           </section>
