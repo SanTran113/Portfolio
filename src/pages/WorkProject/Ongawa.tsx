@@ -16,7 +16,7 @@ function Ongawa() {
     <iframe
       style={{ border: "1px solid rgba(0, 0, 0, 0.1)" }}
       className="aspect-video"
-      src="https://embed.figma.com/proto/nJMpfKz3RcBumpbSz82F0A/New-Ongawa-Website--Copy-?node-id=2115-4449&p=f&scaling=contain&content-scaling=fixed&page-id=2115%3A4221&starting-point-node-id=2115%3A4449&show-proto-sidebar=1&embed-host=share"
+      src="https://embed.figma.com/proto/bshkks0xZ4PJtzAd6Lh3Il/New-Ongawa-Website--Copy-?node-id=2115-4449&p=f&scaling=min-zoom&content-scaling=fixed&page-id=2115%3A4221&starting-point-node-id=2115%3A4449&show-proto-sidebar=1&embed-host=share"
       {...{ allowfullscreen: "" }}
     ></iframe>
   );
