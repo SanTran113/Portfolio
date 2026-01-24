@@ -1,6 +1,8 @@
 import { useState } from "react";
-import ProjectHeader from "../components/ProjectHeader";
-import { projectList } from "../data/projectsList";
+import ProjectHeader from "../../components/ProjectHeader";
+import { projectList } from "../../data/projectsList";
+
+
 
 function SorcererDesk() {
   const [project] = useState(projectList[4]);

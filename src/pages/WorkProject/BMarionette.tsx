@@ -1,20 +1,20 @@
 import { useState } from "react";
-import ProjectHeader from "../components/ProjectHeader";
-import { projectList } from "../data/projectsList";
+import ProjectHeader from "../../components/ProjectHeader";
+import { projectList } from "../../data/projectsList";
 
-import BM_eyes from "../assets/BMarionette/BM_Eyes.png";
-import MFront from "../assets/BMarionette/Marionette_front.png";
-import MSide from "../assets/BMarionette/Marionette_side.png";
-import BM_sculpt from "../assets/BMarionette/BM_sculpting.png";
-import BM_topoFace from "../assets/BMarionette/BM_topologyFace.png";
-import BM_topoBody from "../assets/BMarionette/BM_topologyBody.png";
-import BM_UVMap from "../assets/BMarionette/BM_UVMap.png";
-import musicBox from "../assets/BMarionette/musicBox_UVMap.png";
-import MBTex from "../assets/BMarionette/BMTexture.png";
-import musicBoxTex from "../assets/BMarionette/musicBoxTexture.png";
-import BMLight from "../assets/BMarionette/BMLighting.png";
-import BM_Bow from "../assets/BMarionette/BM_bow scene.jpg";
-import BM_dance from "../assets/BMarionette/BM_dance_scene.jpg";
+import BM_eyes from "../../assets/BMarionette/BM_Eyes.png";
+import MFront from "../../assets/BMarionette/Marionette_front.png";
+import MSide from "../../assets/BMarionette/Marionette_side.png";
+import BM_sculpt from "../../assets/BMarionette/BM_sculpting.png";
+import BM_topoFace from "../../assets/BMarionette/BM_topologyFace.png";
+import BM_topoBody from "../../assets/BMarionette/BM_topologyBody.png";
+import BM_UVMap from "../../assets/BMarionette/BM_UVMap.png";
+import musicBox from "../../assets/BMarionette/musicBox_UVMap.png";
+import MBTex from "../../assets/BMarionette/BMTexture.png";
+import musicBoxTex from "../../assets/BMarionette/musicBoxTexture.png";
+import BMLight from "../../assets/BMarionette/BMLighting.png";
+import BM_Bow from "../../assets/BMarionette/BM_bow scene.jpg";
+import BM_dance from "../../assets/BMarionette/BM_dance_scene.jpg";
 
 function BMarionette() {
   const [proj] = useState(projectList[3]);
