@@ -2,12 +2,12 @@ import { useState } from "react";
 import ProjectHeader from "../../components/ProjectHeader";
 import { projectList } from "../../data/projectsList";
 
-import SDLowPoly from "../../assets/SorcererDesk/SorcererDeskLowPoly.png";
-import SDTopo_Top from "../../assets/SorcererDesk/SorcererDeskTopo_top.png";
-import SDTopo_Side from "../../assets/SorcererDesk/SorcererDeskTopo_side.png";
-import SDTex_side from "../../assets/SorcererDesk/SorcererDeskTex_side.png";
-import SDTex_top from "../../assets/SorcererDesk/SorcererDeskTex_top.png";
-import SDFinal from "../../assets/SorcererDesk/SorcerersDeskCover.jpg";
+import SDLowPoly from "../../assets/sorcererDesk/SorcererDeskLowPoly.png";
+import SDTopo_Top from "../../assets/sorcererDesk/SorcererDeskTopo_top.png";
+import SDTopo_Side from "../../assets/sorcererDesk/SorcererDeskTopo_side.png";
+import SDTex_side from "../../assets/sorcererDesk/SorcererDeskTex_side.png";
+import SDTex_top from "../../assets/sorcererDesk/SorcererDeskTex_top.png";
+import SDFinal from "../../assets/sorcererDesk/SorcerersDeskCover.jpg";
 
 function SorcererDesk() {
   const [project] = useState(projectList[4]);
