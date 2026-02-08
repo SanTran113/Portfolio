@@ -39,9 +39,9 @@ function ProjectHeader({
             </div>
           </section>
         </div>
-        <section>
+        <section className="lg:w-2/5">
           <p className="text-white text-body font-bold">Description:</p>
-          <p className="text-white text-body">{description}</p>
+          <p className="text-gray-300 text-body font-normal">{description}</p>
         </section>
       </div>
     </div>

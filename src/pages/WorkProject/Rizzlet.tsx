@@ -13,7 +13,10 @@ function Rizzlet() {
         year={"January 2024 – June 2024"}
         role={"Software Engineer"}
         technologies={project.skillsUsed}
-        description={""}
+        description={
+          "Rizzlet is a website that gamifies studying and promotes friendly competition." +
+          " It aims to help address the procrastination and lack of focus many students face when studying or doing homework by promoting studying in intervals."
+        }
       />
       <div className="flex flex-col pl-[15%] pr-[15%]">
         <button
