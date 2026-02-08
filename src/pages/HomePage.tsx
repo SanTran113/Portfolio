@@ -9,10 +9,9 @@ function HomePage() {
       <div className="flex flex-col xm:flex-row lg:flex-row gap-4 h-full">
         <div className="w-full flex flex-col space-y-10">
           <section className="space-y-6">
-            <p className= "text-body lg:font-semibold text-gray-300">
-              I'm a developer and designer with a passion for capturing life through my projects.
-              Over the past years, I've specialized in creating web applications that are not only
-              functional but also to inspire and evoke emotions.
+            <p className="text-body lg:font-semibold text-gray-300">
+              Hellow! I'm a developer and designer with a passion for capturing
+              life through my projects, whether that be through web or games!
             </p>
             <section className="text-heading1 font-bold text-white">
               <nav className="flex flex-col justify-between ">
