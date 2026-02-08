@@ -27,8 +27,8 @@ const projectList: Project[] = [
   {
     name: "Rizzlet",
     coverImg: RizzletCover,
-    skillsUsed: "React, TailwindCSS, TypeScript, AWS, MongoDB",
-    link: "https://github.com/Rizzlet/rizzlet",
+    skillsUsed: "React, TailwindCSS, TypeScript, Azure, MongoDB",
+    link: "/rizzlet",
     type: "Full Stack",
     workType: "web",
   },

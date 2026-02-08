@@ -12,6 +12,7 @@ import Contact from "./pages/Contact.tsx";
 import Ongawa from "./pages/WorkProject/Ongawa.tsx";
 import BMarionette from "./pages/WorkProject/BMarionette.tsx";
 import SorcererDesk from "./pages/WorkProject/SorcererDesk.tsx";
+import Rizzlet from "./pages/WorkProject/Rizzlet.tsx";
 
 const router = createBrowserRouter([
   {
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
   {
     path: "/sorcerer-desk",
     element: <SorcererDesk />,
+  },
+    {
+    path: "/rizzlet",
+    element: <Rizzlet />,
   },
 ]);
 
