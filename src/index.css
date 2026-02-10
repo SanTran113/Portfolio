@@ -3,8 +3,8 @@
 
 @theme {
   --size-aboutImg: clamp(20rem, 50vw, 50rem);
-  --size-homeImg: clamp(35rem, 65vw, 90rem);
-  --size-workImg: clamp(100vw, 50rem, 100vh);
+  --size-homeImg: clamp(40rem, 90vw, 90rem);
+  --size-workImg: clamp(20rem, 70vw, 40rem);
   --size-projectImg: clamp(5rem, 20vw, 100rem);
   --text-title: clamp(1rem, 11vw, 12rem);
   --text-body: clamp(1rem, 1.4vw, 1.5rem);

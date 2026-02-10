@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Mask from "../components/Mask";
-import Rectangle from "../assets/Rectangle.svg";
+import Rectangle from "../assets/rec_wetAcylic2_lg.png";
 import { projectList } from "../data/projectsList";
 import type { WorkType } from "../data/WorkType";
 
@@ -29,14 +29,16 @@ function Works() {
 
   return (
     <div className="ml-5 mr-5 lg:ml-10 lg:mr-10 flex flex-col md:flex-row lg:flex-row gap-10 item-start h-[calc(100vh-8rem)]">
-      <section className="w-full flex flex-col items-start">
+      <section className="w-full h-full flex flex-col justify-start items-start overflow-hidden">
         <Mask
-          className="w-full size-aboutImg opacity-100"
+          className="w-full size-workImg opacity-100"
           maskImage={Rectangle}
           backgroundImage={project.coverImg}
         />
+        <div className="text-white text-body font-semibold mt-5">{project.skillsUsed}</div>
+        <hr className="w-full border-gray-300 mt-2 mb-5" />
       </section>
-      <section className="w-full flex flex-col ">
+      <section className="w-full flex flex-col overflow-y-auto">
         <div className="text-white text-heading1 font-bold ">Projects</div>
         <div className="w-full text-white text-heading2 font-normal mt-[3%] mb-[3%] flex flex-row ">
           <button
