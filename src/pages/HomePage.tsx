@@ -1,5 +1,5 @@
 import Mask from "../components/Mask";
-import Paint from "../assets/paintStroke.png";
+import Paint from "../assets/circle_arylic.png";
 import Clouds from "../assets/pinkClouds.jpeg";
 
 function HomePage() {
@@ -43,9 +43,8 @@ function HomePage() {
           </section>
         </div>
         <section className="w-full relative h-1/2">
-          <div className="w-full border border-white h-3/4"></div>
           <Mask
-            className="place-self-center size-homeImg inline-block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-3/5"
+            className="place-self-center size-homeImg inline-block absolute lg:-translate-y-2/5 lg:left-1/12"
             maskImage={Paint}
             backgroundImage={Clouds}
           />
