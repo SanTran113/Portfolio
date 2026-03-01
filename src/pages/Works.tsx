@@ -7,7 +7,6 @@ import type { WorkType } from "../data/WorkType";
 
 function Works() {
   const type = useParams<{ type: WorkType }>();
-  const [work, setWork] = useState<WorkType>(type?.type || "web");
   const [project, setProject] = useState(projectList[0]);
   const navigate = useNavigate();
 

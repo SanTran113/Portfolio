@@ -1,24 +1,42 @@
+import { Link, useLocation } from "react-router-dom";
+
 function Navbar() {
+  const { pathname } = useLocation();
+  const type = pathname.startsWith("/game")
+    ? "game"
+    : pathname.startsWith("/web")
+      ? "web"
+      : "";
+
   return (
     <nav className="p-4 col-span-3 row-start-2 flex justify-between items-center gap-4 mt-5 mr-5 ml-5">
-      <a href="/" className="text-white text-2xl font-bold">
+      <Link
+        to={type ? `/${type}` : "/"}
+        className="text-white text-2xl font-bold"
+      >
         ST
-      </a>
+      </Link>
       <ul className="flex space-x-4">
         <li>
-          <a href="/works" className="text-white hover:text-gray-300">
+          <Link
+            to={`/${type ?? "web"}/works`}
+            className="text-white hover:text-gray-300"
+          >
             Works
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/aboutme" className="text-white hover:text-gray-300">
+          <Link
+            to={`/${type ?? "web"}/aboutme`}
+            className="text-white hover:text-gray-300"
+          >
             About
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/contact" className="text-white hover:text-gray-300">
+          <Link to={`/${type ?? "web"}/contact`} className="text-white hover:text-gray-300">
             Contact
-          </a>
+          </Link>
         </li>
       </ul>
       <div></div>

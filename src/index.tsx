@@ -4,7 +4,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 import "./index.css";
 
-import Navbar from "./components/Navbar.tsx";
+import Layout from "./components/Layout.tsx";
 import HomePage from "./pages/HomePage.tsx";
 import Contact from "./pages/Contact.tsx";
 
@@ -21,49 +21,24 @@ import Rizzlet from "./pages/WorkProject/Rizzlet.tsx";
 
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <HomePage />,
-  },
-  {
-    path: "/aboutme",
-    element: <About />,
-  },
-  {
-    path: "/contact",
-    element: <Contact />,
-  },
-  { path: "/web", 
-    element: <WebHome /> 
-  },
-  { path: "/game", 
-    element: <GameHome /> 
-  },
-  {
-    path: "/:type/works",
-    element: <Works />,
-  },
-
-  {
-    path: "/ongawa",
-    element: <Ongawa />,
-  },
-  {
-    path: "/butterfly-marionette",
-    element: <BMarionette />,
-  },
-  {
-    path: "/sorcerer-desk",
-    element: <SorcererDesk />,
-  },
-  {
-    path: "/rizzlet",
-    element: <Rizzlet />,
+    element: <Layout />,
+    children: [
+      { path: "/:type?", element: <HomePage /> },
+      { path: "/:type/aboutme", element: <About /> },
+      { path: "/:type/contact", element: <Contact /> },
+      { path: "/web", element: <WebHome /> },
+      { path: "/game", element: <GameHome /> },
+      { path: "/:type/works", element: <Works /> },
+      { path: "/ongawa", element: <Ongawa /> },
+      { path: "/butterfly-marionette", element: <BMarionette /> },
+      { path: "/sorcerer-desk", element: <SorcererDesk /> },
+      { path: "/rizzlet", element: <Rizzlet /> },
+    ],
   },
 ]);
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <Navbar />
     <RouterProvider router={router} />
   </StrictMode>,
 );
