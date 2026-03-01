@@ -1,8 +1,10 @@
 import Mask from "../../components/Mask";
 import Paint from "../../assets/circle_arylic.png";
 import Clouds from "../../assets/pinkClouds.jpeg";
+import { Link } from "react-router-dom";
 
-function GameHome() {
+function WebHome() {
+
   return (
     <div className="pl-10 pr-10 overflow-hidden h-[calc(100vh-6rem)]">
       <h1 className="text-title font-extrabold text-white mb-home">San Tran</h1>
@@ -15,27 +17,15 @@ function GameHome() {
             </p>
             <section className="text-heading1 font-bold text-white">
               <nav className="flex flex-col justify-between ">
-                <ul className="">
+                <ul className="flex flex-col space-x-4">
                   <li>
-                    <a href="/works" className="text-white hover:text-gray-300">
-                      Works
-                    </a>
+                    <Link to="/game/works">Works</Link>
                   </li>
                   <li>
-                    <a
-                      href="/aboutme"
-                      className="text-white hover:text-gray-300"
-                    >
-                      About Me
-                    </a>
+                    <Link to="/game/aboutme">About</Link>
                   </li>
                   <li>
-                    <a
-                      href="/contact"
-                      className="text-white hover:text-gray-300"
-                    >
-                      Contact
-                    </a>
+                    <Link to="/game/contact">Contact</Link>
                   </li>
                 </ul>
               </nav>
@@ -54,4 +44,4 @@ function GameHome() {
   );
 }
 
-export default GameHome;
+export default WebHome;
