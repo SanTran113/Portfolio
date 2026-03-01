@@ -7,6 +7,7 @@ import type { WorkType } from "../data/WorkType";
 
 function Works() {
   const type = useParams<{ type: WorkType }>();
+  const [work, setWork] = useState<WorkType>(type?.type || "web");
   const [project, setProject] = useState(projectList[0]);
   const navigate = useNavigate();
 
@@ -29,17 +30,16 @@ function Works() {
           maskImage={Rectangle}
           backgroundImage={project.coverImg}
         />
-        <div className="text-white text-body font-semibold mt-5">
-          {project.skillsUsed}
-        </div>
+        <div className="text-white text-body font-semibold mt-5">{project.skillsUsed}</div>
         <hr className="w-full border-gray-300 mt-2 mb-5" />
       </section>
       <section className="w-full flex flex-col overflow-y-auto">
         <div className="text-white text-heading1 font-bold ">Projects</div>
-        <div className="w-full text-white text-heading2 font-normal mt-[3%] mb-[3%] flex flex-row "></div>
+        <div className="w-full text-white text-heading2 font-normal mt-[3%] mb-[3%] flex flex-row ">
+        </div>
         <ul className="flex flex-col ml-5">
           {projectList
-            .filter((proj) => proj.workType === type?.type || "web")
+            .filter((proj) => proj.workType === (type?.type || "web"))
             .map((proj) => (
               <button
                 key={proj.name}
