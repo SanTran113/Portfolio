@@ -6,9 +6,14 @@ import "./index.css";
 
 import Navbar from "./components/Navbar.tsx";
 import HomePage from "./pages/HomePage.tsx";
+import Contact from "./pages/Contact.tsx";
+
+import WebHome from "./pages/Web/WebHome.tsx";
+
+import GameHome from "./pages/Game/GameHome.tsx";
+
 import About from "./pages/About.tsx";
 import Works from "./pages/Works.tsx";
-import Contact from "./pages/Contact.tsx";
 import Ongawa from "./pages/WorkProject/Ongawa.tsx";
 import BMarionette from "./pages/WorkProject/BMarionette.tsx";
 import SorcererDesk from "./pages/WorkProject/SorcererDesk.tsx";
@@ -24,13 +29,20 @@ const router = createBrowserRouter([
     element: <About />,
   },
   {
-    path: "/works",
-    element: <Works />,
-  },
-  {
     path: "/contact",
     element: <Contact />,
   },
+  { path: "/web", 
+    element: <WebHome /> 
+  },
+  { path: "/game", 
+    element: <GameHome /> 
+  },
+  {
+    path: "/:type/works",
+    element: <Works />,
+  },
+
   {
     path: "/ongawa",
     element: <Ongawa />,
@@ -43,7 +55,7 @@ const router = createBrowserRouter([
     path: "/sorcerer-desk",
     element: <SorcererDesk />,
   },
-    {
+  {
     path: "/rizzlet",
     element: <Rizzlet />,
   },
