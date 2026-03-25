@@ -15,6 +15,7 @@ const projectList: Project[] = [
     link: "/ongawa",
     type: "UI/UX",
     workType: "web",
+    sectionType: ["design"],
   },
   {
     name: "SpreadGoodness",
@@ -23,6 +24,7 @@ const projectList: Project[] = [
     link: "https://www.figma.com/proto/KaozpSMjEoZwmjtndTjaNp/SpreadGoodness-New-Mockups--Copy-?node-id=1203-752&p=f&t=GdXHLvtAqOd3EKSS-1&scaling=min-zoom&content-scaling=fixed&page-id=95%3A218&starting-point-node-id=1203%3A752&show-proto-sidebar=1",
     type: "Frontend",
     workType: "web",
+    sectionType: ["dev", "design"],
   },
   {
     name: "Rizzlet",
@@ -31,6 +33,7 @@ const projectList: Project[] = [
     link: "/rizzlet",
     type: "Full Stack",
     workType: "web",
+    sectionType: ["dev"],
   },
   {
     name: "Butterfly Marionette",
@@ -39,6 +42,7 @@ const projectList: Project[] = [
     link: "/butterfly-marionette",
     type: "3D Model and Animation",
     workType: "game",
+    sectionType: ["design"],
   },
   {
     name: "Sorcerer's Desk",
@@ -47,6 +51,7 @@ const projectList: Project[] = [
     link: "/sorcerer-desk",
     type: "3D Model",
     workType: "game",
+    sectionType: ["design"],
   },
   {
     name: "GrayScale",
@@ -55,6 +60,7 @@ const projectList: Project[] = [
     link: "https://nnguy239.itch.io/grayscale",
     type: "Puzzle",
     workType: "game",
+    sectionType: ["dev"],
   },
   {
     name: "Ninja Penguin",
@@ -63,6 +69,7 @@ const projectList: Project[] = [
     link: "https://san-which.itch.io/sr-fish-le-penguin",
     type: "Platformer",
     workType: "game",
+    sectionType: ["dev"],
   },
 ];
 

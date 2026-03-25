@@ -1,14 +1,20 @@
 import { useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import Mask from "../components/Mask";
-import Rectangle from "../assets/rec_wetAcylic2_lg.png";
 import { projectList } from "../data/projectsList";
 import type { WorkType } from "../data/WorkType";
+import type { SectionType } from "../data/SectionType";
 
 function Works() {
   const type = useParams<{ type: WorkType }>();
+  const [section, setSection] = useState<SectionType>("dev");
   const [project, setProject] = useState(projectList[0]);
   const navigate = useNavigate();
+
+  const tabClassName = (sectionType: SectionType) => {
+    return `w-1/2 cursor-pointer decoration-white decoration-2 underline-offset-6 ${
+      section === sectionType ? "underline" : "not-underline"
+    }`;
+  };
 
   const handleProjectClick = (proj: typeof project) => {
     const externalLink =
@@ -35,10 +41,27 @@ function Works() {
       </section>
       <section className="w-full h-full flex flex-col lg:overflow-y-auto">
         <div className="text-white text-heading1 font-bold mt-5">Projects</div>
-        <div className="w-full text-white text-heading2 font-normal mt-[3%] mb-[3%] flex flex-row "></div>
+        <div className="w-full text-white text-heading2 font-normal mt-[3%] mb-[3%] flex flex-row ">
+          <button
+            className={tabClassName("dev")}
+            onClick={() => setSection("dev")}
+          >
+            Development
+          </button>
+          <button
+            className={tabClassName("design")}
+            onClick={() => setSection("design")}
+          >
+            Design
+          </button>
+        </div>
         <ul className="flex flex-col ml-5">
           {projectList
-            .filter((proj) => proj.workType === (type?.type || "web"))
+            .filter(
+              (proj) =>
+                proj.workType === (type?.type || "web") &&
+                proj.sectionType?.includes(section),
+            )
             .map((proj) => (
               <button
                 key={proj.name}
