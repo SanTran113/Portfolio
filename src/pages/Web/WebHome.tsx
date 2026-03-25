@@ -9,7 +9,7 @@ function WebHome() {
         <Button label="Works" buttonLink="/web/works" />
       </section>
       <div className="-translate-y-150 lg:-translate-y-320">
-        <GradientCircle />
+        {/* <GradientCircle /> */}
       </div>
       
     </div>
