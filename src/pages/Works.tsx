@@ -39,9 +39,9 @@ function Works() {
         </div>
         <hr className="w-full border-gray-300 mt-2 mb-5" />
       </section>
-      <section className="w-full h-full flex flex-col lg:overflow-y-auto">
+      <section className="w-full h-full flex flex-col ">
         <div className="text-white text-heading1 font-bold mt-5">Projects</div>
-        <div className="w-full text-white text-heading2 font-normal mt-[3%] mb-[3%] flex flex-row ">
+        <div className="w-full text-white text-heading2 font-normal mt-[3%] mb-[3%] flex flex-row">
           <button
             className={tabClassName("dev")}
             onClick={() => setSection("dev")}
@@ -65,7 +65,7 @@ function Works() {
             .map((proj) => (
               <button
                 key={proj.name}
-                className="group text-left cursor-pointer hover:opacity-80 hover:outline-1 hover/see:visible hover:outline-white flex flex-row justify-between items-center p-3 lg:p-4 space-y-1"
+                className="group text-left cursor-pointer hover:opacity-80 hover:outline-1 hover/see:visible hover:outline-white flex flex-row justify-between items-center p-2 lg:p-4 space-y-1"
                 onMouseEnter={() => setProject(proj)}
                 onClick={() => handleProjectClick(proj)}
               >
