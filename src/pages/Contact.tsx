@@ -10,7 +10,7 @@ function Contact() {
             Chat with me through LinkedIn and see some demos!
           </div>
           <button
-            className="text-contact cursor-pointer hover:text-gray-300 hover:bg-gray-900 p-2 rounded border border-white text-white w-full"
+            className="text-contact cursor-pointer hover:bg-white hover:text-[#2B2C3C] p-2 rounded border border-white text-white w-full"
             onClick={() =>
               window.open("https://www.linkedin.com/in/san-tran1/", "_blank")
             }
@@ -25,7 +25,7 @@ function Contact() {
             Email me directly @ san.tran7141@gmail.com!
           </div>
           <button
-            className="text-contact cursor-pointer hover:text-gray-300 hover:bg-gray-900 p-2 rounded border border-white text-white w-full"
+            className="text-contact cursor-pointer hover:bg-white hover:text-[#2B2C3C] p-2 rounded border border-white text-white w-full"
             onClick={() =>
               window.open("mailto:san.tran7141@gmail.com", "_blank")
             }
@@ -40,7 +40,7 @@ function Contact() {
             Check out my projects on GitHub!
           </div>
           <button
-            className="text-contact cursor-pointer hover:text-gray-300 hover:bg-gray-900 p-2 rounded border border-white text-white w-full"
+            className="text-contact cursor-pointer hover:bg-white hover:text-[#2B2C3C] p-2 rounded border border-white text-white w-full"
             onClick={() =>
               window.open("https://github.com/SanTran113", "_blank")
             }
