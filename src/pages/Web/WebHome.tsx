@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Particles from "../../components/Particles";
+import { GradientCircle } from "../../components/GradientCircle";
 
 function WebHome() {
   return (
@@ -33,7 +34,9 @@ function WebHome() {
             <i className="fi fi-rr-angle-small-right flex justify-center"></i>
           </Link>
         </section>
-        <div className="-translate-y-150 lg:-translate-y-320"></div>
+        <section className="absolute -translate-y-100">
+          <GradientCircle />
+        </section>
       </section>
     </div>
   );

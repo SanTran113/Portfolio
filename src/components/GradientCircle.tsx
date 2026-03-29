@@ -11,7 +11,7 @@ export const GradientCircle = ({
 }: GradientCircleProps) => {
   return (
     <div 
-      className="rounded-full w-screen aspect-square"
+      className="rounded-full w-screen aspect-square animate-pulse opacity-70"
       style={{
         borderRadius: borderRadius,
         background: `radial-gradient(50% 50% at 50% 50%, ${innerColor} 0%, transparent 100%)`
