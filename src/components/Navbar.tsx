@@ -10,7 +10,7 @@ function Navbar() {
 
   return (
     <>
-      <nav className="p-4 col-span-3 row-start-2 flex justify-between items-center gap-4 mt-3 mb-1 mr-5 ml-5">
+      <nav className="p-4 col-span-3 row-start-2 flex justify-between items-center gap-4 mt-3 mb-1 mr-5 ml-5 -z-5">
         <Link
           to={type ? `/${type}` : "/"}
           className="text-white text-2xl font-bold"

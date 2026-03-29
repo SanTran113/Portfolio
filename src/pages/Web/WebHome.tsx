@@ -34,9 +34,9 @@ function WebHome() {
             <i className="fi fi-rr-angle-small-right flex justify-center"></i>
           </Link>
         </section>
-        <section className="absolute -translate-y-100">
-          <GradientCircle />
-        </section>
+      </section>
+      <section className="absolute -translate-y-130 -z-10">
+        <GradientCircle />
       </section>
     </div>
   );
