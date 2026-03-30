@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
 import { GradientCircle } from "../../components/GradientCircle";
+import Button from "../../components/Button";
 
 function WebHome() {
   return (
@@ -9,14 +9,7 @@ function WebHome() {
           San Tran
         </h1>
         <section className="text-heading1 font-bold text-white flex justify-center items-center">
-          <Link
-            to={"/web/works"}
-            className="text-white text-heading2 font-medium cursor-pointer outline-1 hover/see:visible 
-          outline-white flex flex-row justify-between items-center p-3 lg:p-4 space-y-1 hover:bg-white hover:text-[#2B2C3C]"
-          >
-            See Projects
-            <i className="fi fi-rr-angle-small-right flex justify-center"></i>
-          </Link>
+          <Button label="See Projects" buttonLink="/web/works" icon={true} />
         </section>
       </section>
       <section className="fixed -z-10 -translate-y-130">

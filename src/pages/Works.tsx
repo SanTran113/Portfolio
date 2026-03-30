@@ -33,7 +33,7 @@ function Works() {
       <div className="px-5 lg:px-10 flex flex-col md:flex-row lg:flex-row gap-10 item-start h-[calc(100vh-8rem)]">
         <section className="flex flex-col w-full ">
           <img
-            className="pt-6 w-full min-h-2/5 lg:min-h-7/8 object-cover bg-no-repeat"
+            className="pt-6 w-full min-h-2/5 lg:min-h-7/8 object-cover bg-no-repeat aspect-video"
             src={project.coverImg}
           />
           <div className="text-white text-body font-semibold mt-5">
@@ -59,7 +59,7 @@ function Works() {
               Design
             </button>
           </div>
-          <ul className="flex flex-col ml-5">
+          <ul className="flex flex-col ml-5 gap-3">
             {projectList
               .filter(
                 (proj) =>
@@ -69,7 +69,7 @@ function Works() {
               .map((proj) => (
                 <button
                   key={proj.name}
-                  className="group text-left cursor-pointer hover:opacity-80 hover:outline-1 hover:outline-white flex flex-row justify-between items-center p-2 lg:p-4 space-y-1"
+                  className="group text-left cursor-pointer hover:opacity-80 hover:outline-1 hover:outline-white flex flex-row justify-between items-center p-2 lg:p-4"
                   onMouseEnter={() => setProject(proj)}
                   onClick={() => handleProjectClick(proj)}
                 >

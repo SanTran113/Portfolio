@@ -3,6 +3,7 @@ import Circle from "../assets/circle_arylic.png";
 import Profile from "../assets/profile.jpg";
 import Resume from "../assets/resume.pdf";
 import { GradientCircle } from "../components/GradientCircle";
+import Button from "../components/Button";
 
 function About() {
   return (
@@ -37,7 +38,7 @@ function About() {
               </ul>
             </div>
             <button
-              className="text-body cursor-pointer hover:bg-gray-200 p-2 rounded bg-white text-[#1a1a1a] w-full mb-10"
+              className="text-body cursor-pointer p-2 hover:bg-white hover:text-[#2B2C3C] w-full mb-10 outline-white outline-1"
               onClick={() => window.open(Resume, "_blank")}
             >
               See Resume
