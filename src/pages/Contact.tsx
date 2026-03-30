@@ -1,3 +1,5 @@
+import { GradientCircle } from "../components/GradientCircle";
+
 function Contact() {
   return (
     <div className="pl-10 pr-10">
@@ -49,6 +51,9 @@ function Contact() {
           </button>
         </section>
       </div>
+      <section className="fixed -z-10 -translate-y-130">
+        <GradientCircle />
+      </section>
     </div>
   );
 }

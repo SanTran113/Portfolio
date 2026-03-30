@@ -19,7 +19,7 @@ function WebHome() {
           </Link>
         </section>
       </section>
-      <section className="fixed -z-10 -translate-y-130 ">
+      <section className="fixed -z-10 -translate-y-130">
         <GradientCircle />
       </section>
     </div>

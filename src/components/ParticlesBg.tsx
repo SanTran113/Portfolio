@@ -13,7 +13,7 @@ export const ParticlesBg = () => {
           particleHoverFactor={1}
           alphaParticles={false}
           particleBaseSize={60}
-          sizeRandomness={0.9}
+          sizeRandomness={0.5}
           cameraDistance={21}
           disableRotation={false}
         />

@@ -3,6 +3,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { projectList } from "../data/projectsList";
 import type { WorkType } from "../data/WorkType";
 import type { SectionType } from "../data/SectionType";
+import { GradientCircle } from "../components/GradientCircle";
 
 function Works() {
   const type = useParams<{ type: WorkType }>();
@@ -28,7 +29,7 @@ function Works() {
   };
 
   return (
-    <div className="ml-5 mr-5 lg:ml-10 lg:mr-10 flex flex-col md:flex-row lg:flex-row gap-10 item-start h-[calc(100vh-8rem)]">
+    <div className="px-5 lg:px-10 flex flex-col md:flex-row lg:flex-row gap-10 item-start h-[calc(100vh-8rem)]">
       <section className="flex flex-col w-full ">
         <img
           className="pt-6 w-full min-h-2/5 lg:min-h-7/8 object-cover bg-no-repeat"
@@ -76,6 +77,9 @@ function Works() {
               </button>
             ))}
         </ul>
+      </section>
+      <section className="fixed inset-0 -z-10 translate-y-0 lg:-translate-x-80">
+        <GradientCircle />
       </section>
     </div>
   );

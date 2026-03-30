@@ -1,4 +1,6 @@
 export function GradientCircle({ className }: { className?: string }) {
+  
+
   return (
     <div
       className={`rounded-full w-screen aspect-square animate-pulse opacity-70 ${className}`}
