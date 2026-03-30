@@ -1,21 +1,10 @@
-import React from "react";
-
-interface GradientCircleProps {
-    innerColor?: string;
-    borderRadius?: number;
-}
-
-export const GradientCircle = ({ 
-    innerColor = "#62536B", 
-    borderRadius = 1814 
-}: GradientCircleProps) => {
+export function GradientCircle({ className }: { className?: string }) {
   return (
-    <div 
-      className="rounded-full w-screen aspect-square animate-pulse opacity-70"
+    <div
+      className={`rounded-full w-screen aspect-square animate-pulse opacity-70 ${className}`}
       style={{
-        borderRadius: borderRadius,
-        background: `radial-gradient(50% 50% at 50% 50%, ${innerColor} 0%, transparent 100%)`
+        background: `radial-gradient(50% 50% at 50% 50%, #62536B 0%, transparent 100%)`,
       }}
     ></div>
   );
-};
+}

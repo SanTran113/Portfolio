@@ -1,25 +1,9 @@
 import { Link } from "react-router-dom";
-import Particles from "../../components/Particles";
 import { GradientCircle } from "../../components/GradientCircle";
 
 function WebHome() {
   return (
     <div className="w-full h-[calc(100vh-6rem)] relative flex justify-center items-center">
-      <div style={{ width: "100%", height: "100%", position: "relative" }}>
-        <Particles
-          particleCount={360}
-          particleSpread={13}
-          speed={0.02}
-          particleColors={["#606276", "#b5987d", "#ffffff"]}
-          moveParticlesOnHover={false}
-          particleHoverFactor={1}
-          alphaParticles={false}
-          particleBaseSize={60}
-          sizeRandomness={0.9}
-          cameraDistance={21}
-          disableRotation={false}
-        />
-      </div>
       <section className="absolute flex flex-col justify-center items-center">
         <h1 className="text-title font-light text-white mb-home flex justify-center">
           San Tran
@@ -35,7 +19,7 @@ function WebHome() {
           </Link>
         </section>
       </section>
-      <section className="absolute -translate-y-130 -z-10">
+      <section className="fixed -z-10 -translate-y-130 ">
         <GradientCircle />
       </section>
     </div>
