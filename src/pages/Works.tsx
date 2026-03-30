@@ -66,7 +66,7 @@ function Works() {
             .map((proj) => (
               <button
                 key={proj.name}
-                className="group text-left cursor-pointer hover:opacity-80 hover:outline-1 hover/see:visible hover:outline-white flex flex-row justify-between items-center p-2 lg:p-4 space-y-1"
+                className="group text-left cursor-pointer hover:opacity-80 hover:outline-1 hover:outline-white flex flex-row justify-between items-center p-2 lg:p-4 space-y-1"
                 onMouseEnter={() => setProject(proj)}
                 onClick={() => handleProjectClick(proj)}
               >
@@ -78,9 +78,9 @@ function Works() {
             ))}
         </ul>
       </section>
-      <section className="fixed inset-0 -z-10 translate-y-0 lg:-translate-x-80">
+      {/* <section className="fixed inset-0 -z-10 translate-y-0 lg:-translate-x-80">
         <GradientCircle />
-      </section>
+      </section> */}
     </div>
   );
 }
