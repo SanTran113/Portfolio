@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { projectList } from "../data/projectsList";
 import type { WorkType } from "../data/WorkType";
@@ -8,9 +8,20 @@ import { GradientCircle } from "../components/GradientCircle";
 function Works() {
   const type = useParams<{ type: WorkType }>();
   const [section, setSection] = useState<SectionType>("dev");
+  const [projList, setProjList] = useState(projectList);
   const [project, setProject] = useState(projectList[0]);
   const navigate = useNavigate();
 
+  useEffect(() => {
+    const filtered = projectList.filter(
+      (proj) =>
+        proj.workType === (type?.type || "web") &&
+        proj.sectionType?.includes(section),
+    );
+    setProjList(filtered);
+    setProject(filtered[0]); 
+  }, [type, section]);
+  
   const tabClassName = (sectionType: SectionType) => {
     return `w-1/2 cursor-pointer decoration-white decoration-2 underline-offset-6 ${
       section === sectionType ? "underline" : "not-underline"
@@ -60,25 +71,19 @@ function Works() {
             </button>
           </div>
           <ul className="flex flex-col ml-5 gap-3">
-            {projectList
-              .filter(
-                (proj) =>
-                  proj.workType === (type?.type || "web") &&
-                  proj.sectionType?.includes(section),
-              )
-              .map((proj) => (
-                <button
-                  key={proj.name}
-                  className="group text-left cursor-pointer hover:opacity-80 hover:outline-1 hover:outline-white flex flex-row justify-between items-center p-2 lg:p-4"
-                  onMouseEnter={() => setProject(proj)}
-                  onClick={() => handleProjectClick(proj)}
-                >
-                  <h1 className="text-white text-heading2 font-medium">
-                    {proj.name}
-                  </h1>
-                  <div className="text-gray-300 text-body">{proj.type}</div>
-                </button>
-              ))}
+            {projList.map((proj) => (
+              <button
+                key={proj.name}
+                className="text-left cursor-pointer hover:opacity-80 hover:outline-1 hover:outline-white flex flex-row justify-between items-center p-2 lg:p-4"
+                onMouseEnter={() => setProject(proj)}
+                onClick={() => handleProjectClick(proj)}
+              >
+                <h1 className="text-white text-heading2 font-medium">
+                  {proj.name}
+                </h1>
+                <div className="text-gray-300 text-body">{proj.type}</div>
+              </button>
+            ))}
           </ul>
         </section>
       </div>
