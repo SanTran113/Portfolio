@@ -5,23 +5,30 @@ import type { WorkType } from "../data/WorkType";
 import type { SectionType } from "../data/SectionType";
 import { GradientCircle } from "../components/GradientCircle";
 
+const getFilteredProj = (workType: WorkType, sectionType: SectionType) => {
+  return projectList.filter(
+    (proj) =>
+      proj.workType === workType &&
+      proj.sectionType?.includes(sectionType),
+  );
+};
+
 function Works() {
   const type = useParams<{ type: WorkType }>();
   const [section, setSection] = useState<SectionType>("dev");
-  const [projList, setProjList] = useState(projectList);
-  const [project, setProject] = useState(projectList[0]);
+
+  const [projList, setProjList] = useState(() => {
+    return getFilteredProj(type?.type || "web", section);
+  });
+  const [project, setProject] = useState(projList[0]);
   const navigate = useNavigate();
 
   useEffect(() => {
-    const filtered = projectList.filter(
-      (proj) =>
-        proj.workType === (type?.type || "web") &&
-        proj.sectionType?.includes(section),
-    );
+    const filtered = getFilteredProj(type?.type || "web", section);
     setProjList(filtered);
-    setProject(filtered[0]); 
+    setProject(filtered[0]);
   }, [type, section]);
-  
+
   const tabClassName = (sectionType: SectionType) => {
     return `w-1/2 cursor-pointer decoration-white decoration-2 underline-offset-6 ${
       section === sectionType ? "underline" : "not-underline"
