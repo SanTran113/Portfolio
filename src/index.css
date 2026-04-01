@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 @import "@flaticon/flaticon-uicons/css/all/all";
 
@@ -18,15 +19,18 @@
 
   --bg-contact: oklch(0.18 0 0);
   --breakpoint-xm: 52rem;
+
+  --dark-color: #2B2C3C;
+  --light-color: #62536B;
 }
 
 :root {
-  font-family: "Lato", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
-  background-color: #1a1a1a;
-  background-image: url("./assets/canvasTex.jpg");
+  background-color: var(--dark-color);
+  /* background-image: url("./assets/canvasTex.jpg"); */
   background-blend-mode: multiply;
   background-size: cover;
   background-position: center;

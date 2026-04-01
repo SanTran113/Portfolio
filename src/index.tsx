@@ -4,11 +4,16 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 import "./index.css";
 
-import Navbar from "./components/Navbar.tsx";
+import Layout from "./components/Layout.tsx";
 import HomePage from "./pages/HomePage.tsx";
+import Contact from "./pages/Contact.tsx";
+
+import WebHome from "./pages/Web/WebHome.tsx";
+
+import GameHome from "./pages/Game/GameHome.tsx";
+
 import About from "./pages/About.tsx";
 import Works from "./pages/Works.tsx";
-import Contact from "./pages/Contact.tsx";
 import Ongawa from "./pages/WorkProject/Ongawa.tsx";
 import BMarionette from "./pages/WorkProject/BMarionette.tsx";
 import SorcererDesk from "./pages/WorkProject/SorcererDesk.tsx";
@@ -16,42 +21,24 @@ import Rizzlet from "./pages/WorkProject/Rizzlet.tsx";
 
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <HomePage />,
-  },
-  {
-    path: "/aboutme",
-    element: <About />,
-  },
-  {
-    path: "/works",
-    element: <Works />,
-  },
-  {
-    path: "/contact",
-    element: <Contact />,
-  },
-  {
-    path: "/ongawa",
-    element: <Ongawa />,
-  },
-  {
-    path: "/butterfly-marionette",
-    element: <BMarionette />,
-  },
-  {
-    path: "/sorcerer-desk",
-    element: <SorcererDesk />,
-  },
-    {
-    path: "/rizzlet",
-    element: <Rizzlet />,
+    element: <Layout />,
+    children: [
+      { path: "/:type?", element: <HomePage /> },
+      { path: "/:type/aboutme", element: <About /> },
+      { path: "/:type/contact", element: <Contact /> },
+      { path: "/web", element: <WebHome /> },
+      { path: "/game", element: <GameHome /> },
+      { path: "/:type/works", element: <Works /> },
+      { path: "/:type/ongawa", element: <Ongawa /> },
+      { path: "/:type/butterfly-marionette", element: <BMarionette /> },
+      { path: "/:type/sorcerer-desk", element: <SorcererDesk /> },
+      { path: "/:type/rizzlet", element: <Rizzlet /> },
+    ],
   },
 ]);
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <Navbar />
     <RouterProvider router={router} />
   </StrictMode>,
 );
