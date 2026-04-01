@@ -3,7 +3,6 @@ import Circle from "../assets/circle_arylic.png";
 import Profile from "../assets/profile.jpg";
 import Resume from "../assets/resume.pdf";
 import { GradientCircle } from "../components/GradientCircle";
-import Button from "../components/Button";
 
 function About() {
   return (
@@ -46,7 +45,7 @@ function About() {
           </section>
         </div>
       </div>
-      <section className="fixed -z-10 -translate-y-210 lg:-translate-x-100 lg:-translate-y-250">
+      <section className="fixed -z-10 inset-0 -translate-y-0 lg:-translate-x-120 lg:-translate-y-70">
         <GradientCircle />
       </section>
     </>

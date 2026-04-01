@@ -5,7 +5,7 @@ import { ParticlesBg } from "./ParticlesBg";
 function Layout() {
   return (
     <>
-      <div className="overflow-hidden">
+      <div className="">
         <Navbar />
         <ParticlesBg />
       </div>

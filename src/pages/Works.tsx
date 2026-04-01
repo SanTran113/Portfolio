@@ -82,7 +82,7 @@ function Works() {
           </ul>
         </section>
       </div>
-      <section className="fixed -z-10 -translate-y-180 lg:-translate-x-50 lg:-translate-y-250">
+      <section className="fixed -z-10  inset-0 -translate-y-50 lg:-translate-x-100 lg:-translate-y-200">
         <GradientCircle />
       </section>
     </>

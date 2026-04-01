@@ -55,7 +55,7 @@ function Contact() {
           </section>
         </div>
       </div>
-      <section className="fixed -z-10 -translate-y-300">
+      <section className="fixed -z-10 inset-0 -translate-y-130">
         <GradientCircle />
       </section>
     </>
