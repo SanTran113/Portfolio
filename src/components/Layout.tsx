@@ -8,8 +8,8 @@ function Layout() {
 
   return (
     <>
-      <div className={hideNav ? "hidden" : "block"}>
-        <Navbar />
+      <div className="overflow-hidden">
+        {!hideNav && <Navbar />}
         <ParticlesBg />
       </div>
 
