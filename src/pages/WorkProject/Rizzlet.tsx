@@ -2,6 +2,11 @@ import { useState } from "react";
 import { projectList } from "../../data/projectsList";
 import ProjectHeader from "../../components/ProjectHeader";
 
+import game from "../../assets/rizzlet/interactiveGame.png";
+import leaderboard from "../../assets/rizzlet/leaderboard.png";
+import questionOverview from "../../assets/rizzlet/questionsOverview.png";
+import submitQuestion from "../../assets/rizzlet/submitAQuestion.png";
+
 function Rizzlet() {
   const [project] = useState(projectList[2]);
 
@@ -39,6 +44,25 @@ function Rizzlet() {
               <li className="mt-2">Update Player score</li>
             </ul>
           </section>
+
+          <section className="text-heading2 text-white font-bold">
+            Question Overview
+            <img className="w-full aspect-video mt-2" src={questionOverview} alt="Question Overview" />
+          </section>
+          <section className="text-heading2 text-white font-bold">
+          Submit a Question
+          <img className="w-full aspect-video mt-2" src={submitQuestion} alt="Submit Question" />
+          </section>
+          <section className="text-heading2 text-white font-bold">
+            Leaderboard
+            <img className="w-full aspect-video mt-2" src={leaderboard} alt="Leaderboard" />
+          </section>
+          <section className="text-heading2 text-white font-bold">
+            Interactive Game
+            <img className="w-full aspect-video mt-2" src={game} alt="Interactive Game" />
+          </section>
+
+
           <section className="text-heading2 text-white font-bold">
             Demo
             <iframe
