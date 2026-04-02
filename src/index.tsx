@@ -18,6 +18,7 @@ import Ongawa from "./pages/WorkProject/Ongawa.tsx";
 import BMarionette from "./pages/WorkProject/BMarionette.tsx";
 import SorcererDesk from "./pages/WorkProject/SorcererDesk.tsx";
 import Rizzlet from "./pages/WorkProject/Rizzlet.tsx";
+import SG from "./pages/WorkProject/SG.tsx";
 
 const router = createBrowserRouter([
   {
@@ -33,6 +34,7 @@ const router = createBrowserRouter([
       { path: "/:type/butterfly-marionette", element: <BMarionette /> },
       { path: "/:type/sorcerer-desk", element: <SorcererDesk /> },
       { path: "/:type/rizzlet", element: <Rizzlet /> },
+      { path: "/:type/spreadgoodness", element: <SG /> },
     ],
   },
 ]);
