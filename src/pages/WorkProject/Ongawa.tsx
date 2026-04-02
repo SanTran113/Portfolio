@@ -29,6 +29,7 @@ function Ongawa() {
         year={"October 2024 - Current"}
         role={"Designer"}
         technologies={project.skillsUsed}
+        description="Hitting notes in time with the music and diving into a journey of discovery and creativity in Ongawa. Combining rhythm-based gameplay with Role-playing elements, uncover hidden musical talents while controlling unique characters, each with their own skills and playstyles!"
       />
       <div className="flex flex-col pl-[15%] pr-[15%]">
         <button
