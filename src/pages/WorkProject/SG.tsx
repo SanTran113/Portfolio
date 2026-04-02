@@ -52,11 +52,31 @@ export default function SG() {
               The main flow of Spread Goodness is to create a post also called
               "starting a challenge." Through starting a new challenge, the user
               is able to start a chain of kindness by sharing something they did
-              to spread kindness.
+              to spread kindness. Below are the inital sketchs from the ideation
+              phase of the project. These sketches were made before my
+              onboarding from the founder of Spread Goodness.
             </p>
             <div className="flex flex-row gap-[2%]">
-              <img src={sgSketch1} className="w-1/2 mt-[2%] rounded aspect-auto" />
-              <img src={sgSketch2} className="w-1/2 mt-[2%] rounded aspect-auto" />
+              <img
+                src={sgSketch1}
+                className="w-1/2 mt-[2%] rounded aspect-auto"
+              />
+              <img
+                src={sgSketch2}
+                className="w-1/2 mt-[2%] rounded aspect-auto"
+              />
+            </div>
+          </section>
+
+          <section className="text-heading2 text-white font-bold">
+            Important Decisions
+            <div className="text-body font-normal mt-[1%]">
+              <h1 className="font-bold text-heading3">
+                First Screen
+              </h1>
+              <p className="mb-[2%]">
+                In the first screen of the 
+              </p>
             </div>
           </section>
 
