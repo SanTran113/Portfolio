@@ -8,6 +8,9 @@ import sgMain3 from "../../assets/spreadgoodness/sgMain3.png";
 import sgMain4 from "../../assets/spreadgoodness/sgMain4.png";
 import sgMain5 from "../../assets/spreadgoodness/sgMain5.png";
 import sghome from "../../assets/spreadgoodness/sghome.png";
+import rippleTracker from "../../assets/spreadgoodness/rippleTracker.png";
+import sgSketch1 from "../../assets/spreadgoodness/sgSketch1.jpg";
+import sgSketch2 from "../../assets/spreadgoodness/sgSketch2.jpg";
 
 export default function SG() {
   const [project] = useState(projectList[1]);
@@ -22,7 +25,7 @@ export default function SG() {
         technologies={project.skillsUsed}
         description="Our low-lift web-app encourages students to do something kind and unexpected for someone, share what they’ve done on our online platform, and nominate others to participate."
       />
-      <div className="flex flex-col pl-[15%] pr-[15%]">
+      <div className="w-full flex flex-col pl-[15%] pr-[15%]">
         <button
           className="text-body cursor-pointer hover:bg-gray-200 p-2 rounded bg-white text-[#1a1a1a] w-full mt-5 mb-[5%]"
           onClick={() =>
@@ -32,17 +35,38 @@ export default function SG() {
           Test Demo
         </button>
 
-        <div className="space-y-[8%] mt-[5%]">
+        <div className="w-full space-y-[8%] mt-[5%]">
           <section className="text-heading2 text-white font-bold">
             Main Flow
             <p className="text-body font-normal mt-[1%]">
               The main flow of Spread Goodness is to create a post also called
               "starting a challenge." Through starting a new challenge, the user
               is able to start a chain of kindness by sharing something they did
-              to spread kindness. So, here as a user I shared that I gave a
-              friend a gift that reminded me of them. After sharing and creating
-              a challenge, I can nominate others to participate in the
-              challenge, creating a chain of kindness.
+              to spread kindness.
+            </p>
+          </section>
+
+          <section className="w-full text-heading2 text-white font-bold">
+            Inital Sketches
+            <p className="text-body font-normal mt-[1%]">
+              The main flow of Spread Goodness is to create a post also called
+              "starting a challenge." Through starting a new challenge, the user
+              is able to start a chain of kindness by sharing something they did
+              to spread kindness.
+            </p>
+            <div className="flex flex-row gap-[2%]">
+              <img src={sgSketch1} className="w-1/2 mt-[2%] rounded aspect-auto" />
+              <img src={sgSketch2} className="w-1/2 mt-[2%] rounded aspect-auto" />
+            </div>
+          </section>
+
+          <section className="text-heading2 text-white font-bold">
+            Final Web Screens
+            <p className="text-body font-normal mt-[1%]">
+              Here as a user I shared that I gave a friend a gift that reminded
+              me of them. After sharing and creating a challenge, I can nominate
+              others to participate in the challenge, creating a chain of
+              kindness.
             </p>
             <img src={sgMain1} className="w-full mt-[2%] rounded" />
             <img src={sgMain2} className="w-full mt-[2%] rounded" />
@@ -54,6 +78,7 @@ export default function SG() {
 
           <section className="text-heading2 text-white font-bold">
             Ripple Tracker (All Challenges)
+            <img src={rippleTracker} className="w-full mt-[2%] rounded" />
           </section>
 
           <section className="text-heading2 text-white font-bold">
