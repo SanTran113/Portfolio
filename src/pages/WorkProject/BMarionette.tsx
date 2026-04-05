@@ -29,8 +29,8 @@ function BMarionette() {
         technologies={proj.skillsUsed}
         description="A seemingly innocent marionette on a music box that all of a sudden seems alive."
       />
-      <div className="flex flex-col pl-[15%] pr-[15%]">
-        <div className="space-y-[8%] mt-[5%]">
+      <div className="flex flex-col pl-[20%] pr-[20%]">
+        <div className="space-y-[5%] mt-[3%]">
           <section className="text-heading2 text-white font-bold">
             Animation
             <iframe

@@ -35,7 +35,7 @@ export default function SG() {
         technologies={project.skillsUsed}
         description="Our low-lift web-app encourages students to do something kind and unexpected for someone, share what they’ve done on our online platform, and nominate others to participate."
       />
-      <div className="w-full flex flex-col pl-[15%] pr-[15%]">
+      <div className="w-full flex flex-col pl-[20%] pr-[20%]">
         <button
           className="text-body cursor-pointer hover:bg-gray-200 p-2 rounded bg-white text-[#1a1a1a] w-full mt-5 mb-[5%]"
           onClick={() =>
@@ -45,7 +45,7 @@ export default function SG() {
           Test Demo
         </button>
 
-        <div className="w-full space-y-[8%] mt-[5%]">
+        <div className="w-full space-y-[5%] mt-[3%]">
           <section className="text-heading2 text-white font-bold">
             Main Flow
             <p className="text-body font-normal mt-[1%]">
