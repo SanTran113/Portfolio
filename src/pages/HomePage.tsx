@@ -18,7 +18,7 @@ function HomePage() {
           Game Development
         </Link>
       </div>
-      <section className="fixed -z-10 inset-0 -translate-y-130">
+      <section className="fixed -z-10 inset-0 -translate-y-50 lg:-translate-y-130">
         <GradientCircle />
       </section>
     </>

@@ -1,5 +1,4 @@
-import Mask from "./Mask";
-import rec from "../assets/rec_work.png";
+import { GradientCircle } from "./GradientCircle";
 import ProjectDescriptionItem from "./ProjectDescriptionItem";
 
 function ProjectHeader({
@@ -18,12 +17,11 @@ function ProjectHeader({
   description?: string;
 }) {
   return (
-    <div>
-      <section className="w-full h-full flex items-center">
-        <Mask
-          className="w-full size-projectImg opacity-100"
-          maskImage={rec}
-          backgroundImage={coverImg}
+    <>
+      <section className="w-full flex items-center">
+        <img
+          src={coverImg}
+          className="h-[30vh] w-full object-cover bg-no-repeat"
         />
       </section>
       <div className="flex flex-col lg:flex-row space-x-10 pl-[15%] pr-[15%] mt-[5%]">
@@ -44,7 +42,10 @@ function ProjectHeader({
           <p className="text-gray-300 text-body font-normal">{description}</p>
         </section>
       </div>
-    </div>
+      <section className="fixed -z-10 inset-0 -translate-y-50 md:-translate-y-150 lg:-translate-y-300">
+        <GradientCircle />
+      </section>
+    </>
   );
 }
 
