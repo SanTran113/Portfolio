@@ -22,7 +22,7 @@ function SorcererDesk() {
         technologies={project.skillsUsed}
         description="A sorcerer's desk filled with various magical items, such as potions, spell books, and mystical artifacts. "
       />
-      <div className="flex flex-col pl-[20%] pr-[20%]">
+      <div className="flex flex-col px-[5%] md:px-[10%] lg:px-[20%]">
         <div className="space-y-[5%] mt-[3%]">
           <section className="text-heading2 text-white font-bold">
             Sculpting

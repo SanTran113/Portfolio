@@ -4,7 +4,7 @@ function Contact() {
   return (
     <>
       <div className="pl-10 pr-10">
-        <div className="text-heading1 text-white font-bold mb-home">
+        <div className="text-heading1 text-white font-bold mb-home mt-5">
           Contact{" "}
         </div>
         <div className="flex flex-col lg:flex-row xl:flex-row 2xl:flex-row justify-center items-stretch">

@@ -23,7 +23,7 @@ function Rizzlet() {
           " It aims to help address the procrastination and lack of focus many students face when studying or doing homework by promoting studying in intervals."
         }
       />
-      <div className="flex flex-col pl-[20%] pr-[20%]">
+      <div className="flex flex-col px-[5%] md:px-[10%] lg:px-[20%]">
         <button
           className="text-body cursor-pointer hover:bg-gray-200 p-2 rounded bg-white text-[#1a1a1a] w-full mt-5 mb-[5%]"
           onClick={() => window.open("https://github.com/Rizzlet/rizzlet")}

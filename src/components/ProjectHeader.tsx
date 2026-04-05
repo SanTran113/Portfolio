@@ -24,17 +24,17 @@ function ProjectHeader({
           className="h-[30vh] w-full object-cover bg-no-repeat"
         />
       </section>
-      <div className="flex flex-col space-x-10 pl-[20%] pr-[20%] mt-[5%]">
+      <div className="w-full flex flex-col space-x-10 px-[5%] md:px-[10%] lg:px-[20%] mt-[5%]">
         <div className="text-white text-heading1 font-bold">{projectName}</div>
-        <div className="flex flex-col lg:flex-row space-x-10">
-          <div className="flex flex-col space-y-[8%] lg:w-3/5">
+        <div className="w-full flex flex-col md:flex-row lg:flex-row space-x-10">
+          <div className="flex flex-col space-y-[8%] md:w-3/5 lg:w-3/5">
             <section className="flex flex-col">
                 {ProjectDescriptionItem("Year", year)}
                 {ProjectDescriptionItem("My Role", role)}
                 {ProjectDescriptionItem("Technologies Used", technologies)}
             </section>
           </div>
-          <section className="lg:w-2/5">
+          <section className="md:w-3/5 lg:w-2/5">
             <p className="text-white text-body font-bold">Description:</p>
             <p className="text-gray-300 text-body font-normal">{description}</p>
           </section>
