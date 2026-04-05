@@ -29,15 +29,16 @@ function Ongawa() {
         year={"October 2024 - Current"}
         role={"Designer"}
         technologies={project.skillsUsed}
+        description="Hitting notes in time with the music and diving into a journey of discovery and creativity in Ongawa. Combining rhythm-based gameplay with Role-playing elements, uncover hidden musical talents while controlling unique characters, each with their own skills and playstyles!"
       />
-      <div className="flex flex-col pl-[15%] pr-[15%]">
+      <div className="flex flex-col px-[5%] md:px-[10%] lg:px-[20%]">
         <button
           className="text-body cursor-pointer hover:bg-gray-200 p-2 rounded bg-white text-[#1a1a1a] w-full mt-5 mb-[5%]"
           onClick={scrollToPrototype}
         >
           Test Prototype
         </button>
-        <div className="space-y-[8%] mt-[5%]">
+        <div className="space-y-[5%] mt-[3%]">
           <section className="text-heading2 text-white font-bold">
             Preface
             <p className="text-body font-normal mt-[1%]">
