@@ -71,6 +71,15 @@ const projectList: Project[] = [
     workType: "game",
     sectionType: ["dev"],
   },
+  {
+    name: "PolyPlanner Pro",
+    coverImg: SGCover,
+    skillsUsed: "React, TailwindCSS, TypeScript, AWS, Docker, PostgreSQL",
+    link: "/web/polyplannerpro",
+    type: "Full Stack",
+    workType: "web",
+    sectionType: ["dev"],
+  },
 ];
 
 export { projectList };
