@@ -13,6 +13,7 @@ function Rizzlet() {
   return (
     <div className="w-full mb-[10%]">
       <ProjectHeader
+        project={project}
         coverImg={project.coverImg}
         projectName={project.name}
         year={"January 2024 – June 2024"}

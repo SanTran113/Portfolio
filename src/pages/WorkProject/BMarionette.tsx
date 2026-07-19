@@ -22,6 +22,7 @@ function BMarionette() {
   return (
     <div className="w-full mb-[10%]">
       <ProjectHeader
+        project={proj}
         coverImg={BM_eyes}
         projectName={proj.name}
         year={"September 2025 - December 2025"}

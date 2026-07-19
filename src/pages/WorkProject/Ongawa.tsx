@@ -24,6 +24,7 @@ function Ongawa() {
   return (
     <div className="w-full mb-[10%]">
       <ProjectHeader
+        project={project}
         coverImg={project.coverImg}
         projectName={project.name}
         year={"October 2024 - Current"}

@@ -28,7 +28,8 @@ export default function SG() {
   return (
     <div className="w-full mb-[10%]">
       <ProjectHeader
-        coverImg={project.coverImg}
+        project={project}
+        coverImg= {project.coverImg}
         projectName={project.name}
         year={"August 2024 - Current"}
         role={"Web Developer"}

@@ -1,9 +1,11 @@
 import type { WorkType } from "./WorkType";
 import type { SectionType} from "./SectionType"
 
+export type ImageSrc = string;
+
 export type Project = {
     name: string;
-    coverImg: string;
+    coverImg: ImageSrc;
     skillsUsed: string;
     link: string;
     type: string;

@@ -15,6 +15,7 @@ function SorcererDesk() {
   return (
     <div className="w-full mb-[10%]">
       <ProjectHeader
+        project={project}
         coverImg={project.coverImg}
         projectName={project.name}
         year={"September 2025 - October 2025"}
