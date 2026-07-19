@@ -9,4 +9,6 @@ export type Project = {
     type: string;
     workType?: WorkType;
     sectionType?: SectionType[];
+    startDate?: Date;
+    endDate?: Date | "Current";
 };
