@@ -3,6 +3,12 @@ import { projectList } from "../../data/projectsList";
 import ProjectHeader from "../../components/ProjectHeader";
 
 import ApprovalFlow from "../../assets/Qts/ApprovalFlow.svg";
+import ApprovalHistory from "../../assets/Qts/ApprovalHistory.png";
+import ApproveFlowchart from "../../assets/Qts/ApproveFlowchart.png";
+import FlowchartSnapshot from "../../assets/Qts/FlowchartSnapshot.png";
+import RequestReview from "../../assets/Qts/RequestReview.png";
+import StudentApproval from "../../assets/Qts/StudentApproval.png";
+import EmailService from "../../assets/Qts/EmailService.png";
 
 export default function QTs() {
   const [project] = useState(projectList[7]);
@@ -103,50 +109,52 @@ export default function QTs() {
             Final Screens
             <h1 className="font-bold text-heading3">Request Approval</h1>
             <p className="text-body font-normal mt-[1%]"></p>
-            {/* <img
-              src={}
+            <img
+              src={RequestReview}
               alt="approachImg"
-              className="w-full lg:w-1/2 mt-[2%]"
-            /> */}
+              className="w-full mt-[2%] mb-[3%]"
+            />
             <h1 className="font-bold text-heading3">Automatic Email Service</h1>
             <p className="text-body font-normal mt-[1%]"></p>
-            {/* <img
-              src={}
+            <img
+              src={EmailService}
               alt="approachImg"
-              className="w-full lg:w-1/2 mt-[2%]"
-            /> */}
+              className="w-full mt-[2%] mb-[3%]"
+            />
             <h1 className="font-bold text-heading3">
               Approving/Rejecting Flowchart
             </h1>
             <p className="text-body font-normal mt-[1%]"></p>
-            {/* <img
-              src={}
+            <img
+              src={ApproveFlowchart}
               alt="approachImg"
-              className="w-full lg:w-1/2 mt-[2%]"
-            /> */}
+              className="w-full mt-[2%] mb-[3%]"
+            />
             <h1 className="font-bold text-heading3">
               Flowchart Approval History
             </h1>
             <p className="text-body font-normal mt-[1%]"></p>
-            {/* <img
-              src={}
+            <img
+              src={ApprovalHistory}
               alt="approachImg"
-              className="w-full lg:w-1/2 mt-[2%]"
-            /> */}
+              className="w-full mt-[2%] mb-[3%]"
+            />
             <h1 className="font-bold text-heading3">Flowchart Snapshot</h1>
             <p className="text-body font-normal mt-[1%]"></p>
-            {/* <img
-              src={}
+            <img
+              src={FlowchartSnapshot}
               alt="approachImg"
-              className="w-full lg:w-1/2 mt-[2%]"
-            /> */}
-            <h1 className="font-bold text-heading3">Checking on the Student Side</h1>
+              className="w-full mt-[2%] mb-[3%]"
+            />
+            <h1 className="font-bold text-heading3">
+              Checking on the Student Side
+            </h1>
             <p className="text-body font-normal mt-[1%]"></p>
-            {/* <img
-              src={}
+            <img
+              src={StudentApproval}
               alt="approachImg"
-              className="w-full lg:w-1/2 mt-[2%]"
-            /> */}
+              className="w-full mt-[2%] mb-[3%]"
+            />
           </section>
         </div>
       </div>
