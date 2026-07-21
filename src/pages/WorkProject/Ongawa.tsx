@@ -83,7 +83,7 @@ function Ongawa() {
             </div>
           </section>
           <section className="text-heading2 text-white font-bold">
-            Aproach
+            Approach
             <p className="text-body font-normal mt-[1%]">
               The team hopes for designs that resemble games such as Muse Dash,
               Cytus II, Deemo II, and VOEZ. Each of these websites has animation
