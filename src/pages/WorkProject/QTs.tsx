@@ -2,7 +2,7 @@ import { useState } from "react";
 import { projectList } from "../../data/projectsList";
 import ProjectHeader from "../../components/ProjectHeader";
 
-import ApprovalFlow from "../../assets/Qts/ApprovalFlow.svg"
+import ApprovalFlow from "../../assets/Qts/ApprovalFlow.svg";
 
 export default function QTs() {
   const [project] = useState(projectList[7]);
@@ -93,7 +93,60 @@ export default function QTs() {
               side. Below is a swimlane chart which goes through the approval
               process from the stuednt to the advisor.
             </p>
-            <img src={ApprovalFlow} alt="approachImg" className="w-full lg:w-1/2 mt-[2%]" />
+            <img
+              src={ApprovalFlow}
+              alt="approachImg"
+              className="w-full lg:w-1/2 mt-[2%]"
+            />
+          </section>
+          <section className="text-heading2 text-white font-bold">
+            Final Screens
+            <h1 className="font-bold text-heading3">Request Approval</h1>
+            <p className="text-body font-normal mt-[1%]"></p>
+            {/* <img
+              src={}
+              alt="approachImg"
+              className="w-full lg:w-1/2 mt-[2%]"
+            /> */}
+            <h1 className="font-bold text-heading3">Automatic Email Service</h1>
+            <p className="text-body font-normal mt-[1%]"></p>
+            {/* <img
+              src={}
+              alt="approachImg"
+              className="w-full lg:w-1/2 mt-[2%]"
+            /> */}
+            <h1 className="font-bold text-heading3">
+              Approving/Rejecting Flowchart
+            </h1>
+            <p className="text-body font-normal mt-[1%]"></p>
+            {/* <img
+              src={}
+              alt="approachImg"
+              className="w-full lg:w-1/2 mt-[2%]"
+            /> */}
+            <h1 className="font-bold text-heading3">
+              Flowchart Approval History
+            </h1>
+            <p className="text-body font-normal mt-[1%]"></p>
+            {/* <img
+              src={}
+              alt="approachImg"
+              className="w-full lg:w-1/2 mt-[2%]"
+            /> */}
+            <h1 className="font-bold text-heading3">Flowchart Snapshot</h1>
+            <p className="text-body font-normal mt-[1%]"></p>
+            {/* <img
+              src={}
+              alt="approachImg"
+              className="w-full lg:w-1/2 mt-[2%]"
+            /> */}
+            <h1 className="font-bold text-heading3">Checking on the Student Side</h1>
+            <p className="text-body font-normal mt-[1%]"></p>
+            {/* <img
+              src={}
+              alt="approachImg"
+              className="w-full lg:w-1/2 mt-[2%]"
+            /> */}
           </section>
         </div>
       </div>
