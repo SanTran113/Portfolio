@@ -30,7 +30,7 @@ export default function QTs() {
           className="text-body cursor-pointer hover:bg-gray-200 p-2 rounded bg-white text-[#1a1a1a] w-full mt-5 mb-[5%]"
           onClick={() => window.open("https://www.polyplanner.pro/", "_blank")}
         >
-          Test Demo
+          See Website
         </button>
         <div className="space-y-[5%] mt-[3%]">
           <section className="text-heading2 text-white font-bold">

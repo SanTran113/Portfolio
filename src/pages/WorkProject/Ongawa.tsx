@@ -33,12 +33,20 @@ function Ongawa() {
         description="Hitting notes in time with the music and diving into a journey of discovery and creativity in Ongawa. Combining rhythm-based gameplay with Role-playing elements, uncover hidden musical talents while controlling unique characters, each with their own skills and playstyles!"
       />
       <div className="flex flex-col px-[5%] md:px-[10%] lg:px-[20%]">
-        <button
-          className="text-body cursor-pointer hover:bg-gray-200 p-2 rounded bg-white text-[#1a1a1a] w-full mt-5 mb-[5%]"
-          onClick={scrollToPrototype}
-        >
-          Test Prototype
-        </button>
+        <div className="flex flex-row gap-[1%]">
+          <button
+            className="text-body cursor-pointer hover:bg-gray-200 p-2 rounded bg-white text-[#1a1a1a] w-full mt-5 mb-[5%]"
+            onClick={scrollToPrototype}
+          >
+            Test Figma Prototype
+          </button>
+          <button
+            className="text-body cursor-pointer hover:bg-gray-200 p-2 rounded bg-white text-[#1a1a1a] w-full mt-5 mb-[5%]"
+            onClick={() => window.open("https://www.ongawa.io/", "_blank")}
+          >
+            See Website
+          </button>
+        </div>
         <div className="space-y-[5%] mt-[3%]">
           <section className="text-heading2 text-white font-bold">
             Preface
