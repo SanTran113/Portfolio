@@ -9,6 +9,7 @@ import FlowchartSnapshot from "../../assets/Qts/FlowchartSnapshot.png";
 import RequestReview from "../../assets/Qts/RequestReview.png";
 import StudentApproval from "../../assets/Qts/StudentApproval.png";
 import EmailService from "../../assets/Qts/EmailService.png";
+import StudentApprovalRequests from "../../assets/Qts/StudentApprovalRequests.png";
 
 export default function QTs() {
   const [project] = useState(projectList[7]);
@@ -101,25 +102,45 @@ export default function QTs() {
             </p>
             <img
               src={ApprovalFlow}
-              alt="approachImg"
+              alt="approvalFlowImg"
               className="w-full lg:w-1/2 mt-[2%]"
             />
           </section>
           <section className="text-heading2 text-white font-bold">
             Final Screens
             <h1 className="font-bold text-heading3">Request Approval</h1>
-            <p className="text-body font-normal mt-[1%]"></p>
+            <p className="text-body font-normal mt-[1%]">
+              On the student side of the Poly Planner Pro, the student may
+              request for an advisor review. In this pop-up they may select a
+              specific advisor from the list or no advisor. If the student
+              selects no advisor then the request will be mailed to the advisor
+              email to the department. The student must select which flowchart,
+              with an optional message to send to the advisor.
+            </p>
             <img
               src={RequestReview}
-              alt="approachImg"
+              alt="requestReviewImg"
               className="w-full mt-[2%] mb-[3%]"
             />
-            <h1 className="font-bold text-heading3">Automatic Email Service</h1>
-            <p className="text-body font-normal mt-[1%]"></p>
+            <h1 className="font-bold text-heading3">Viewing Approval Request</h1>
+            <p className="text-body font-normal mt-[1%]">
+              One issue that the team for saw, was advisors not checking
+              requests in Poly Planner Pro. With all the separate platforms and
+              responsibilities, Poly Planner Pro would simply be another task to
+              check. So instead of having the request go unchecked within the
+              website, the request is sent directly to the advisor via email. Of
+              course, there is also a section for the advisors to check if they
+              have any requests (see 2nd image).
+            </p>
             <img
               src={EmailService}
-              alt="approachImg"
+              alt="emailServiceImg"
               className="w-full mt-[2%] mb-[3%]"
+            />
+            <img
+              src={StudentApprovalRequests}
+              alt="studentApprovalRequestsImg"
+              className="w-full mb-[3%]"
             />
             <h1 className="font-bold text-heading3">
               Approving/Rejecting Flowchart
@@ -127,7 +148,7 @@ export default function QTs() {
             <p className="text-body font-normal mt-[1%]"></p>
             <img
               src={ApproveFlowchart}
-              alt="approachImg"
+              alt="approveFlowchartImg"
               className="w-full mt-[2%] mb-[3%]"
             />
             <h1 className="font-bold text-heading3">
@@ -136,14 +157,14 @@ export default function QTs() {
             <p className="text-body font-normal mt-[1%]"></p>
             <img
               src={ApprovalHistory}
-              alt="approachImg"
+              alt="approvalHistoryImg"
               className="w-full mt-[2%] mb-[3%]"
             />
             <h1 className="font-bold text-heading3">Flowchart Snapshot</h1>
             <p className="text-body font-normal mt-[1%]"></p>
             <img
               src={FlowchartSnapshot}
-              alt="approachImg"
+              alt="flowchartSnapshotImg"
               className="w-full mt-[2%] mb-[3%]"
             />
             <h1 className="font-bold text-heading3">
@@ -152,7 +173,7 @@ export default function QTs() {
             <p className="text-body font-normal mt-[1%]"></p>
             <img
               src={StudentApproval}
-              alt="approachImg"
+              alt="studentApprovalImg"
               className="w-full mt-[2%] mb-[3%]"
             />
           </section>
