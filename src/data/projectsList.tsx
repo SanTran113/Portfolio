@@ -5,6 +5,7 @@ import BMCover from "../assets/BMarionette/BMCover.png";
 import NinjaPenguCover from "../assets/covers/NinjaPenguCover.png";
 import grayScaleGameplay from "../assets/grayscale/grayScaleGameplay.png";
 import SDCover from "../assets/sorcererDesk/SorcerersDeskCover.jpg";
+import pppCover from "../assets/Qts/pppCover.png";
 import type { Project } from "./Project";
 
 const projectList: Project[] = [
@@ -87,7 +88,7 @@ const projectList: Project[] = [
   },
   {
     name: "PolyPlanner Pro",
-    coverImg: SGCover,
+    coverImg: pppCover,
     skillsUsed: "React, TailwindCSS, TypeScript, AWS, Docker, PostgreSQL",
     link: "/web/polyplannerpro",
     type: "Full Stack",

@@ -122,7 +122,9 @@ export default function QTs() {
               alt="requestReviewImg"
               className="w-full mt-[2%] mb-[3%]"
             />
-            <h1 className="font-bold text-heading3">Viewing Approval Request</h1>
+            <h1 className="font-bold text-heading3">
+              Viewing Approval Request
+            </h1>
             <p className="text-body font-normal mt-[1%]">
               One issue that the team for saw, was advisors not checking
               requests in Poly Planner Pro. With all the separate platforms and
@@ -145,7 +147,11 @@ export default function QTs() {
             <h1 className="font-bold text-heading3">
               Approving/Rejecting Flowchart
             </h1>
-            <p className="text-body font-normal mt-[1%]"></p>
+            <p className="text-body font-normal mt-[1%]">
+              Below is the advisor view of a student's flowchart. On the left
+              side bar, the advisor can approve or reject the flowchart. Once
+              approved or rejected the advisor will be prompted with a banner.
+            </p>
             <img
               src={ApproveFlowchart}
               alt="approveFlowchartImg"
@@ -154,14 +160,24 @@ export default function QTs() {
             <h1 className="font-bold text-heading3">
               Flowchart Approval History
             </h1>
-            <p className="text-body font-normal mt-[1%]"></p>
+            <p className="text-body font-normal mt-[1%]">
+              Once the flowchart has been approved or rejected, the advisor can
+              view the history of each flowchart. The history shows the date and
+              time of the approval/rejection, a snapshot of the flowchart and an
+              option to delete the flowchart. The importance of this history
+              relies on keeping track of what has happened, as well as a back up
+              of any mistakes an advisor may take.
+            </p>
             <img
               src={ApprovalHistory}
               alt="approvalHistoryImg"
               className="w-full mt-[2%] mb-[3%]"
             />
             <h1 className="font-bold text-heading3">Flowchart Snapshot</h1>
-            <p className="text-body font-normal mt-[1%]"></p>
+            <p className="text-body font-normal mt-[1%]">
+              Each flowchart snapshot is a printable version of the flowchart
+              status of the moment the approval/rejection happened.
+            </p>
             <img
               src={FlowchartSnapshot}
               alt="flowchartSnapshotImg"
@@ -170,7 +186,11 @@ export default function QTs() {
             <h1 className="font-bold text-heading3">
               Checking on the Student Side
             </h1>
-            <p className="text-body font-normal mt-[1%]"></p>
+            <p className="text-body font-normal mt-[1%]">
+              Finally, on the student side, the student is able to check the
+              status of their approval request, whether it was approved,
+              rejected, or still pending.
+            </p>
             <img
               src={StudentApproval}
               alt="studentApprovalImg"
