@@ -20,7 +20,7 @@ export default function QTs() {
         project={project}
         coverImg={project.coverImg}
         projectName={project.name}
-        year={"September 2025 - December 2025"}
+        year={"September 2025 - June 2026"}
         role="Software Engineer"
         technologies={project.skillsUsed}
         description="Through the creation of this website, I helped students and advisors through the Quarter to Semester transition at Cal Poly."
