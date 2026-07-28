@@ -8,8 +8,7 @@ import { GradientCircle } from "../components/GradientCircle";
 const getFilteredProj = (workType: WorkType, sectionType: SectionType) => {
   return projectList.filter(
     (proj) =>
-      proj.workType === workType &&
-      proj.sectionType?.includes(sectionType),
+      proj.workType === workType && proj.sectionType?.includes(sectionType),
   );
 };
 
@@ -49,7 +48,7 @@ function Works() {
   return (
     <>
       <div className="px-5 lg:px-10 flex flex-col md:flex-row lg:flex-row gap-10 item-start h-[calc(100vh-8rem)]">
-        <section className="flex flex-col w-full ">
+        <section className="flex flex-col w-full">
           <img
             className="pt-6 w-full min-h-2/5 lg:min-h-7/8 object-cover bg-no-repeat aspect-video"
             src={project.coverImg}
@@ -57,9 +56,9 @@ function Works() {
           <div className="text-white text-body font-semibold mt-5">
             {project.skillsUsed}
           </div>
-          <hr className="w-full border-gray-300 mt-2 mb-5" />
+          <hr className="w-full border-gray-300 mt-2 mb-5"/>
         </section>
-        <section className="w-full h-full flex flex-col ">
+        <section className="w-full h-full flex flex-col">
           <div className="text-white text-heading1 font-bold mt-5">
             Projects
           </div>
@@ -77,20 +76,29 @@ function Works() {
               Design
             </button>
           </div>
-          <ul className="flex flex-col ml-5 gap-3">
-            {projList.map((proj) => (
-              <button
-                key={proj.name}
-                className="text-left cursor-pointer hover:opacity-80 hover:outline-1 hover:outline-white flex flex-row justify-between items-center p-2 lg:p-4"
-                onMouseEnter={() => setProject(proj)}
-                onClick={() => handleProjectClick(proj)}
-              >
-                <h1 className="text-white text-heading2 font-medium">
-                  {proj.name}
-                </h1>
-                <div className="text-gray-300 text-body">{proj.type}</div>
-              </button>
-            ))}
+          <ul className="flex flex-col ml-5 gap-3 mb-10">
+            {projList
+              .sort((a, b) => {
+                const getTime = (date: Date | "Current" | undefined) => {
+                  if (date === "Current") return Infinity;
+                  if (!date) return -Infinity;
+                  return date.getTime();
+                };
+                return getTime(b.endDate) - getTime(a.endDate);
+              })
+              .map((proj) => (
+                <button
+                  key={proj.name}
+                  className="text-left cursor-pointer hover:opacity-80 hover:outline-1 hover:outline-white flex flex-row justify-between items-center p-2 lg:p-4"
+                  onMouseEnter={() => setProject(proj)}
+                  onClick={() => handleProjectClick(proj)}
+                >
+                  <h1 className="text-white text-heading2 font-medium">
+                    {proj.name}
+                  </h1>
+                  <div className="text-gray-300 text-body">{proj.type}</div>
+                </button>
+              ))}
           </ul>
         </section>
       </div>

@@ -24,6 +24,7 @@ function Ongawa() {
   return (
     <div className="w-full mb-[10%]">
       <ProjectHeader
+        project={project}
         coverImg={project.coverImg}
         projectName={project.name}
         year={"October 2024 - Current"}
@@ -32,12 +33,20 @@ function Ongawa() {
         description="Hitting notes in time with the music and diving into a journey of discovery and creativity in Ongawa. Combining rhythm-based gameplay with Role-playing elements, uncover hidden musical talents while controlling unique characters, each with their own skills and playstyles!"
       />
       <div className="flex flex-col px-[5%] md:px-[10%] lg:px-[20%]">
-        <button
-          className="text-body cursor-pointer hover:bg-gray-200 p-2 rounded bg-white text-[#1a1a1a] w-full mt-5 mb-[5%]"
-          onClick={scrollToPrototype}
-        >
-          Test Prototype
-        </button>
+        <div className="flex flex-row gap-[1%]">
+          <button
+            className="text-body cursor-pointer hover:bg-gray-200 p-2 rounded bg-white text-[#1a1a1a] w-full mt-5 mb-[5%]"
+            onClick={scrollToPrototype}
+          >
+            Test Figma Prototype
+          </button>
+          <button
+            className="text-body cursor-pointer hover:bg-gray-200 p-2 rounded bg-white text-[#1a1a1a] w-full mt-5 mb-[5%]"
+            onClick={() => window.open("https://www.ongawa.io/", "_blank")}
+          >
+            See Website
+          </button>
+        </div>
         <div className="space-y-[5%] mt-[3%]">
           <section className="text-heading2 text-white font-bold">
             Preface
@@ -82,7 +91,7 @@ function Ongawa() {
             </div>
           </section>
           <section className="text-heading2 text-white font-bold">
-            Aproach
+            Approach
             <p className="text-body font-normal mt-[1%]">
               The team hopes for designs that resemble games such as Muse Dash,
               Cytus II, Deemo II, and VOEZ. Each of these websites has animation

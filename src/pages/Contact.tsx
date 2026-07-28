@@ -7,8 +7,8 @@ function Contact() {
         <div className="text-heading1 text-white font-bold mb-home mt-5">
           Contact{" "}
         </div>
-        <div className="flex flex-col lg:flex-row xl:flex-row 2xl:flex-row justify-center items-stretch">
-          <section className="flex flex-col bg-[var(--bg-contact)] m-5 p-5 space-y-6 justify-between flex-1">
+        <div className="flex flex-col lg:flex-row xl:flex-row 2xl:flex-row justify-center items-stretch ">
+          <section className="flex flex-col rounded-md bg-white/3 shadow-lg ring-1 ring-black/5 backdrop-blur-xl m-5 p-5 space-y-6 justify-between flex-1">
             <i className="text-3xl fi fi-solid fi-brands-linkedin text-white mb-20"></i>
             <h1 className="text-contact text-white font-bold">LinkedIn</h1>
             <div className="text-contact text-white mb-10">
@@ -23,7 +23,7 @@ function Contact() {
               See LinkedIn Profile
             </button>
           </section>
-          <section className="flex flex-col bg-[var(--bg-contact)] m-5 p-5 space-y-6 justify-between flex-1">
+          <section className="flex flex-col rounded-md bg-white/3 shadow-lg ring-1 ring-black/5 backdrop-blur-xl m-5 p-5 space-y-6 justify-between flex-1">
             <i className="text-3xl fi fi-solid fi-sr-envelope text-white mb-20"></i>
             <h1 className="text-contact text-white font-bold">Email</h1>
             <div className="text-contact text-white mb-10">
@@ -38,7 +38,7 @@ function Contact() {
               Email Me
             </button>
           </section>
-          <section className="flex flex-col bg-[var(--bg-contact)] m-5 p-5 space-y-6 justify-between flex-1">
+          <section className="flex flex-col rounded-md bg-white/3 shadow-lg ring-1 ring-black/5 backdrop-blur-xl m-5 p-5 space-y-6 justify-between flex-1">
             <i className="text-3xl fi fi-solid fi-brands-github text-white mb-20"></i>
             <h1 className="text-contact text-white font-bold">GitHub</h1>
             <div className="text-contact text-white mb-10">

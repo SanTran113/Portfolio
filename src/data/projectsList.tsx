@@ -5,6 +5,7 @@ import BMCover from "../assets/BMarionette/BMCover.png";
 import NinjaPenguCover from "../assets/covers/NinjaPenguCover.png";
 import grayScaleGameplay from "../assets/grayscale/grayScaleGameplay.png";
 import SDCover from "../assets/sorcererDesk/SorcerersDeskCover.jpg";
+import pppCover from "../assets/Qts/pppCover.png";
 import type { Project } from "./Project";
 
 const projectList: Project[] = [
@@ -16,6 +17,8 @@ const projectList: Project[] = [
     type: "UI/UX",
     workType: "web",
     sectionType: ["design"],
+    startDate: new Date("2024-10"),
+    endDate: "Current",
   },
   {
     name: "SpreadGoodness",
@@ -25,6 +28,8 @@ const projectList: Project[] = [
     type: "Frontend",
     workType: "web",
     sectionType: ["dev", "design"],
+    startDate: new Date("2024-08"),
+    endDate: new Date("2026-01"),
   },
   {
     name: "Rizzlet",
@@ -34,6 +39,8 @@ const projectList: Project[] = [
     type: "Full Stack",
     workType: "web",
     sectionType: ["dev"],
+    startDate: new Date("2024-01"),
+    endDate: new Date("2024-06"),
   },
   {
     name: "Butterfly Marionette",
@@ -43,6 +50,8 @@ const projectList: Project[] = [
     type: "3D Model and Animation",
     workType: "game",
     sectionType: ["design"],
+    startDate: new Date("2025-08"),
+    endDate: new Date("2025-12"),
   },
   {
     name: "Sorcerer's Desk",
@@ -52,6 +61,8 @@ const projectList: Project[] = [
     type: "3D Model",
     workType: "game",
     sectionType: ["design"],
+    startDate: new Date("2025-08"),
+    endDate: new Date("2025-12"),
   },
   {
     name: "GrayScale",
@@ -61,6 +72,8 @@ const projectList: Project[] = [
     type: "Puzzle",
     workType: "game",
     sectionType: ["dev"],
+    startDate: new Date("2025-03"),
+    endDate: new Date("2025-06"),
   },
   {
     name: "Ninja Penguin",
@@ -70,6 +83,19 @@ const projectList: Project[] = [
     type: "Platformer",
     workType: "game",
     sectionType: ["dev"],
+    startDate: new Date("2025-03"),
+    endDate: new Date("2025-06"),
+  },
+  {
+    name: "PolyPlanner Pro",
+    coverImg: pppCover,
+    skillsUsed: "React, TailwindCSS, TypeScript, AWS, Docker, PostgreSQL",
+    link: "/web/polyplannerpro",
+    type: "Full Stack",
+    workType: "web",
+    sectionType: ["dev"],
+    startDate: new Date("2025-08"),
+    endDate: "Current",
   },
 ];
 
