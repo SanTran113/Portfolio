@@ -6,6 +6,7 @@ import NinjaPenguCover from "../assets/covers/NinjaPenguCover.png";
 import grayScaleGameplay from "../assets/grayscale/grayScaleGameplay.png";
 import SDCover from "../assets/sorcererDesk/SorcerersDeskCover.jpg";
 import pppCover from "../assets/Qts/pppCover.png";
+import tavernCover from "../assets/tavern/tavernbg.png";
 import type { Project } from "./Project";
 
 const projectList: Project[] = [
@@ -96,6 +97,17 @@ const projectList: Project[] = [
     sectionType: ["dev"],
     startDate: new Date("2025-08"),
     endDate: "Current",
+  },
+  {
+    name: "Fantasy Tavern",
+    coverImg: tavernCover,
+    skillsUsed: "Javascript, Typescript, CSS, MongoDB, Procreate(Pixel Art)",
+    link: "/web/fantasytavern",
+    type: "Full Stack",
+    workType: "web",
+    sectionType: ["dev"],
+    startDate: new Date("2025-01"),
+    endDate: new Date("2025-03"),
   },
 ];
 
