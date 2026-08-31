@@ -20,6 +20,7 @@ import SorcererDesk from "./pages/WorkProject/SorcererDesk.tsx";
 import Rizzlet from "./pages/WorkProject/Rizzlet.tsx";
 import SG from "./pages/WorkProject/SG.tsx";
 import QTs from "./pages/WorkProject/QTs.tsx";
+import Tavern from "./pages/WorkProject/Tavern.tsx";
 
 const router = createBrowserRouter([
   {
@@ -37,6 +38,7 @@ const router = createBrowserRouter([
       { path: "/:type/rizzlet", element: <Rizzlet /> },
       { path: "/:type/spreadgoodness", element: <SG /> },
       { path: "/:type/polyplannerpro", element: <QTs /> },
+      { path: "/:type/fantasytavern", element: <Tavern />},
     ],
   },
 ]);

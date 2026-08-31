@@ -6,10 +6,19 @@ import type { SectionType } from "../data/SectionType";
 import { GradientCircle } from "../components/GradientCircle";
 
 const getFilteredProj = (workType: WorkType, sectionType: SectionType) => {
-  return projectList.filter(
-    (proj) =>
-      proj.workType === workType && proj.sectionType?.includes(sectionType),
-  );
+  return projectList
+    .filter(
+      (proj) =>
+        proj.workType === workType && proj.sectionType?.includes(sectionType),
+    )
+    .sort((a, b) => {
+      const getTime = (date: Date | "Current" | undefined) => {
+        if (date === "Current") return Infinity;
+        if (!date) return -Infinity;
+        return date.getTime();
+      };
+      return getTime(b.endDate) - getTime(a.endDate);
+    });
 };
 
 function Works() {
@@ -56,7 +65,7 @@ function Works() {
           <div className="text-white text-body font-semibold mt-5">
             {project.skillsUsed}
           </div>
-          <hr className="w-full border-gray-300 mt-2 mb-5"/>
+          <hr className="w-full border-gray-300 mt-2 mb-5" />
         </section>
         <section className="w-full h-full flex flex-col">
           <div className="text-white text-heading1 font-bold mt-5">
@@ -78,14 +87,6 @@ function Works() {
           </div>
           <ul className="flex flex-col ml-5 gap-3 mb-10">
             {projList
-              .sort((a, b) => {
-                const getTime = (date: Date | "Current" | undefined) => {
-                  if (date === "Current") return Infinity;
-                  if (!date) return -Infinity;
-                  return date.getTime();
-                };
-                return getTime(b.endDate) - getTime(a.endDate);
-              })
               .map((proj) => (
                 <button
                   key={proj.name}
