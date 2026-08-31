@@ -41,7 +41,14 @@ export default function Tavern() {
         <div className="space-y-[5%] mt-[3%]">
           <section className="text-heading2 text-white font-bold">
             Preface
-            <p className="text-body font-normal mt-[1%]"></p>
+            <p className="text-body font-normal mt-[1%]">
+              E-commerce websites are the functional and complex. I wanted to
+              combine this functionaltity with a little bit of fantasy. Keeping
+              the transactional flow: user authentication, browsing, purchasing,
+              and a shopping bag. In fantasy tavern, the shop is reimaged as a
+              tavern, drink menu as the product catalog, your inventory as the
+              shopping bag, and the whole UI as custom pixel art.
+            </p>
           </section>
 
           <section className="text-heading2 text-white font-bold">
@@ -59,7 +66,24 @@ export default function Tavern() {
 
           <section className="text-heading2 text-white font-bold">
             Approach
-            <p className="text-body font-normal mt-[1%]"></p>
+            <p className="text-body font-normal mt-[1%]">
+              I built Fantasy Tavern starting from structure and styling, then
+              working down into data, and finally back up through interactivity.
+              <br />I started with semantic HTML and a CSS design token system,
+              since the tavern aesthetic needed to be consistent everywhere.
+              This included text color, accent colors, buttons, and etc. From
+              there I made sure that the pages were responsive, from the menu to
+              the inventory screens.
+              <br />
+              Once the frontend was in place, I moved to the server side using
+              Express and MongoDB, designing the database schema around users,
+              drinks, and inventory relationships. I built out REST endpoints to
+              serve drink data and user authentication, then connected those
+              endpoints to the frontend with client-side rendering. For
+              security, I implemented token-based authentication with JWTs and
+              bcrypt-hashed passwords, then used that auth layer to gate access
+              to user-specific data like inventory and profile editing.
+            </p>
           </section>
 
           <section className="text-heading2 text-white font-bold">
@@ -135,7 +159,7 @@ export default function Tavern() {
               Below is an image of all the drinks laid out for showcase
               purposes. The drinks are from left to right: Mulberry Madness,
               Secret Paradise, Blueberry Madness, Sweetest Sin, Dissociate,
-              Phoenix Ashes, Emperor's Tea, Tranny of Dragons, and Acidic
+              Phoenix Ashes, Emperor's Tea, Tyranny of Dragons, and Acidic
               Basillisk.
             </p>
             <div className="flex justify-center items-center">
