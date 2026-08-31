@@ -10,6 +10,7 @@ import LoginImg from "../../assets/tavern/tavernLogin.png";
 import SignupImg from "../../assets/tavern/tavernSignup.png";
 import BgImg from "../../assets/tavern/tavernbg.png";
 import BgImgDark from "../../assets/tavern/tavernbgdark.png";
+import AllDrinks from "../../assets/tavern/drinks.png";
 
 export default function Tavern() {
   const [project] = useState(projectList[8]);
@@ -111,8 +112,8 @@ export default function Tavern() {
               Because the theme is a tavern, I had the product listing mimic a
               menu. If you hover over a menu item, there is a pop up description
               of that menu item, including the item name, image, and
-              description. If you click on the menu item, you may add it to your
-              "shopping bag."
+              description. If you click on the menu item, you purchase the item
+              and it is added to your inventory.
             </p>
             <img
               src={DrinkMenu}
@@ -129,10 +130,30 @@ export default function Tavern() {
               alt="tavernLoginImg"
               className="w-full mt-[2%] mb-[3%]"
             />
-            <h1 className="font-bold text-heading3">
-              Shopping Bag ("Inventory")
-            </h1>
-            <p className="text-body font-normal mt-[1%]"></p>
+            <h1 className="font-bold text-heading3">Inventory</h1>
+            <p className="text-body font-normal mt-[1%]">
+              Below is an image of all the drinks laid out for showcase
+              purposes. The drinks are from left to right: Mulberry Madness,
+              Secret Paradise, Blueberry Madness, Sweetest Sin, Dissociate,
+              Phoenix Ashes, Emperor's Tea, Tranny of Dragons, and Acidic
+              Basillisk.
+            </p>
+            <div className="flex justify-center items-center">
+              <img
+                src={AllDrinks}
+                alt="tavernLoginImg"
+                className="w-full lg:w-2/5 mt-[2%] mb-[3%]"
+              />
+            </div>
+            <h1 className="font-bold text-heading3">Inventory</h1>
+            <p className="text-body font-normal mt-[1%]">
+              Once you have purchased the item, you may view it in your
+              inventory. It will depict the items that you own. Inside your
+              inventory you may also "sell" anything that you may not want or
+              edit your user information. Although, editing your use may not
+              have fit here I wanted to practice editing user information,
+              including username and password.
+            </p>
             <img
               src={InventoryImg}
               alt="tavernLoginImg"
