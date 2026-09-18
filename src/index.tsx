@@ -5,11 +5,11 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import "./index.css";
 
 import Layout from "./components/Layout.tsx";
+import Cursor from "./motion/cursor.tsx";
+
 import HomePage from "./pages/HomePage.tsx";
 import Contact from "./pages/Contact.tsx";
-
 import WebHome from "./pages/Web/WebHome.tsx";
-
 import GameHome from "./pages/Game/GameHome.tsx";
 
 import About from "./pages/About.tsx";
@@ -23,7 +23,12 @@ import QTs from "./pages/WorkProject/QTs.tsx";
 
 const router = createBrowserRouter([
   {
-    element: <Layout />,
+    element: (
+      <>
+        <Layout />
+        <Cursor />
+      </>
+    ),
     children: [
       { path: "/:type?", element: <HomePage /> },
       { path: "/:type/aboutme", element: <About /> },

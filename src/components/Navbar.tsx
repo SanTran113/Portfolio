@@ -12,6 +12,7 @@ function Navbar() {
     <>
       <nav className="p-4 col-span-3 row-start-2 flex justify-between items-center gap-4 mt-3 mb-1 mr-5 ml-5 -z-5">
         <Link
+          data-cursor-hover
           to={type ? `/${type}` : "/"}
           className="text-white text-2xl font-bold"
         >
@@ -20,6 +21,7 @@ function Navbar() {
         <ul className="flex space-x-5 md:space-x-10 lg:space-x-15">
           <li>
             <Link
+              data-cursor-hover
               to={`/${type ?? "web"}/works`}
               className="text-white hover:text-gray-300"
             >
@@ -28,6 +30,7 @@ function Navbar() {
           </li>
           <li>
             <Link
+              data-cursor-hover
               to={`/${type ?? "web"}/aboutme`}
               className="text-white hover:text-gray-300"
             >
@@ -36,6 +39,7 @@ function Navbar() {
           </li>
           <li>
             <Link
+              data-cursor-hover
               to={`/${type ?? "web"}/contact`}
               className="text-white hover:text-gray-300"
             >

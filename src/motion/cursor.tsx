@@ -25,14 +25,33 @@ export default function Cursor() {
     const down = () => setIsPressing(true);
     const up = () => setIsPressing(false);
 
+    // set hovering state
+    const over = (e) => {
+      if (e.target.closest("[data-cursor-hover]")) {
+        setIsHovering(true);
+      }
+    };
+    const out = (e) => {
+      if (e.target.closest("[data-cursor-hover]")) {
+        const related = e.relatedTarget;
+        if (!related || !related.closest("[data-cursor-hover]")) {
+          setIsHovering(false);
+        }
+      }
+    };
+
     window.addEventListener("mousemove", move);
     window.addEventListener("mousedown", down);
     window.addEventListener("mouseup", up);
+    document.addEventListener("mouseover", over);
+    document.addEventListener("mouseout", out);
 
     return () => {
       window.removeEventListener("mousemove", move);
       window.removeEventListener("mousedown", down);
       window.removeEventListener("mouseup", up);
+      document.removeEventListener("mouseover", over);
+      document.removeEventListener("mouseout", out);
     };
   }, []);
 
@@ -55,7 +74,16 @@ export default function Cursor() {
         animate={{
           width: isPressing ? 40 : isHovering ? 40 : 25,
           height: isPressing ? 40 : isHovering ? 40 : 25,
-          background: isPressing ? "none" : isHovering ? "white" : "none",
+          background: isPressing
+            ? "transparent"
+            : isHovering
+              ? "white"
+              : "transparent",
+          mixBlendMode: isPressing
+            ? "normal"
+            : isHovering
+              ? "difference"
+              : "normal",
         }}
         transition={{ type: "spring", stiffness: 300, damping: 20 }}
       />
