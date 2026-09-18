@@ -1,9 +1,11 @@
 import { GradientCircle } from "../../components/GradientCircle";
 import Button from "../../components/Button";
+import Cursor from "../../motion/cursor";
 
 function WebHome() {
   return (
       <div className="w-full h-[calc(100vh-6rem)] relative flex justify-center items-center">
+        <Cursor/>
         <section className="absolute flex flex-col justify-center items-center">
           <h1 className="text-title font-light text-white mb-home flex justify-center">
             San Tran
