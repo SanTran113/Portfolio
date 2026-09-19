@@ -9,8 +9,8 @@ interface ParticlesProps {
   moveParticlesOnHover?: boolean;
   particleHoverFactor?: number;
   alphaParticles?: boolean;
-  particleBaseSize?: number;
-  sizeRandomness?: number;
+  particleMinSize?: number;
+  particleMaxSize?: number;
   cameraDistance?: number;
   disableRotation?: boolean;
   pixelRatio?: number;
@@ -44,8 +44,8 @@ const vertex = /* glsl */ `
   uniform mat4 projectionMatrix;
   uniform float uTime;
   uniform float uSpread;
-  uniform float uBaseSize;
-  uniform float uSizeRandomness;
+  uniform float uMinSize;
+  uniform float uMaxSize;
   
   varying vec4 vRandom;
   varying vec3 vColor;
@@ -65,13 +65,8 @@ const vertex = /* glsl */ `
     
     vec4 mvPos = viewMatrix * mPos;
 
-    if (uSizeRandomness == 0.0) {
-      gl_PointSize = uBaseSize;
-    } else {
-      gl_PointSize = (uBaseSize * (1.0 + uSizeRandomness * (random.x - 0.5))) / length(mvPos.xyz);
-    }
-    
-    gl_Position = projectionMatrix * mvPos;
+    gl_PointSize = mix(uMinSize, uMaxSize, random.x) / length(mvPos.xyz);
+
     gl_Position = projectionMatrix * mvPos;
   }
 `;
@@ -108,8 +103,8 @@ const Particles: React.FC<ParticlesProps> = ({
   moveParticlesOnHover = false,
   particleHoverFactor = 1,
   alphaParticles = false,
-  particleBaseSize = 100,
-  sizeRandomness = 1,
+  particleMinSize = 100,
+  particleMaxSize = 100,
   cameraDistance = 20,
   disableRotation = false,
   pixelRatio = 1,
@@ -183,8 +178,8 @@ const Particles: React.FC<ParticlesProps> = ({
       uniforms: {
         uTime: { value: 0 },
         uSpread: { value: particleSpread },
-        uBaseSize: { value: particleBaseSize * pixelRatio },
-        uSizeRandomness: { value: sizeRandomness },
+        uMinSize: { value: particleMinSize * pixelRatio },
+        uMaxSize: { value: particleMaxSize * pixelRatio },
         uAlphaParticles: { value: alphaParticles ? 1 : 0 }
       },
       transparent: true,
@@ -242,8 +237,8 @@ const Particles: React.FC<ParticlesProps> = ({
     moveParticlesOnHover,
     particleHoverFactor,
     alphaParticles,
-    particleBaseSize,
-    sizeRandomness,
+    particleMinSize,
+    particleMaxSize,
     cameraDistance,
     disableRotation,
     pixelRatio

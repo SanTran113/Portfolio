@@ -12,9 +12,9 @@ export const ParticlesBg = () => {
           moveParticlesOnHover={false}
           particleHoverFactor={1}
           alphaParticles={false}
-          particleBaseSize={60}
-          sizeRandomness={0.5}
-          cameraDistance={21}
+          particleMinSize={100}
+          particleMaxSize={100}
+          cameraDistance={25}
           disableRotation={false}
         />
       </div>
