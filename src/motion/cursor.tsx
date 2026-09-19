@@ -40,11 +40,19 @@ export default function Cursor() {
       }
     };
 
+    const reset = () => {
+      setIsHovering(false);
+      setIsPressing(false);
+    };
+
     window.addEventListener("mousemove", move);
     window.addEventListener("mousedown", down);
     window.addEventListener("mouseup", up);
     document.addEventListener("mouseover", over);
     document.addEventListener("mouseout", out);
+    window.addEventListener("click", reset);
+    window.addEventListener("pagehide", reset);
+    document.addEventListener("visibilitychange", reset);
 
     return () => {
       window.removeEventListener("mousemove", move);
@@ -52,6 +60,9 @@ export default function Cursor() {
       window.removeEventListener("mouseup", up);
       document.removeEventListener("mouseover", over);
       document.removeEventListener("mouseout", out);
+      window.removeEventListener("click", reset);
+      window.removeEventListener("pagehide", reset);
+      document.removeEventListener("visibilitychange", reset);
     };
   }, []);
 
