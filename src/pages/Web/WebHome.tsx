@@ -13,6 +13,7 @@ function WebHome() {
             label="See Projects"
             buttonLink="/web/works"
             icon={true}
+            varient="primary"
           />
         </section>
       </section>

@@ -5,6 +5,7 @@ import Profile from "../assets/profile.jpg";
 import SERes from "../assets/SE Resume.pdf";
 import GameRes from "../assets/Games Resume.pdf";
 import { GradientCircle } from "../components/GradientCircle";
+import Button from "../components/Button";
 import type { WorkType } from "../data/WorkType";
 
 function About() {
@@ -23,10 +24,10 @@ function About() {
     } else if (type?.type === "game") {
       return (
         <p className="text-body">
-          I'm a game developer based in the Los Angeles Area. I enjoy
-          makeing games and interactive experiences that are engaging and fun. 
-          My goal is to create games that are not only enjoyable to play, but also visually
-          appealing and immersive!
+          I'm a game developer based in the Los Angeles Area. I enjoy makeing
+          games and interactive experiences that are engaging and fun. My goal
+          is to create games that are not only enjoyable to play, but also
+          visually appealing and immersive!
         </p>
       );
     }
@@ -87,12 +88,11 @@ function About() {
               <h1 className="text-heading2 text-white font-bold">Skills</h1>
               {getSkills()}
             </div>
-            <button
-              className="text-body cursor-pointer p-2 hover:bg-white hover:text-[#2B2C3C] w-full mb-10 outline-white outline-1"
+            <Button
+              label="See Resume"
+              varient="fullPrimary"
               onClick={() => window.open(getResumeLink(), "_blank")}
-            >
-              See Resume
-            </button>
+            />
           </section>
         </div>
       </div>
