@@ -5,7 +5,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import "./index.css";
 
 import Layout from "./components/Layout.tsx";
-import Cursor from "./motion/Cursor.tsx";
+import Cursor from "./components/Cursor.tsx";
 
 import HomePage from "./pages/HomePage.tsx";
 import Contact from "./pages/Contact.tsx";
