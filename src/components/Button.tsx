@@ -13,7 +13,7 @@ interface ButtonProps {
 
 const varientStyles: Record<Varient, string> = {
   primary:
-    "relative text-heading2 hover/see:visible outline-white flex flex-row justify-between items-center p-3 lg:p-4 space-y-1 hover:text-[#2B2C3C]",
+    "relative text-heading2 outline-white flex flex-row justify-between items-center p-3 lg:p-4 space-y-1 hover:text-[#2B2C3C]",
   fullPrimary:
     "relative text-contact hover:text-[#2B2C3C] p-2 border-white w-full",
 };
@@ -30,12 +30,12 @@ export default function Button({
   const [isHovering, setIsHovering] = useState(false);
 
   const content = (
-    <>
+    <div className="flex flex-row justify-between items-center w-full">
       {label}
       {icon && (
         <i className="fi fi-rr-angle-small-right flex justify-center"></i>
       )}
-    </>
+    </div>
   );
 
   const buttonBg = (
