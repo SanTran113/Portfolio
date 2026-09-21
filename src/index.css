@@ -7,7 +7,7 @@
   --size-homeImg: clamp(40rem, 90vw, 90rem);
   --size-workImg: clamp(20rem, 70vw, 40rem);
   --size-projectImg: clamp(5rem, 20vw, 100rem);
-  --text-title: clamp(1rem, 11vw, 12rem);
+  --text-title: clamp(1rem, 9vw, 9rem);
   --text-body: clamp(1rem, 1.1vw, 1.2rem);
   --text-contact: clamp(0.8rem, 1vw, 1rem);
   --text-heading1: clamp(1.6rem, 3.5vw, 4rem);
