@@ -26,7 +26,7 @@ export default function QTs() {
         technologies={project.skillsUsed}
         description="Through the creation of this website, I helped students and advisors through the Quarter to Semester transition at Cal Poly."
       />
-      <div className="flex flex-col px-[5%] md:px-[10%] lg:px-[20%] my-[1%]">
+      <div className="flex flex-col px-[5%] md:px-[10%] lg:px-[20%] my-[2%]">
         <Button
           label="See Website"
           varient="fullPrimary"

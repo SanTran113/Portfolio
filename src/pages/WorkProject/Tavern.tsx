@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { projectList } from "../../data/projectsList";
 import ProjectHeader from "../../components/ProjectHeader";
+import Button from "../../components/Button";
 
 import DrinkMenu from "../../assets/tavern/drinkMenu.png";
 import DrinkMenuAdd from "../../assets/tavern/drinkMenuAdd.png";
@@ -26,19 +27,18 @@ export default function Tavern() {
         technologies={project.skillsUsed}
         description="A special twist to an ecommerce website! An interactive tavern where the user is able to purchase a fantasy drink."
       />
-      <div className="flex flex-col px-[5%] md:px-[10%] lg:px-[20%]">
-        <button
-          className="text-body cursor-pointer hover:bg-gray-200 p-2 rounded bg-white text-[#1a1a1a] w-full mt-5 mb-[5%]"
+      <div className="flex flex-col px-[5%] md:px-[10%] lg:px-[20%] my-[2%]">
+        <Button
+          label="See Github"
+          varient="fullPrimary"
           onClick={() =>
             window.open(
               "https://github.com/SanTran113/Fantasy-Tavern",
               "_blank",
             )
           }
-        >
-          See Github
-        </button>
-        <div className="space-y-[5%] mt-[3%]">
+        />
+        <div className="space-y-[5%] mt-[8%]">
           <section className="text-heading2 text-white font-bold">
             Preface
             <p className="text-body font-normal mt-[1%]">

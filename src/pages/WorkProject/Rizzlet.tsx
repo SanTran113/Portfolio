@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { projectList } from "../../data/projectsList";
 import ProjectHeader from "../../components/ProjectHeader";
+import Button from "../../components/Button";
 
 import game from "../../assets/rizzlet/interactiveGame.png";
 import leaderboard from "../../assets/rizzlet/leaderboard.png";
@@ -24,14 +25,13 @@ function Rizzlet() {
           " It aims to help address the procrastination and lack of focus many students face when studying or doing homework by promoting studying in intervals."
         }
       />
-      <div className="flex flex-col px-[5%] md:px-[10%] lg:px-[20%]">
-        <button
-          className="text-body cursor-pointer hover:bg-gray-200 p-2 rounded bg-white text-[#1a1a1a] w-full mt-5 mb-[5%]"
+      <div className="flex flex-col px-[5%] md:px-[10%] lg:px-[20%] my-[2%]">
+        <Button
+          label="See Github"
+          varient="fullPrimary"
           onClick={() => window.open("https://github.com/Rizzlet/rizzlet")}
-        >
-          See Github
-        </button>
-        <div className="space-y-[5%] mt-[3%]">
+        />
+        <div className="space-y-[5%] mt-[8%]">
           <section className="text-heading2 text-white font-bold">
             Personal Main Features Created
             <ul className="list-decimal ml-[4%] text-body font-normal ">
@@ -48,21 +48,36 @@ function Rizzlet() {
 
           <section className="text-heading2 text-white font-bold">
             Question Overview
-            <img className="w-full aspect-video mt-2" src={questionOverview} alt="Question Overview" />
+            <img
+              className="w-full aspect-video mt-2"
+              src={questionOverview}
+              alt="Question Overview"
+            />
           </section>
           <section className="text-heading2 text-white font-bold">
-          Submit a Question
-          <img className="w-full aspect-video mt-2" src={submitQuestion} alt="Submit Question" />
+            Submit a Question
+            <img
+              className="w-full aspect-video mt-2"
+              src={submitQuestion}
+              alt="Submit Question"
+            />
           </section>
           <section className="text-heading2 text-white font-bold">
             Leaderboard
-            <img className="w-full aspect-video mt-2" src={leaderboard} alt="Leaderboard" />
+            <img
+              className="w-full aspect-video mt-2"
+              src={leaderboard}
+              alt="Leaderboard"
+            />
           </section>
           <section className="text-heading2 text-white font-bold">
             Interactive Game
-            <img className="w-full aspect-video mt-2" src={game} alt="Interactive Game" />
+            <img
+              className="w-full aspect-video mt-2"
+              src={game}
+              alt="Interactive Game"
+            />
           </section>
-
 
           <section className="text-heading2 text-white font-bold">
             Demo

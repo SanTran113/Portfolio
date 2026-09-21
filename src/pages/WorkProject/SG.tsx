@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { projectList } from "../../data/projectsList";
 import ProjectHeader from "../../components/ProjectHeader";
+import Button from "../../components/Button";
 
 import sgSketch1 from "../../assets/spreadgoodness/sgSketch1.jpg";
 import sgSketch2 from "../../assets/spreadgoodness/sgSketch2.jpg";
@@ -29,24 +30,23 @@ export default function SG() {
     <div className="w-full mb-[10%]">
       <ProjectHeader
         project={project}
-        coverImg= {project.coverImg}
+        coverImg={project.coverImg}
         projectName={project.name}
         year={"August 2024 - Current"}
         role={"Web Developer"}
         technologies={project.skillsUsed}
         description="Our low-lift web-app encourages students to do something kind and unexpected for someone, share what they’ve done on our online platform, and nominate others to participate."
       />
-      <div className="w-full flex flex-col px-[5%] md:px-[10%] lg:px-[20%]">
-        <button
-          className="text-body cursor-pointer hover:bg-gray-200 p-2 rounded bg-white text-[#1a1a1a] w-full mt-5 mb-[5%]"
+      <div className="flex flex-col px-[5%] md:px-[10%] lg:px-[20%] my-[2%]">
+        <Button
+          label= "Test Demo"
+          varient= "fullPrimary"
           onClick={() =>
             window.open("https://sgc.spreadgoodness.love/demo", "_blank")
           }
-        >
-          Test Demo
-        </button>
-
-        <div className="w-full space-y-[5%] mt-[3%]">
+        />
+        Test Demo
+        <div className="w-full space-y-[5%] mt-[8%]">
           <section className="text-heading2 text-white font-bold">
             Main Flow
             <p className="text-body font-normal mt-[1%]">
@@ -155,10 +155,22 @@ export default function SG() {
               kindness.
             </p>
             <div className="flex flex-wrap -mx-2">
-              <img src={rippleTrackerM} className="w-full md:w-1/5 lg:w-1/5 mt-[2%] px-2 rounded"/>
-              <img src={rippleTrackerW} className="w-full md:w-4/5 lg:w-4/5 mt-[2%] rounded" />
-              <img src={sgMainM} className="w-full md:w-1/5 lg:w-1/5 mt-[2%] px-2 rounded" />
-              <img src={sgMainW} className="w-full md:w-4/5 lg:w-4/5 mt-[2%] rounded" />
+              <img
+                src={rippleTrackerM}
+                className="w-full md:w-1/5 lg:w-1/5 mt-[2%] px-2 rounded"
+              />
+              <img
+                src={rippleTrackerW}
+                className="w-full md:w-4/5 lg:w-4/5 mt-[2%] rounded"
+              />
+              <img
+                src={sgMainM}
+                className="w-full md:w-1/5 lg:w-1/5 mt-[2%] px-2 rounded"
+              />
+              <img
+                src={sgMainW}
+                className="w-full md:w-4/5 lg:w-4/5 mt-[2%] rounded"
+              />
             </div>
           </section>
 
@@ -170,8 +182,14 @@ export default function SG() {
               progress, and profanity settings.
             </p>
             <div className="flex flex-wrap -mx-2">
-              <img src={sgToolboxM} className="w-full md:w-1/5 lg:w-1/5 mt-[2%] px-2 rounded" />
-              <img src={sgToolboxW} className="w-full md:w-4/5 lg:w-4/5 mt-[2%] rounded" />
+              <img
+                src={sgToolboxM}
+                className="w-full md:w-1/5 lg:w-1/5 mt-[2%] px-2 rounded"
+              />
+              <img
+                src={sgToolboxW}
+                className="w-full md:w-4/5 lg:w-4/5 mt-[2%] rounded"
+              />
             </div>
           </section>
         </div>
