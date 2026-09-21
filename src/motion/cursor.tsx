@@ -1,7 +1,24 @@
 import { motion, useMotionValue, useSpring } from "framer-motion";
 import { useEffect, useState } from "react";
 
+// Check if the device is mobile or on web
+function useHasFinePointer() {
+  const [hasFinePointer, setHasFinePointer] = useState(false);
+
+  useEffect(() => {
+    const mql = window.matchMedia("(hover: hover) and (pointer: fine)");
+    setHasFinePointer(mql.matches);
+
+    const listener = (e) => setHasFinePointer(e.matches);
+    mql.addEventListener("change", listener);
+    return () => mql.removeEventListener("change", listener);
+  }, []);
+
+  return hasFinePointer;
+}
+
 export default function Cursor() {
+  const hasFinePointer = useHasFinePointer();
   const [isHovering, setIsHovering] = useState(false);
   const [isPressing, setIsPressing] = useState(false);
 
@@ -65,6 +82,9 @@ export default function Cursor() {
       document.removeEventListener("visibilitychange", reset);
     };
   }, []);
+
+  // Return no cursor if the device is mobile
+  if (!hasFinePointer) return null;
 
   return (
     <>
