@@ -38,8 +38,8 @@ function Works() {
   }, [type, section]);
 
   const tabClassName = (sectionType: SectionType) => {
-    return `cursor-pointer decoration-white decoration-1.5 underline-offset-6 ${
-      section === sectionType ? "underline text-white" : "not-underline text-white/50"
+    return `cursor-pointer decoration-white decoration-1.5 underline-offset-8 ${
+      section === sectionType ? "underline text-white font-medium" : "not-underline text-white/50 font-normal"
     }`;
   };
 
@@ -56,7 +56,7 @@ function Works() {
 
   return (
     <>
-      <div className="px-5 lg:px-10 flex flex-col md:flex-row lg:flex-row gap-10 item-start h-[calc(100vh-8rem)]">
+      <div className="px-5 lg:px-10 flex flex-col md:flex-row lg:flex-row md:gap-5 lg:gap-10 item-start h-[calc(100vh-8rem)]">
         <section className="flex flex-col w-full">
           <img
             className="pt-6 w-full min-h-2/5 lg:min-h-7/8 object-cover bg-no-repeat aspect-video"
@@ -71,7 +71,8 @@ function Works() {
           <div className="text-white text-heading1 font-bold mt-5">
             Projects
           </div>
-          <section className="flex flex-row justify-start items-start w-full text-white text-heading2 font-normal gap-8 mt-[3%] mb-[1%] ml-5">
+          <section className="flex flex-row justify-start items-start w-full text-white text-heading3 font-normal gap-8 mt-[3%] mb-[2%]">
+            Filter by:{" "}
             <button
               data-cursor-hover
               className={tabClassName("dev")}
@@ -87,7 +88,7 @@ function Works() {
               Design
             </button>
           </section>
-          <ul className="flex flex-col ml-5 gap-3 mb-10">
+          <ul className="flex flex-col gap-3 mb-10">
             {projList.map((proj) => (
               <>
                 <button
