@@ -71,14 +71,16 @@ function Works() {
           <div className="text-white text-heading1 font-bold mt-5">
             Projects
           </div>
-          <div className="w-full text-white text-heading2 font-normal mt-[3%] mb-[3%] flex flex-row">
+          <div className="flex flex-row justify-start items-start w-full text-white text-heading2 font-normal mt-[3%] mb-[3%]">
             <button
+              data-cursor-hover
               className={tabClassName("dev")}
               onClick={() => setSection("dev")}
             >
               Development
             </button>
             <button
+              data-cursor-hover
               className={tabClassName("design")}
               onClick={() => setSection("design")}
             >
@@ -86,20 +88,20 @@ function Works() {
             </button>
           </div>
           <ul className="flex flex-col ml-5 gap-3 mb-10">
-            {projList
-              .map((proj) => (
-                <button
-                  key={proj.name}
-                  className="text-left cursor-pointer hover:opacity-80 hover:outline-1 hover:outline-white flex flex-row justify-between items-center p-2 lg:p-4"
-                  onMouseEnter={() => setProject(proj)}
-                  onClick={() => handleProjectClick(proj)}
-                >
-                  <h1 className="text-white text-heading2 font-medium">
-                    {proj.name}
-                  </h1>
-                  <div className="text-gray-300 text-body">{proj.type}</div>
-                </button>
-              ))}
+            {projList.map((proj) => (
+              <button
+                data-cursor-hover
+                key={proj.name}
+                className="text-left cursor-pointer hover:opacity-80 hover:outline-1 hover:outline-white flex flex-row justify-between items-center p-2 lg:p-4"
+                onMouseEnter={() => setProject(proj)}
+                onClick={() => handleProjectClick(proj)}
+              >
+                <h1 className="text-white text-heading2 font-medium">
+                  {proj.name}
+                </h1>
+                <div className="text-gray-300 text-body">{proj.type}</div>
+              </button>
+            ))}
           </ul>
         </section>
       </div>

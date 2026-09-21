@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-type Varient = "primary" | "fullPrimary" | "outline" | "underline";
+type Varient = "primary" | "fullPrimary";
 interface ButtonProps {
   label: string;
   buttonLink?: string;
@@ -11,11 +11,9 @@ interface ButtonProps {
 
 const varientStyles: Record<Varient, string> = {
   primary:
-    "text-heading2 outline-1 hover/see:visible outline-white flex flex-row justify-between items-center p-3 lg:p-4 space-y-1 hover:bg-white hover:text-[#2B2C3C]",
+    "text-heading2 hover/see:visible outline-white flex flex-row justify-between items-center p-3 lg:p-4 space-y-1 hover:bg-white hover:text-[#2B2C3C]",
   fullPrimary:
-    "text-contact hover:bg-white hover:text-[#2B2C3C] p-2 rounded border border-white w-full",
-  outline: "",
-  underline: "",
+    "text-contact hover:bg-white hover:text-[#2B2C3C] p-2 border-white w-full",
 };
 
 export default function Button({
@@ -25,7 +23,7 @@ export default function Button({
   varient = "primary",
   onClick,
 }: ButtonProps) {
-  const baseStyle = "text-white font-medium cursor-pointer";
+  const baseStyle = "text-white font-medium cursor-pointer rounded border";
   const classStyles = `${baseStyle} ${varientStyles[varient]}`;
 
   const content = (
