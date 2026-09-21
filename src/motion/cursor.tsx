@@ -9,7 +9,7 @@ function useHasFinePointer() {
     const mql = window.matchMedia("(hover: hover) and (pointer: fine)");
     setHasFinePointer(mql.matches);
 
-    const listener = (e) => setHasFinePointer(e.matches);
+    const listener = (e: MediaQueryListEvent) => setHasFinePointer(e.matches);
     mql.addEventListener("change", listener);
     return () => mql.removeEventListener("change", listener);
   }, []);
@@ -35,7 +35,7 @@ export default function Cursor() {
 
   //   Detecting movement and pressing
   useEffect(() => {
-    const move = (e) => {
+    const move = (e: MouseEvent) => {
       mouseX.set(e.clientX);
       mouseY.set(e.clientY);
     };
@@ -43,14 +43,14 @@ export default function Cursor() {
     const up = () => setIsPressing(false);
 
     // set hovering state
-    const over = (e) => {
-      if (e.target.closest("[data-cursor-hover]")) {
+    const over = (e: MouseEvent) => {
+      if ((e.target as Element).closest("[data-cursor-hover]")) {
         setIsHovering(true);
       }
     };
-    const out = (e) => {
-      if (e.target.closest("[data-cursor-hover]")) {
-        const related = e.relatedTarget;
+    const out = (e: MouseEvent) => {
+      if ((e.target as Element).closest("[data-cursor-hover]")) {
+        const related = e.relatedTarget as Element | null;
         if (!related || !related.closest("[data-cursor-hover]")) {
           setIsHovering(false);
         }
