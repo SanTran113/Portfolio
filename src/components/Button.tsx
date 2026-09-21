@@ -1,4 +1,6 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 type Varient = "primary" | "fullPrimary";
 interface ButtonProps {
@@ -11,9 +13,9 @@ interface ButtonProps {
 
 const varientStyles: Record<Varient, string> = {
   primary:
-    "text-heading2 hover/see:visible outline-white flex flex-row justify-between items-center p-3 lg:p-4 space-y-1 hover:bg-white hover:text-[#2B2C3C]",
+    "relative text-heading2 hover/see:visible outline-white flex flex-row justify-between items-center p-3 lg:p-4 space-y-1 hover:text-[#2B2C3C]",
   fullPrimary:
-    "text-contact hover:bg-white hover:text-[#2B2C3C] p-2 border-white w-full",
+    "relative text-contact hover:text-[#2B2C3C] p-2 border-white w-full",
 };
 
 export default function Button({
@@ -25,6 +27,7 @@ export default function Button({
 }: ButtonProps) {
   const baseStyle = "text-white font-medium cursor-pointer rounded border";
   const classStyles = `${baseStyle} ${varientStyles[varient]}`;
+  const [isHovering, setIsHovering] = useState(false);
 
   const content = (
     <>
@@ -35,19 +38,42 @@ export default function Button({
     </>
   );
 
+  const buttonBg = (
+    <motion.span
+      className="absolute inset-0 bg-white -z-10"
+      initial={false}
+      animate={{ opacity: isHovering ? 1 : 0 }}
+      transition={{ type: "spring", stiffness: 120, damping: 20, mass: 0.8 }}
+    />
+  );
+
   // If the button has a link use Link instead
   if (buttonLink) {
     return (
-      <Link data-cursor-hover to={buttonLink} className={classStyles}>
+      <Link
+        data-cursor-hover
+        to={buttonLink}
+        className={classStyles}
+        onMouseEnter={() => setIsHovering(true)}
+        onMouseLeave={() => setIsHovering(false)}
+      >
         {content}
+        {buttonBg}
       </Link>
     );
   }
 
   return (
     <>
-      <button data-cursor-hover className={classStyles} onClick={onClick}>
+      <button
+        data-cursor-hover
+        className={classStyles}
+        onClick={onClick}
+        onMouseEnter={() => setIsHovering(true)}
+        onMouseLeave={() => setIsHovering(false)}
+      >
         {content}
+        {buttonBg}
       </button>
     </>
   );
