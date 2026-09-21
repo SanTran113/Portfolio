@@ -38,8 +38,8 @@ function Works() {
   }, [type, section]);
 
   const tabClassName = (sectionType: SectionType) => {
-    return `w-1/2 cursor-pointer decoration-white decoration-2 underline-offset-6 ${
-      section === sectionType ? "underline" : "not-underline"
+    return `cursor-pointer decoration-white decoration-1.5 underline-offset-6 ${
+      section === sectionType ? "underline text-white" : "not-underline text-white/50"
     }`;
   };
 
@@ -71,7 +71,7 @@ function Works() {
           <div className="text-white text-heading1 font-bold mt-5">
             Projects
           </div>
-          <div className="flex flex-row justify-start items-start w-full text-white text-heading2 font-normal mt-[3%] mb-[3%]">
+          <section className="flex flex-row justify-start items-start w-full text-white text-heading2 font-normal gap-8 mt-[3%] mb-[1%] ml-5">
             <button
               data-cursor-hover
               className={tabClassName("dev")}
@@ -86,21 +86,23 @@ function Works() {
             >
               Design
             </button>
-          </div>
+          </section>
           <ul className="flex flex-col ml-5 gap-3 mb-10">
             {projList.map((proj) => (
-              <button
-                data-cursor-hover
-                key={proj.name}
-                className="text-left cursor-pointer hover:opacity-80 hover:outline-1 hover:outline-white flex flex-row justify-between items-center p-2 lg:p-4"
-                onMouseEnter={() => setProject(proj)}
-                onClick={() => handleProjectClick(proj)}
-              >
-                <h1 className="text-white text-heading2 font-medium">
-                  {proj.name}
-                </h1>
-                <div className="text-gray-300 text-body">{proj.type}</div>
-              </button>
+              <>
+                <button
+                  data-cursor-hover
+                  key={proj.name}
+                  className="text-left cursor-pointer hover:opacity-80 hover:outline-1 hover:outline-white flex flex-row justify-between items-center p-2 lg:p-4"
+                  onMouseEnter={() => setProject(proj)}
+                  onClick={() => handleProjectClick(proj)}
+                >
+                  <h1 className="text-white text-heading2 font-medium">
+                    {proj.name}
+                  </h1>
+                  <div className="text-gray-300 text-body">{proj.type}</div>
+                </button>
+              </>
             ))}
           </ul>
         </section>
