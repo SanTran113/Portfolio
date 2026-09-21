@@ -81,7 +81,7 @@ export default function Cursor() {
       window.removeEventListener("pagehide", reset);
       document.removeEventListener("visibilitychange", reset);
     };
-  }, []);
+  }, [mouseX, mouseY]);
 
   // Return no cursor if the device is mobile
   if (!hasFinePointer) return null;
