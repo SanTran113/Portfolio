@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { projectList } from "../../data/projectsList";
 import ProjectHeader from "../../components/ProjectHeader";
+import Button from "../../components/Button";
 
 import ApprovalFlow from "../../assets/Qts/ApprovalFlow.svg";
 import ApprovalHistory from "../../assets/Qts/ApprovalHistory.png";
@@ -25,14 +26,13 @@ export default function QTs() {
         technologies={project.skillsUsed}
         description="Through the creation of this website, I helped students and advisors through the Quarter to Semester transition at Cal Poly."
       />
-      <div className="flex flex-col px-[5%] md:px-[10%] lg:px-[20%]">
-        <button
-          className="text-body cursor-pointer hover:bg-gray-200 p-2 rounded bg-white text-[#1a1a1a] w-full mt-5 mb-[5%]"
+      <div className="flex flex-col px-[5%] md:px-[10%] lg:px-[20%] my-[1%]">
+        <Button
+          label="See Website"
+          varient="fullPrimary"
           onClick={() => window.open("https://www.polyplanner.pro/", "_blank")}
-        >
-          See Website
-        </button>
-        <div className="space-y-[5%] mt-[3%]">
+        />
+        <div className="space-y-[5%] mt-[8%]">
           <section className="text-heading2 text-white font-bold">
             Preface
             <p className="text-body font-normal mt-[1%]">
