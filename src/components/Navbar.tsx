@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const NavItems = [
   { page: "works", label: "Works" },
-  { page: "about", label: "About" },
+  { page: "aboutme", label: "About" },
   { page: "contact", label: "Contact" },
 ];
 
