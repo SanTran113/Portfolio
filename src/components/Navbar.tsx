@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 
 const NavItems = [
-  { page: "works", label: "Works" },
+  { page: "works", label: "Projects" },
   { page: "aboutme", label: "About" },
   { page: "contact", label: "Contact" },
 ];

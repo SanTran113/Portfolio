@@ -105,9 +105,17 @@ function Works() {
             </button>
           </section>
           <ul className="flex flex-col gap-3 mb-10">
-            {projList.map((proj) => (
-              <>
-                <button
+            {projList.map((proj, index) => (
+              <AnimatePresence mode="popLayout" key={proj.name}>
+                <motion.button
+                  initial={{ opacity: 0, x: -50 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  exit={{ opacity: 0, x: 50 }}
+                  transition={{
+                    duration: 0.5,
+                    delay: index * 0.2,
+                    ease: "easeOut",
+                  }}
                   data-cursor-hover
                   key={proj.name}
                   className="text-left cursor-pointer hover:opacity-80 hover:outline-1 hover:outline-white flex flex-row justify-between items-center p-2 lg:p-4"
@@ -118,8 +126,8 @@ function Works() {
                     {proj.name}
                   </h1>
                   <div className="text-gray-300 text-body">{proj.type}</div>
-                </button>
-              </>
+                </motion.button>
+              </AnimatePresence>
             ))}
           </ul>
         </section>
