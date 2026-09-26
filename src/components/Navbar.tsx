@@ -29,15 +29,18 @@ function Navbar() {
           ST
         </Link>
         <ul className="flex space-x-5 md:space-x-10 lg:space-x-15">
-          {NavItems.map(({page, label}) => {
-            const isDimmed = isHovering !== null && isHovering !== page;
+          {NavItems.map(({ page, label }) => {
+            const to = `/${type ?? "web"}/${page}`;
+            const isActive = pathname === to;
+            const isDimmed = isHovering!== null && isHovering !== page;
             return (
               <li>
                 <MotionLink
                   data-cursor-hover
-                  to={`/${type ?? "web"}/${page}`}
-                  initial={{ color: "#FFFFFF" }}
-                  animate={{ color: isDimmed ? "#D1D5DB" : "#FFFFFF"}}
+                  className={`${isActive ? "underline underline-offset-6 " : ""}`}
+                  to={to}
+                  initial={{ color: isActive ? "#FFFFFF" : "#97959F" }}
+                  animate={{ color: isDimmed ? "#97959F" : "#FFFFFF" }}
                   onMouseEnter={() => setIsHovering(page)}
                   onMouseLeave={() => setIsHovering(null)}
                   transition={{ duration: 0.2 }}
