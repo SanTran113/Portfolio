@@ -5,7 +5,7 @@ export const ParticlesBg = () => {
     <div className="fixed inset-0 -z-10">
       <div style={{ width: "100%", height: "100%", position: "relative" }}>
         <Particles
-          particleCount={360}
+          particleCount={300}
           particleSpread={13}
           speed={0.02}
           particleColors={["#606276", "#b5987d", "#ffffff"]}
