@@ -22,7 +22,7 @@ const getFilteredProj = (workType: WorkType, sectionType: SectionType) => {
     });
 };
 
-function Works() {
+export default function Projects() {
   const type = useParams<{ type: WorkType }>();
   const [section, setSection] = useState<SectionType>("dev");
 
@@ -138,5 +138,3 @@ function Works() {
     </>
   );
 }
-
-export default Works;

@@ -13,7 +13,7 @@ import WebHome from "./pages/Web/WebHome.tsx";
 import GameHome from "./pages/Game/GameHome.tsx";
 
 import About from "./pages/About.tsx";
-import Works from "./pages/Works.tsx";
+import Projects from "./pages/Projects.tsx";
 import Ongawa from "./pages/WorkProject/Ongawa.tsx";
 import BMarionette from "./pages/WorkProject/BMarionette.tsx";
 import SorcererDesk from "./pages/WorkProject/SorcererDesk.tsx";
@@ -36,7 +36,7 @@ const router = createBrowserRouter([
       { path: "/:type/contact", element: <Contact /> },
       { path: "/web", element: <WebHome /> },
       { path: "/game", element: <GameHome /> },
-      { path: "/:type/works", element: <Works /> },
+      { path: "/:type/projects", element: <Projects /> },
       { path: "/:type/ongawa", element: <Ongawa /> },
       { path: "/:type/butterfly-marionette", element: <BMarionette /> },
       { path: "/:type/sorcerer-desk", element: <SorcererDesk /> },

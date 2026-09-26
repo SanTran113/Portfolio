@@ -14,7 +14,7 @@ function WebHome() {
         <section className="w-full text-heading1 font-bold text-white">
           <Button
             label="See Projects"
-            buttonLink="/web/works"
+            buttonLink="/web/projects"
             icon={true}
             varient="primary"
           />
