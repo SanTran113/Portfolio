@@ -64,7 +64,7 @@ export default function Projects() {
           <div className="relative w-full min-h-2/5 md:min-h-7/8 lg:min-h-7/8 aspect-video mt-6">
             <AnimatePresence mode="popLayout">
               <motion.img
-                className="absolute inset-0 w-full h-full object-cover bg-no-repeat rounded"
+                className="absolute inset-0 w-full h-full object-cover bg-no-repeat rounded "
                 key={project.coverImg}
                 src={project.coverImg}
                 initial={{ opacity: 0 }}
@@ -120,7 +120,7 @@ export default function Projects() {
                     }}
                     data-cursor-hover
                     key={proj.name}
-                    className="text-left cursor-pointer hover:opacity-80 flex flex-row justify-between items-center p-2 lg:p-4 rounded"
+                    className="text-left cursor-pointer hover:opacity-80 hover:outline-1 hover:outline-white flex flex-row justify-between items-center p-2 lg:p-4 rounded"
                     onMouseEnter={() => {
                       setProject(proj);
                       setIsHovering(proj.name);

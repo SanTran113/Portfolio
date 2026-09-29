@@ -98,7 +98,7 @@ export default function QTs() {
             <p className="text-body font-normal mt-[1%]">
               With the team, I mainly worked on the approval flow on the advisor
               side. Below is a swimlane chart which goes through the approval
-              process from the stuednt to the advisor.
+              process from the student to the advisor.
             </p>
             <img
               src={ApprovalFlow}
