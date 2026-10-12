@@ -45,7 +45,6 @@ export default function SG() {
             window.open("https://sgc.spreadgoodness.love/demo", "_blank")
           }
         />
-        Test Demo
         <div className="w-full space-y-[5%] mt-[8%]">
           <section className="text-heading2 text-white font-bold">
             Main Flow
